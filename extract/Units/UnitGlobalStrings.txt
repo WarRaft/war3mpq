@@ -1,0 +1,5 @@
+[Categories]
+GiantClass=Великан
+UndeadClass=Нежить
+MechanicalClass=""
+

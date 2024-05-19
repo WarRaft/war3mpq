@@ -1,0 +1,412 @@
+﻿// This file contains strings used by the WorldEdit module in the game.
+// If the string never gets used in the game application, it should be placed
+// in WorldEditStrings.txt to save on game memory usage.
+
+[WorldEditStrings]
+
+// Tile set names
+WESTRING_LOCALE_LORDAERON_SUMMER=Летний Лордерон
+WESTRING_LOCALE_LORDAERON_FALL=Осенний Лордерон
+WESTRING_LOCALE_LORDAERON_WINTER=Зимний Лордерон
+WESTRING_LOCALE_BARRENS=Пустоши
+WESTRING_LOCALE_ASHENVALE=Ашенваль
+WESTRING_LOCALE_FELWOOD=Фелвуд
+WESTRING_LOCALE_NORTHREND=Нортренд
+WESTRING_LOCALE_CITYSCAPE=Город
+WESTRING_LOCALE_VILLAGE=Деревня
+WESTRING_LOCALE_VILLAGEFALL=Осенняя деревня
+WESTRING_LOCALE_DUNGEON=Подземелье
+WESTRING_LOCALE_DUNGEON2=Подземелье
+WESTRING_LOCALE_DALARAN=Даларан
+WESTRING_LOCALE_ALL=Все
+WESTRING_LOCALE_RUINS=Затонувший город
+//#LINENOBETA
+WESTRING_LOCALE_ICECROWN=Ледяная Корона
+//#LINENOBETA
+WESTRING_LOCALE_OUTLAND=Глушь
+//#LINENOBETA
+WESTRING_LOCALE_BLACKCITADEL=Темная Цитадель
+//#LINENOBETA
+WESTRING_LOCALE_DALARANRUINS=Развалины Даларана
+
+// Map size descriptions
+WESTRING_MAPSIZE_TINY=Минимум
+WESTRING_MAPSIZE_SMALL=Малый
+WESTRING_MAPSIZE_MEDIUM=Средний
+WESTRING_MAPSIZE_LARGE=Большой
+WESTRING_MAPSIZE_HUGE=Огромный
+WESTRING_MAPSIZE_EPIC=Гигант
+
+// Map info defaults
+WESTRING_DEFAULT_MAPNAME=Еще одна карта
+WESTRING_DEFAULT_MAPDESC=Описание отсутствует
+WESTRING_UNKNOWN=Неизвестно
+WESTRING_DEFAULT_MAPAUTHOR=WESTRING_UNKNOWN
+WESTRING_DEFAULT_MAPSUGGESTEDPLAYERS=Не важно
+WESTRING_PLAYER=Игрок
+WESTRING_FORCE=Клан
+
+WESTRING_DEFAULT_CAMPAIGNNAME=Очередная кампания Warcraft III
+WESTRING_DEFAULT_CAMPAIGNDIFFICULTY=Средний
+WESTRING_DEFAULT_AINAME=Очередной ИИ Warcraft III
+
+// Errors and warnings
+WESTRING_ERROR=Ошибка
+WESTRING_ERROR_NOTEXTURE=Не удалось загрузить текстуру
+WESTRING_ERROR_NOFILE=Не удалось открыть файл
+WESTRING_ERROR_BADSHADOWMAP=Неверный файл карты теней
+WESTRING_ERROR_BADOBJECTID=Неверный идентификатор объекта
+
+WESTRING_WARNING=Внимание
+WESTRING_WARNING_BADWEATHEREFFECT=Неверный указатель погодного эффекта
+WESTRING_WARNING_MISSINGSTRING=Отсутствует строка
+WESTRING_WARNING_INVALIDTEXTUREID=Неверный идентификатор  текстуры
+WESTRING_WARNING_DUPLICATEDBENTRIES=В базе данных найдены дублирующиеся записи: '%s' (%s)
+WESTRING_WARNING_UNKNOWNDBFIELD=Ссылка на неизвестное поле базы данных: '%s' (%s)
+
+// Script errors
+WESTRING_SCRIPTERRORS=Ошибки сценария
+WESTRING_SCRIPTCOMPILEERROR=Ошибка компиляции сценария
+WESTRING_SCRIPT_LINE=Строка
+WESTRING_SCRIPTERR_OK=Ошибка: отсутствует код
+WESTRING_SCRIPTERR_UNKNOWN=Неизвестная ошибка компиляции
+WESTRING_SCRIPTERR_SYNTAX=Синтаксическая ошибка
+WESTRING_SCRIPTERR_SEMICOLON=Непредвиденный символ ';'
+WESTRING_SCRIPTERR_EXP_COMMA=Отсутствует символ ','
+WESTRING_SCRIPTERR_EXP_COMMA_RETURNS=Отсутствует ',' или 'returns' в списке параметров
+WESTRING_SCRIPTERR_EXP_EXPR=Отсутствует выражение
+WESTRING_SCRIPTERR_EXP_LBRACE=Отсутствует символ '['
+WESTRING_SCRIPTERR_EXP_RBRACE=Отсутствует символ ']'
+WESTRING_SCRIPTERR_EXP_LPAREN=Отсутствует символ '('
+WESTRING_SCRIPTERR_EXP_RPAREN=Отсутствует символ ')'
+WESTRING_SCRIPTERR_EXP_EQUALS=Expected '='
+WESTRING_SCRIPTERR_EXP_ENDLINE=Отсутствует конец строки
+WESTRING_SCRIPTERR_EXP_INDEX=Отсутствует индекс массива
+WESTRING_SCRIPTERR_EXP_BLOCK=Отсутствует блок кода
+WESTRING_SCRIPTERR_EXP_ENDLOOP=Отсутствует 'endloop'
+WESTRING_SCRIPTERR_EXP_STATEMENT=Отсутствует оператор кода
+WESTRING_SCRIPTERR_EXP_THEN=Отсутствует 'then'
+WESTRING_SCRIPTERR_EXP_EXTENDS=Отсутствует 'extends'
+WESTRING_SCRIPTERR_EXP_TAKES=Отсутствует 'takes'
+WESTRING_SCRIPTERR_EXP_RETURNS=Отсутствует 'returns'
+WESTRING_SCRIPTERR_EXP_FUNCTION=Отсутствует 'function'
+WESTRING_SCRIPTERR_EXP_ARGLIST=Отсутствует корректный список аргументов
+WESTRING_SCRIPTERR_EXP_PARAMS=Отсутствует корректный список параметров
+WESTRING_SCRIPTERR_EXP_SET=Отсутствует 'set'
+WESTRING_SCRIPTERR_EXP_TYPE=Отсутствует зарезервированный тип или тип идентификатора
+WESTRING_SCRIPTERR_EXP_CALL=Отсутствует 'call'
+WESTRING_SCRIPTERR_EXP_COMPARE=Expected '=='
+WESTRING_SCRIPTERR_EXP_ENDIF=Отсутствует 'endif'
+WESTRING_SCRIPTERR_EXP_UNKNOWN_NAME=Отсутствует название
+WESTRING_SCRIPTERR_EXP_FUNC_NAME=Отсутствует название функции
+WESTRING_SCRIPTERR_EXP_VAR_NAME=Отсутствует название переменной
+WESTRING_SCRIPTERR_EXP_HANDLE_NAME=Отсутствует название идентификатора
+WESTRING_SCRIPTERR_EXP_KNOWN_NAME=Отсутствует название
+WESTRING_SCRIPTERR_NO_NATIVE_FUNC=Незарегистрированная встроенная функция
+WESTRING_SCRIPTERR_ARG_TYPE=Неверный тип аргумента
+WESTRING_SCRIPTERR_ARG_COUNT=Неверное количество аргументов
+WESTRING_SCRIPTERR_NATIVE_MISMATCH=Встроенное объявление не соответствует зарегистрированной версии
+WESTRING_SCRIPTERR_NEED_RETURN=Функция должна возвращать значение
+WESTRING_SCRIPTERR_VOID_RETURN=Функция  'returns nothing' возвратила непредвиденное значение
+WESTRING_SCRIPTERR_TYPE_MISMATCH=Несовпадение типов при присвоении
+WESTRING_SCRIPTERR_EXPR_TYPE=Неподходящий тип для указанного оператора
+WESTRING_SCRIPTERR_SET_CONST=Попытка изменить значение переменной-константы
+WESTRING_SCRIPTERR_NON_CONST_CALL=Попытка вызвать функцию-константу из функции, не являющейся константой
+WESTRING_SCRIPTERR_SET_CONST_CALL=Изменение значения переменной в функции-константе
+WESTRING_SCRIPTERR_NOT_ORDINAL=Некорректный индекс массива
+WESTRING_SCRIPTERR_NOT_ARRAY=Попытка проиндексировать переменную, не являющуюся массивом
+WESTRING_SCRIPTERR_EXITWHEN=Непредвиденный оператор  'exitwhen'
+WESTRING_SCRIPTERR_NO_CONST_ARRAY=Массив не может быть константой
+
+// Localizeable names of destructables for display
+// in tooltips etc, should they be or become selectables
+WESTRING_DEST_ROCK_CHUNKS=Каменные глыбы
+//#LINENOBETA
+WESTRING_DEST_BARREL=Бочонок
+//#LINENOBETA
+WESTRING_DEST_BARREL_EXPLOSIVES=Бочонок со взрывчаткой
+//#LINENOBETA
+WESTRING_DEST_ICEY_ROCK=Ледяная скала
+WESTRING_DEST_CAGE=Клетка
+WESTRING_DEST_GATE_HORIZONTAL=Ворота
+WESTRING_DEST_GATE_DIAGONAL_1=Ворота
+WESTRING_DEST_GATE_VERTICAL=Ворота
+WESTRING_DEST_GATE_DIAGONAL_2=Ворота
+//#LINENOBETA
+WESTRING_DEST_ICECROWN_GATE_HORIZONTAL=Ледяные ворота
+//#LINENOBETA
+WESTRING_DEST_ICECROWN_GATE_DIAGONAL_1=Ледяные ворота
+//#LINENOBETA
+WESTRING_DEST_ICECROWN_GATE_VERTICAL=Ледяные ворота
+//#LINENOBETA
+WESTRING_DEST_ICECROWN_GATE_DIAGONAL_2=Ледяные ворота
+//#LINENOBETA
+WESTRING_DEST_ICE_GATE_HORIZONTAL=Скальные ледяные ворота
+//#LINENOBETA
+WESTRING_DEST_ICE_GATE_DIAGONAL_1=Скальные ледяные ворота
+//#LINENOBETA
+WESTRING_DEST_ICE_GATE_VERTICAL=Скальные ледяные ворота
+//#LINENOBETA
+WESTRING_DEST_ICE_GATE_DIAGONAL_2="Скальные ледяные ворота"
+WESTRING_DEST_RUINS_GATE_HORIZONTAL="Ворота в руинах"
+WESTRING_DEST_RUINS_GATE_DIAGONAL_1="Ворота в руинах"
+WESTRING_DEST_RUINS_GATE_VERTICAL="Ворота в руинах"
+WESTRING_DEST_RUINS_GATE_DIAGONAL_2="Ворота в руинах"
+WESTRING_DEST_ELVEN_GATE_HORIZONTAL="Эльфийские ворота"
+WESTRING_DEST_ELVEN_GATE_DIAGONAL_1="Эльфийские ворота"
+WESTRING_DEST_ELVEN_GATE_VERTICAL="Эльфийские ворота"
+WESTRING_DEST_ELVEN_GATE_DIAGONAL_2="Эльфийские ворота"
+WESTRING_DEST_IRON_GATE_HORIZONTAL="Железные ворота"
+WESTRING_DEST_IRON_GATE_DIAGONAL_1="Железные ворота"
+WESTRING_DEST_IRON_GATE_VERTICAL="Железные ворота"
+WESTRING_DEST_IRON_GATE_DIAGONAL_2="Железные ворота"
+WESTRING_DEST_DEMON_GATE_HORIZONTAL="Врата демонов"
+WESTRING_DEST_DEMON_GATE_DIAGONAL_1="Врата демонов"
+WESTRING_DEST_DEMON_GATE_VERTICAL="Врата демонов"
+WESTRING_DEST_DEMON_GATE_DIAGONAL_2="Врата демонов"
+WESTRING_DEST_STONE_WALL_HORIZONTAL="Каменная стена"
+WESTRING_DEST_STONE_WALL_DIAGONAL_2="Каменная стена"
+WESTRING_DEST_STONE_WALL_VERTICAL="Каменная стена"
+WESTRING_DEST_STONE_WALL_DIAGONAL_1="Каменная стена"
+WESTRING_DEST_STONE_RAMP_BOTTOM_LEFT="Каменный подъем"
+WESTRING_DEST_STONE_RAMP_TOP_LEFT="Каменный подъем"
+WESTRING_DEST_STONE_RAMP_TOP_RIGHT="Каменный подъем"
+WESTRING_DEST_STONE_RAMP_BOTTOM_RIGHT="Каменный подъем"
+WESTRING_DEST_STONE_RAMP_BOTTOM_LEFT_2="Каменный подъем"
+WESTRING_DEST_STONE_RAMP_TOP_LEFT_2="Каменный подъем"
+WESTRING_DEST_STONE_RAMP_TOP_RIGHT_2="Каменный подъем"
+WESTRING_DEST_STONE_RAMP_BOTTOM_RIGHT_2="Каменный подъем"
+WESTRING_DEST_ASHENVALE_TREE_WALL=Ашенваль: стена из деревьев
+WESTRING_DEST_BARRENS_TREE_WALL=Пустоши: стена из деревьев
+WESTRING_DEST_FELWOOD_TREE_WALL=Фелвуд: стена из деревьев
+WESTRING_DEST_FALL_TREE_WALL=Стена из осенних деревьев
+WESTRING_DEST_SUMMER_TREE_WALL=Стена из летних деревьев
+WESTRING_DEST_NORTHREND_TREE_WALL=Нортренд: стена из деревьев
+WESTRING_DEST_WINTER_TREE_WALL=Стена из зимних деревьев
+WESTRING_DEST_SNOWY_TREE_WALL=Стена из деревьев под снегом
+WESTRING_DEST_CITYSCAPE_SUMMER_TREE_WALL=Город: стена из летних деревьев
+WESTRING_DEST_CITYSCAPE_WINTER_TREE_WALL=Город: стена из зимних деревьев
+WESTRING_DEST_CITYSCAPE_SNOWY_TREE_WALL=Город: стена из заснеженных деревьев
+WESTRING_DEST_CITYSCAPE_FALL_TREE_WALL=Город: стена из осенних деревьев
+//#LINENOBETA
+WESTRING_DEST_DALARAN_RUINS_TREE_WALL=Руины Даларана: стена из деревьев
+//#LINENOBETA
+WESTRING_DEST_CITYSCAPE_RUINED_TREE_WALL=Город: разрушенная стена из деревьев
+WESTRING_DEST_VILLAGE_TREE_WALL=Деревня: стена из деревьев
+WESTRING_DEST_DUNGEON_TREE_WALL=Подземелье: стена из деревьев
+//#LINENOBETA
+WESTRING_DEST_ICECROWN_TREE_WALL=Ледяная Корона: стена из деревьев
+//#LINENOBETA
+WESTRING_DEST_OUTLAND_TREE_WALL=Глушь: стена из деревьев
+//#LINENOBETA
+WESTRING_DEST_BLACK_CITADEL_TREE_WALL=Темная Цитадель: стена из деревьев
+WESTRING_DEST_RUINS_TREE_WALL=Древесная стена в руинах
+WESTRING_DEST_SHORT_STONE_CLIFF_0_VERTICAL="Короткий каменный мост"
+WESTRING_DEST_SHORT_STONE_CLIFF_0_DIAGONAL_1="Короткий каменный мост"
+WESTRING_DEST_SHORT_STONE_CLIFF_0_HORIZONTAL="Короткий каменный мост"
+WESTRING_DEST_SHORT_STONE_CLIFF_0_DIAGONAL_2="Короткий каменный мост"
+WESTRING_DEST_LONG_STONE_CLIFF_0_VERTICAL="Длинный каменный мост"
+WESTRING_DEST_LONG_STONE_CLIFF_0_DIAGONAL_1="Длинный каменный мост"
+WESTRING_DEST_LONG_STONE_CLIFF_0_HORIZONTAL="Длинный каменный мост"
+WESTRING_DEST_LONG_STONE_CLIFF_0_DIAGONAL_2="Длинный каменный мост"
+WESTRING_DEST_WIDE_STONE_CLIFF_0_VERTICAL="Широкий каменный мост"
+WESTRING_DEST_WIDE_STONE_CLIFF_0_DIAGONAL_1="Широкий каменный мост"
+WESTRING_DEST_WIDE_STONE_CLIFF_0_HORIZONTAL="Широкий каменный мост"
+WESTRING_DEST_WIDE_STONE_CLIFF_0_DIAGONAL_2="Широкий каменный мост"
+WESTRING_DEST_SHORT_NATURAL_CLIFF_0_VERTICAL="Короткий природный мост"
+WESTRING_DEST_SHORT_NATURAL_CLIFF_0_DIAGONAL_1="Короткий природный мост"
+WESTRING_DEST_SHORT_NATURAL_CLIFF_0_HORIZONTAL="Короткий природный мост"
+WESTRING_DEST_SHORT_NATURAL_CLIFF_0_DIAGONAL_2="Короткий природный мост"
+WESTRING_DEST_LONG_NATURAL_CLIFF_0_VERTICAL="Длинный природный мост"
+WESTRING_DEST_LONG_NATURAL_CLIFF_0_DIAGONAL_1="Длинный природный мост"
+WESTRING_DEST_LONG_NATURAL_CLIFF_0_HORIZONTAL="Длинный природный мост"
+WESTRING_DEST_LONG_NATURAL_CLIFF_0_DIAGONAL_2="Длинный природный мост"
+WESTRING_DEST_WIDE_NATURAL_CLIFF_0_VERTICAL="Широкий природный мост"
+WESTRING_DEST_WIDE_NATURAL_CLIFF_0_DIAGONAL_1="Широкий природный мост"
+WESTRING_DEST_WIDE_NATURAL_CLIFF_0_HORIZONTAL="Широкий природный мост"
+WESTRING_DEST_WIDE_NATURAL_CLIFF_0_DIAGONAL_2="Широкий природный мост"
+WESTRING_DEST_SHORT_STONE_CLIFF_1_VERTICAL="Короткий каменный мост"
+WESTRING_DEST_SHORT_STONE_CLIFF_1_DIAGONAL_1="Короткий каменный мост"
+WESTRING_DEST_SHORT_STONE_CLIFF_1_HORIZONTAL="Короткий каменный мост"
+WESTRING_DEST_SHORT_STONE_CLIFF_1_DIAGONAL_2="Короткий каменный мост"
+WESTRING_DEST_LONG_STONE_CLIFF_1_VERTICAL="Длинный каменный мост"
+WESTRING_DEST_LONG_STONE_CLIFF_1_DIAGONAL_1="Длинный каменный мост"
+WESTRING_DEST_LONG_STONE_CLIFF_1_HORIZONTAL="Длинный каменный мост"
+WESTRING_DEST_LONG_STONE_CLIFF_1_DIAGONAL_2="Длинный каменный мост"
+WESTRING_DEST_WIDE_STONE_CLIFF_1_VERTICAL="Широкий каменный мост"
+WESTRING_DEST_WIDE_STONE_CLIFF_1_DIAGONAL_1="Широкий каменный мост"
+WESTRING_DEST_WIDE_STONE_CLIFF_1_HORIZONTAL="Широкий каменный мост"
+WESTRING_DEST_WIDE_STONE_CLIFF_1_DIAGONAL_2="Широкий каменный мост"
+WESTRING_DEST_SHORT_NATURAL_CLIFF_1_VERTICAL="Короткий природный мост"
+WESTRING_DEST_SHORT_NATURAL_CLIFF_1_DIAGONAL_1="Короткий природный мост"
+WESTRING_DEST_SHORT_NATURAL_CLIFF_1_HORIZONTAL="Короткий природный мост"
+WESTRING_DEST_SHORT_NATURAL_CLIFF_1_DIAGONAL_2="Короткий природный мост"
+WESTRING_DEST_LONG_NATURAL_CLIFF_1_VERTICAL="Длинный природный мост"
+WESTRING_DEST_LONG_NATURAL_CLIFF_1_DIAGONAL_1="Длинный природный мост"
+WESTRING_DEST_LONG_NATURAL_CLIFF_1_HORIZONTAL="Длинный природный мост"
+WESTRING_DEST_LONG_NATURAL_CLIFF_1_DIAGONAL_2="Длинный природный мост"
+WESTRING_DEST_WIDE_NATURAL_CLIFF_1_VERTICAL="Широкий природный мост"
+WESTRING_DEST_WIDE_NATURAL_CLIFF_1_DIAGONAL_1="Широкий природный мост"
+WESTRING_DEST_WIDE_NATURAL_CLIFF_1_HORIZONTAL="Широкий природный мост"
+WESTRING_DEST_WIDE_NATURAL_CLIFF_1_DIAGONAL_2="Широкий природный мост"
+WESTRING_DEST_SHORT_BRIDGE_VERTICAL=Короткий каменный мост
+WESTRING_DEST_SHORT_BRIDGE_DIAGONAL_1=Короткий каменный мост
+WESTRING_DEST_SHORT_BRIDGE_HORIZONTAL=Короткий каменный мост
+WESTRING_DEST_SHORT_BRIDGE_DIAGONAL_2=Короткий каменный мост
+WESTRING_DEST_LONG_BRIDGE_VERTICAL=Длинный деревянный мост
+WESTRING_DEST_LONG_BRIDGE_DIAGONAL_1=Длинный деревянный мост
+WESTRING_DEST_LONG_BRIDGE_HORIZONTAL=Длинный деревянный мост
+WESTRING_DEST_LONG_BRIDGE_DIAGONAL_2=Длинный деревянный мост
+WESTRING_DEST_WIDE_BRIDGE_VERTICAL=Широкий деревянный мост
+WESTRING_DEST_WIDE_BRIDGE_DIAGONAL_1=Широкий деревянный мост
+WESTRING_DEST_WIDE_BRIDGE_HORIZONTAL=Широкий деревянный мост
+WESTRING_DEST_WIDE_BRIDGE_DIAGONAL_2=Широкий деревянный мост
+WESTRING_DEST_FORCE_BRIDGE_VERTICAL=Энергетический мост
+WESTRING_DEST_FORCE_BRIDGE_DIAGONAL_1=Энергетический мост
+WESTRING_DEST_FORCE_BRIDGE_HORIZONTAL=Энергетический мост
+WESTRING_DEST_FORCE_BRIDGE_DIAGONAL_2=Энергетический мост
+WESTRING_DEST_BUILDING=Здание
+WESTRING_DEST_LARGE_BUILDING=Даларан: Фиолетовая цитадель
+WESTRING_DEST_CENTAUR_TENT=Шатер кентавров
+WESTRING_DEST_TAUREN_TENT=Шатер минотавров
+WESTRING_DEST_GNOLL_HUT=Логово гноллов
+WESTRING_DEST_TENT=Шатер
+WESTRING_DEST_EGGSACK=Кокон
+WESTRING_DEST_VAULT=Хранилище заклинаний
+WESTRING_DEST_DTC1=Вход в пещеру
+WESTRING_DEST_DTC2=Вход в пещеру
+WESTRING_DEST_DTG1=Решетка
+WESTRING_DEST_DTG2=Решетка
+WESTRING_DEST_DTG3=Решетка
+WESTRING_DEST_DTG4=Решетка
+WESTRING_DEST_SPIKES=Шипы для подземелий
+WESTRING_DEST_DOFV=Энергетическая стена
+WESTRING_DEST_DOFW=Энергетическая стена
+WESTRING_DEST_LOSBLOCKER=Блокиратор поля зрения
+WESTRING_DEST_LOSBLOCKER_LARGE=Блокиратор поля зрения (большой)
+WESTRING_DEST_PATHBLOCKER=Блокиратор пути (суша)
+WESTRING_DEST_PATHBLOCKER_LARGE=Блок. пути (суша, большой)
+WESTRING_DEST_PATHBLOCKER_FLIER=Блокиратор пути (воздух)
+WESTRING_DEST_PATHBLOCKER_LARGE_FLIER=Блок. пути (воздух, большой)
+WESTRING_DEST_PATHBLOCKER_BOTH=Блокиратор пути (двусторонний)
+WESTRING_DEST_PATHBLOCKER_LARGE_BOTH=Блок. пути (оба, большой)
+//#LINENOBETA
+WESTRING_DEST_RUINS_ROUND_DOOR_HORIZONTAL_1="Каменная дверь"
+//#LINENOBETA
+WESTRING_DEST_RUINS_ROUND_DOOR_HORIZONTAL_2="Каменная дверь"
+//#LINENOBETA
+WESTRING_DEST_RUINS_ROUND_DOOR_HORIZONTAL_3="Каменная дверь"
+//#LINENOBETA
+WESTRING_DEST_RUINS_ROUND_DOOR_HORIZONTAL_4="Каменная дверь"
+//#LINENOBETA
+WESTRING_DEST_RUINS_ROUND_DOOR_VERTICAL_1="Каменная дверь"
+//#LINENOBETA
+WESTRING_DEST_RUINS_ROUND_DOOR_VERTICAL_2="Каменная дверь"
+//#LINENOBETA
+WESTRING_DEST_RUINS_ROUND_DOOR_VERTICAL_3="Каменная дверь"
+//#LINENOBETA
+WESTRING_DEST_RUINS_ROUND_DOOR_VERTICAL_4="Каменная дверь"
+//#LINENOBETA
+WESTRING_DEST_ICE_BRIDGE_VERTICAL=Ледяной мост
+//#LINENOBETA
+WESTRING_DEST_ICE_BRIDGE_DIAGONAL_1=Ледяной мост
+//#LINENOBETA
+WESTRING_DEST_ICE_BRIDGE_HORIZONTAL=Ледяной мост
+//#LINENOBETA
+WESTRING_DEST_ICE_BRIDGE_DIAGONAL_2=Ледяной мост
+//#LINENOBETA
+WESTRING_DEST_TREE_BRIDGE_HORIZONTAL=Древесный мост
+//#LINENOBETA
+WESTRING_DEST_TREE_BRIDGE_VERTICAL=Древесный мост
+//#LINENOBETA
+WESTRING_DEST_MAGICAL_PEN=Магическая решетка
+//#LINENOBETA
+WESTRING_DEST_ANGLED_MAGICAL_PEN=Магическая решетка
+//#LINENOBETA
+WESTRING_DEST_MAGICAL_PEN_WALL=Магическая решетка
+//#LINENOBETA
+WESTRING_DEST_ANGLED_MAGICAL_PEN_WALL=Магическая стена
+//#LINENOBETA
+WESTRING_DEST_ELEVATOR_PATHBLOCKER=Стена подъемника
+//#LINENOBETA
+WESTRING_DEST_WHARF=Верфь
+//#LINENOBETA
+WESTRING_DEST_SARGERAS_GATE=Массивные ворота
+//#LINENOBETA
+WESTRING_DEST_SARGERAS_GATE_DIAG=Массивные ворота
+//#LINENOBETA
+WESTRING_DEST_SMALL_ELEVATOR=Ножной переключатель
+//#LINENOBETA
+WESTRING_DEST_LEVER=Рычаг
+//#LINENOBETA
+WESTRING_DEST_CITY_ENTRANCE=Вход в город
+//#LINENOBETA
+WESTRING_DEST_TYRANDE_BRIDGE_VERTICAL=Мост Последней Надежды
+//#LINENOBETA
+WESTRING_DEST_TYRANDE_BRIDGE_HORIZONTAL=Мост Последней Надежды
+//#LINENOBETA
+WESTRING_DEST_FROZEN_THRONE_GATE=Врата Тронного зала
+WESTRING_DOOD_LOBA=Баррикада
+WESTRING_DOOD_LOCS=Ящики
+WESTRING_DOOD_NOSP=Корабль
+WESTRING_DOOD_YSDB=Уничтоженный мост
+WESTRING_DOOD_YSDC=Уничтоженный мост
+WESTRING_DOOD_XOKT=Королевский трон
+WESTRING_DOOD_XOK1=Королевский трон (СВ-ЮЗ)
+WESTRING_DOOD_XOK2=Королевский трон (СВ-ЮЗ)
+WESTRING_DOOD_ZCR0=Маленький подъем нагов (слева)
+WESTRING_DOOD_ZCR1=Маленький подъем нагов (сверху)
+WESTRING_DOOD_ZCR2=Маленький подъем нагов (справа)
+WESTRING_DOOD_ZCR3=Маленький подъем нагов (снизу)
+WESTRING_DOOD_ZONC=Круг нагов в руинах
+WESTRING_DOOD_NWF1=Плавучая льдина
+//#LINENOBETA
+WESTRING_DOOD_APTC=Ашенваль: дерево-полог
+//#LINENOBETA
+WESTRING_DOOD_ISIG=Иглу
+//#LINENOBETA
+WESTRING_DOOD_ZZEZ=Лифт
+// new destructible strings go below here
+//#LINENOBETA
+WESTRING_DEST_UNDERGROUND_TREE_WALL=Подземелье: стена из деревьев
+//#LINENOBETA
+WESTRING_DEST_RES_STONE=Камень Воскрешения
+//#LINENOBETA
+WESTRING_DEST_BOX=Ящик
+//#LINENOBETA
+WESTRING_DOOD_OZSP=Мерцающие Врата
+//#LINENOBETA
+WESTRING_DEST_INVISIBLE_PLATFORM=Невидимая платформа
+//#LINENOBETA
+WESTRING_DEST_INVISIBLE_PLATFORM_SMALL=Невидимая платформа (малая)
+//#LINENOBETA
+WESTRING_DOOD_BTTC=Пустоши: дерево-полог
+//#LINENOBETA
+WESTRING_DOOD_CTTC=Фелвуд: дерево-полог
+//#LINENOBETA
+WESTRING_DOOD_NTTC=Нортренд: дерево-полог
+//#LINENOBETA
+WESTRING_DOOD_ZTTC=Руины: дерево-полог
+//#LINENOBETA
+WESTRING_DOOD_ITTC=Ледяная Корона: дерево-полог
+//#LINENOBETA
+WESTRING_DOOD_IOT0=Ледяная Корона: трон
+//#LINENOBETA
+WESTRING_DOOD_IOT1=Ледяная Корона: трон (СВ-ЮЗ)
+//#LINENOBETA
+WESTRING_DOOD_IOT2=Ледяная Корона: трон (СВ-ЮЗ)
+//#LINENOBETA
+WESTRING_DEST_SUPPORT_COLUMN=Опорная балка
+//#LINENOBETA
+WESTRING_DEST_WIDE_NATURAL_CLIFF_1_VERTICAL_EXTRA="Очень широкий природный мост"
+//#LINENOBETA
+WESTRING_DEST_WIDE_NATURAL_CLIFF_1_DIAGONAL_1_EXTRA="Очень широкий природный мост"
+//#LINENOBETA
+WESTRING_DEST_WIDE_NATURAL_CLIFF_1_HORIZONTAL_EXTRA="Очень широкий природный мост"
+//#LINENOBETA
+WESTRING_DEST_WIDE_NATURAL_CLIFF_1_DIAGONAL_2_EXTRA="Очень широкий природный мост"
+//#LINENOBETA
+WESTRING_DOOD_OZDS=Демоническая буря
+//#LINENOBETA
+WESTRING_DEST_ROCKIN_ARTHAS=Рок-звезда Артес
+WESTRING_DEST_VOLCANO=Volcano

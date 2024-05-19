@@ -1,0 +1,136 @@
+﻿[Index]
+// The "CampaignList" key defines the campaigns which will
+// appear on the campaign selection screen.  The values listed
+// here are the section names of the specific campaign mission data
+// below.  The order of these values is significant, as that is the
+// order in which they will appear on the campaign selection screen.
+
+CampaignList="","","","","NightElf","Human","Undead","","Orc"
+
+// The sections below make up the campaign data for each specific
+// campaign.  Each mission entry is made up of 3 comma-separated
+// strings.  In order they are: Header, Mission Name, Map Filename.
+// You can have up to 128 missions in a given campaign, but putting 
+// more than 15 will make a scrollbar appear to see the rest.
+//
+// Each campaign section can also have three cinematics associated
+// with them: Intro Cinematic, Open Cinematic, and End Cintematic.
+// The cinematic entries follow a similar pattern as the mission
+// entries: Header, Cinematic Name, Cinematic Filename.
+//
+// Using the "DefaultOpen" key, you can specify that this campaign
+// should be initially open and selectable by a new user.
+//
+// You can specify which model to use for the background, using the
+// "Background" key.  The value specified must be an entry in the
+// war3skins.txt file. Realize that this value is processed using the
+// expansion naming convention (i.e. V0, V1, etc).  You should also set 
+// the fog parameters using the "BackgroundFogXXX" keys.
+//
+// The racial cursor for the campaign can be set using the "Cursor"
+// key.  The values are as follows: Human = 0, Orc = 1, Undead = 2, 
+// Night Elf = 3.
+//      
+// Finally, you can set which ambient sound to play on this screen using
+// the "AmbientSound" key.  The value specified must be an entry in
+// the AmbienceSounds.slk file.
+
+[NightElf]
+Header="Кампания Ночных эльфов"
+Name="Ужас из глубин"
+DefaultOpen=1
+Background="NightElfBackdrop"
+BackgroundFogStyle=0
+BackgroundFogColor=255,102,77,77
+BackgroundFogDensity=0.5
+BackgroundFogStart=0
+BackgroundFogEnd=1700
+Cursor=3
+AmbientSound="ExpansionNightElfGlueScreenLoop"
+IntroCinematic=""
+OpenCinematic="Ролик","Пробуждение","IntroX"
+EndCinematic=""
+Mission0="Глава 1","Наги","Maps\FrozenThrone\Campaign\NightElfX01.w3x"
+Mission1="Глава 2","Таинственные острова","Maps\FrozenThrone\Campaign\NightElfX02.w3x"
+Mission2="Глава 3","Гробница Саргараса","Maps\FrozenThrone\Campaign\NightElfX03.w3x"
+Mission3="Глава 4","Гнев Предателя","Maps\FrozenThrone\Campaign\NightElfX04.w3x"
+Mission4="Интерлюдия","Неоконченное дело","Maps\FrozenThrone\Campaign\NightElfX04Interlude.w3x"
+Mission5="Глава 5","Сведение счетов","Maps\FrozenThrone\Campaign\NightElfX05.w3x"
+Mission6="Глава 6","Осколки Альянса","Maps\FrozenThrone\Campaign\NightElfX06.w3x"
+Mission7="Интерлюдия","Видение Фариона","Maps\FrozenThrone\Campaign\NightElfX06Interlude.w3x"
+Mission8="Глава 7","На руинах Даларана","Maps\FrozenThrone\Campaign\NightElfX07.w3x"
+Mission9="Глава 8","Два брата","Maps\FrozenThrone\Campaign\NightElfX08.w3x"
+Mission10="Финал","Пути расходятся","Maps\FrozenThrone\Campaign\NightElfX08Финал.w3x"
+
+[Human]
+Header="Кампания Альянса"
+Name="Проклятие Мстителей"
+Background="HumanBackdrop"
+BackgroundFogStyle=0
+BackgroundFogColor=255,127,51,51
+BackgroundFogDensity=0.5
+BackgroundFogStart=0
+BackgroundFogEnd=16000
+Cursor=0
+AmbientSound="ExpansionHumanGlueScreenLoop"
+IntroCinematic=""
+OpenCinematic=""
+EndCinematic=""
+Mission0="Глава 1","Чужая работа","Maps\FrozenThrone\Campaign\HumanX01.w3x"
+Mission1="Глава 2","Договор","Maps\FrozenThrone\Campaign\HumanX02.w3x"
+Mission2="Глава 3","Подземелья Даларана","Maps\FrozenThrone\Campaign\HumanX03.w3x"
+Mission3="Секретная глава","Исход","Maps\FrozenThrone\Campaign\HumanX03Secret.w3x"
+Mission4="Интерлюдия","Пустоши","Maps\FrozenThrone\Campaign\HumanX03Interlude.w3x"
+Mission5="Глава 4","В поисках Иллидана","Maps\FrozenThrone\Campaign\HumanX04.w3x"
+Mission6="Интерлюдия","Клятва верности","Maps\FrozenThrone\Campaign\HumanX04Interlude.w3x"
+Mission7="Глава 5","Врата Бездны","Maps\FrozenThrone\Campaign\HumanX05.w3x"
+Mission8="Глава 6","Повелитель Пустошей","Maps\FrozenThrone\Campaign\HumanX06.w3x"
+Mission9="Финал","Приказ Кил-Джедена","Maps\FrozenThrone\Campaign\HumanX06Finale.w3x"
+
+[Undead]
+Header="Кампания Нежити"
+Name="Повелитель Тьмы"
+Background="UndeadBackdrop"
+BackgroundFogStyle=0
+BackgroundFogColor=255,178,178,204
+BackgroundFogDensity=0.5
+BackgroundFogStart=0
+BackgroundFogEnd=8000
+Cursor=2
+AmbientSound="ExpansionUndeadGlueScreenLoop"
+IntroCinematic=""
+OpenCinematic=""
+EndCinematic="Ролик","Восхождение","OutroX"
+Mission0="Глава 1","Король Артес","Maps\FrozenThrone\Campaign\UndeadX01.w3x"
+Mission1="Интерлюдия","Раскол королевства","Maps\FrozenThrone\Campaign\UndeadX01Interlude.w3x"
+Mission2="Глава 2","Бегство из Лордерона","Maps\FrozenThrone\Campaign\UndeadX02.w3x"
+Mission3="Интерлюдия","Прощание Сильваны","Maps\FrozenThrone\Campaign\UndeadX02Interlude.w3x"
+Mission4="Глава 3","Темная Охотница","Maps\FrozenThrone\Campaign\UndeadX03.w3x"
+Mission5="Глава 4","Возвращение в Нортренд","Maps\FrozenThrone\Campaign\UndeadX04.w3x"
+Mission6="Глава 5","Падение Детерока","Maps\FrozenThrone\Campaign\UndeadX05.w3x"
+Mission7="Глава 6","Новая сила","Maps\FrozenThrone\Campaign\UndeadX06.w3x"
+Mission8="Глава 7, часть 1","Мрак и паутина","Maps\FrozenThrone\Campaign\UndeadX07a.w3x"
+Mission9="Глава 7, часть 2","Забытые","Maps\FrozenThrone\Campaign\UndeadX07b.w3x"
+Mission10="Глава 7, часть 3","Путь наверх","Maps\FrozenThrone\Campaign\UndeadX07c.w3x"
+Mission11="Интерлюдия","Разговор","Maps\FrozenThrone\Campaign\UndeadX07Interlude.w3x"
+Mission12="Глава 8","Пламя и лед","Maps\FrozenThrone\Campaign\UndeadX08.w3x"
+Mission13="Финал","Время настало...","Doodads\Cinematic\ArthasIllidanFight\ArthasIllidanFight.mdl"
+
+[Orc]
+Header="Кампания Орды"
+Name="Основание Даротара"
+DefaultOpen=1
+Background="OrcBackdrop"
+BackgroundFogStyle=0
+BackgroundFogColor=255,76,76,102
+BackgroundFogDensity=0.5
+BackgroundFogStart=0
+BackgroundFogEnd=4500
+Cursor=1
+AmbientSound="ExpansionOrcGlueScreenLoop"
+IntroCinematic=""
+OpenCinematic=""
+EndCinematic=""
+Mission0="Глава 1","Новый дом","Maps\FrozenThrone\Campaign\OrcX01.w3x"
+Mission1="Глава 2","Старые враги","Maps\FrozenThrone\Campaign\OrcX02.w3x",1
+Mission2="Глава 3","В блеске славы","Maps\FrozenThrone\Campaign\OrcX03a.w3x"

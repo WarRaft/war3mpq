@@ -1,0 +1,35 @@
+/*
+ *  Date and Time Strings
+ *  ---------------------
+ *
+ *  This file contains all strings that relate to date and time.
+ *
+ */
+
+StringList {
+
+    // --- months
+    MONTH_01        "Январь",
+    MONTH_02        "Февраль",
+    MONTH_03        "Март",
+    MONTH_04        "Апрель",
+    MONTH_05        "Май",
+    MONTH_06        "Июнь",
+    MONTH_07        "Июль",
+    MONTH_08        "Август",
+    MONTH_09        "Сентябрь",
+    MONTH_10        "Октябрь",
+    MONTH_11        "Ноябрь",
+    MONTH_12        "Декабрь",
+
+    // --- days of the week (Sun,Mon,Tue,Wed,Thu,Fri,Sat)
+    DAY_01          "Вс",
+    DAY_02          "Пн",
+    DAY_03          "Вт",
+    DAY_04          "Ср",
+    DAY_05          "Чт",
+    DAY_06          "Пт",
+    DAY_07          "Сб",
+
+}
+

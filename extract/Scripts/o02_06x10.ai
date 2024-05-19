@@ -1,0 +1,46 @@
+//============================================================================
+//  $Id: o02_06x10.ai,v 1.13 2003/05/08 23:25:17 rpardo Exp $
+//============================================================================
+globals
+    player user = PlayerEx(03)
+
+    constant integer ELITE_FOOTMAN  = 'hcth'
+    constant integer CHAPLIN        = 'nchp'
+    constant integer HYDROMANCER    = 'nhym'
+
+endglobals
+//============================================================================
+//  main
+//============================================================================
+function main takes nothing returns nothing
+    call CampaignAI(HOUSE,null)
+    call SetReplacements(2,2,3)
+
+      call SetCaptainHome(BOTH_CAPTAINS,-2075,5240)
+
+//    call SetBuildUnitEx( 1,1,1, BLOOD_PEASANT   )
+//    call SetBuildUnitEx( 0,0,1, TOWN_HALL       )
+//    call SetBuildUnitEx( 0,0,1, BARRACKS        )
+//    call SetBuildUnitEx( 0,0,1, HUMAN_ALTAR     )
+//    call SetBuildUnitEx( 0,0,4, WATCH_TOWER     )
+//    call SetBuildUnitEx( 0,0,1, LUMBER_MILL     )
+//    call SetBuildUnitEx( 0,0,4, GUARD_TOWER     )
+//    call SetBuildUnitEx( 0,0,1, ARCANE_VAULT    )
+//    call SetBuildUnitEx( 0,0,1, BLACKSMITH      )
+//    call SetBuildUnitEx( 0,0,1, KEEP            )
+//    call SetBuildUnitEx( 0,0,1, ARCANE_SANCTUM  )
+//    call SetBuildUnitEx( 0,0,1, CASTLE          )
+//    call SetBuildUnitEx( 0,0,1, AVIARY          )
+//    call SetBuildUnitEx( 8,8,8, BLOOD_PEASANT   )
+//    call SetBuildUnitEx( 2,2,2, ZEPPELIN        )
+
+//    call CampaignDefenderEx( 3,3,3, ELITE_FOOTMAN )
+//    call CampaignDefenderEx( 3,3,3, KNIGHT        )
+//    call CampaignDefenderEx( 3,3,3, HYDROMANCER   )
+//    call CampaignDefenderEx( 3,3,3, CHAPLIN       )
+//    call CampaignDefenderEx( 3,3,3, RIFLEMAN      )
+
+    call WaitForSignal()
+
+endfunction
+
