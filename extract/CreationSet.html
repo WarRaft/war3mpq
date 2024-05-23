@@ -1,0 +1,190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<script type="text/javascript" src="../Layout/Detector.js"></script>
+	<link rel=stylesheet href="../Layout/Styles.css" type="text/css">
+	<title>World Edit Map Creation and Settings</title>
+</head>
+
+<body onload=detection() >
+	
+	<p class="large_header_blue">Map Creation and Settings<br>
+&nbsp;</p>
+	
+	<a class="small_header_blue" name="New">Creating a New Map</a>
+	<p class="normal_white">You can create a new map by selecting the option New in the File menu.  You will then be given several options from which to choose:</p>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Width</i> - Determine the length of your map along its x-axis.  This number can be any whole number from 16 to 256.<br>
+	<i class="oblique_yellow">Height</i> - Determine the length of your map along its y-axis.  This number can be any whole number from 16 to 256.<br>
+	<i class="oblique_yellow">Playable Area</i> - The area of your map that is actually playable. These values cannot be adjusted directly; they are determined by the width and height, minus area reserved for boundary. <br>
+	<i class="oblique_yellow">Size Description</i> - The relative size of your map.  This can be: tiny, small, medium, large, huge, and epic.<br>
+	<i class="oblique_yellow">Tileset</i> - This field allows you to modify what your initial tileset will be when you create your map.<br>
+	<i class="oblique_yellow">Initial Tile</i> - This field tells you what tile will cover your map's terrain when you begin. The default tile can be changed by clicking on any tile in the tileset you have chosen.<br>
+	<i class="oblique_yellow">Initial Cliff Level</i> - Set the starting level of your map's terrain.  For example if your map starts at cliff level 14 (the highest), the terrain cannot be raised any higher.  If you start at cliff level 0, the terrain cannot be lowered.<br>
+	<i class="oblique_yellow">Initial Water Level</i> - The initial water level of your map. If a water level is selected, your map will start covered by that level of water. Use the three buttons below this heading to set the default water level to None, Shallow Water, or Deep Water.<br>
+	<i class="oblique_yellow">Random height field</i> - Checking this option automatically raises and lowers the terrain, creating an uneven surface on your map when you begin.<br>
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="Melee">Melee Versus Non-melee</a>
+	<p class="normal_white">
+	A melee map in Warcraft III is one where the only player-owned units you place are starting locations, and there are no custom triggers, sounds, or units.  The techtree properties and upgrade properties of your map have not been altered; if they have, your map is a non-melee map.   You can, however, place doodads and neutral units.  You can tell immediately if your map is a melee map or not by checking the lower right of the status bar.
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="Pathable">Pathable and Unbuildable</a>
+	<p class="normal_white">
+	Two concepts that you must understand when making both campaign and melee maps are pathability and buildability.<br>
+	<br>
+	Pathability refers to what areas units can move through and around.  For instance the Orc 
+    Hero Tauren Chieftain is a much larger unit than an Orc Peon and therefore requires more area than a Peon to move through and around objects and terrain.  Peons can path through places that a Tauren Chieftain could not.  You can see pathing by hitting the p key or by selecting Pathing from the View menu.<br>
+	<br>
+	Buildability refers to where units and buildings can be placed.  There are certain tiles where buildings may not be placed, such as rock tiles.  However, other units may be placed there.  For instance an uprooted Night Elf building may be placed on a rock tileset, but a rooted Night Elf building cannot.
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="Map">Adjusting Your Map Properties</a>
+	<p class="normal_white">
+	Your map's properties can be displayed and modified by selecting any of the first four options under the Scenario menu:  Map Description, Map Size and Camera Bounds, Loading Screen, and Prologue Screen.
+	</p>
+	<p class="normal_white_margined">
+	<i class="oblique_blue">Map Description</i>
+	<br>
+	<br>
+	<i class="oblique_yellow">Name</i> - Here you can name your map.<br>
+	<i class="oblique_yellow">Suggested Players</i> - List what types of games and configurations your map works best with (e.g., 2v2, 2v2v2v2).<br>
+	<i class="oblique_yellow">Description</i> - Here you can tell players what to expect from your map.<br>
+	<i class="oblique_yellow">Author</i> - Give your name or your handle.<br>
+	<i class="oblique_yellow">Expansion Required</i> - Lists all expansion only 
+    features that are being used in your map.<br>
+	<i class="oblique_yellow">Reset Map Description to Defaults</i> - This option resets all four text fields to their defaults.<br>
+	<br>
+	<i class="oblique_blue">Map Options</i>
+	<br>
+	<br>
+	<i class="oblique_yellow">Hide minimap in preview screens</i> - This prevents players from looking at an open map in the preview screens.  When this option is checked, the minimap cannot be seen when in chat or when it is selected to create a multiplayer or single-player game.<br>
+	<i class="oblique_yellow">Masked areas are partially visible</i> - Areas in which the player hasn't traveled will be somewhat translucent to that player, rather than completely opaque (Black Mask), though far darker than the Fog of War.  This option is referred to as Dark Mask.<br>
+	<i class="oblique_yellow">Show water waves on cliff shores</i> - Where water meets sharply defined land, waves will be visible.<br>
+	<i class="oblique_yellow">Show water waves on rolling shores</i> - Where water meets smoothly sloping land, waves will be visible.<br>
+	<i class="oblique_yellow">Use Item Classification System</i> - 
+    Enables the usage of the Item Classification System. Enabling 
+    causes items to be sorted into the following categories: Permanent, Charged, 
+    Power Up, Artifact, Purchasable, Campaign and Miscellaneous. <br>
+	<i class="oblique_yellow">Use Terrain Fog </i> - Enables fog properties. 
+    Different fog styles, shapes, density and color can be set.<br>
+	<i class="oblique_yellow">Use Global Weather </i> - Enables weather 
+    conditions over the entire map.<br>
+	<i class="oblique_yellow">Custom Sound Environment </i> - Enables the 
+    modification of generally all 3D sounds played during the game.<br>
+	<i class="oblique_yellow">Custom Light Environment </i> - Enables lighting 
+    conditions over the entire map.<br>
+	<i class="oblique_yellow">Reset Options to Defaults</i> - This option resets all four text fields to their defaults.<br>
+	<br>
+	<i class="oblique_blue">Map Size and Camera Bounds</i>
+	<br>
+	<br>
+	This section allows you to alter your map's size and camera bounds. In the center of the dialog box you will see a minimap. The sets of arrows that surround the minimap alter the map from the side they are on. The numbers next to each arrow under the headings Camera and Map denote the size of your map's viewable area and the total size of your map in small grid squares.<br>
+	<br>
+	The two checkboxes, Modify Map Bounds and Modify Camera Bounds, let you modify the total size of your map and the size of your map's viewable area, respectively. If neither box is checked, you cannot click on any of the arrows. If only one option is checked, then you will only modify that.<br>
+	<br>
+	The two statistics to the right of the checkboxes, Playable and Full, give the playable area of your map and the actual size of your map in medium grid squares.<br>
+	<br>
+	<i class="oblique_blue">Loading Screen</i>
+	<br>
+	<br>
+	<i class="oblique_yellow">Use Default Screen</i> - Use the default loading screen.<br>
+	<i class="oblique_yellow">Use Campaign Screen</i> - Use a campaign screen 
+    you have chosen for your loading screen.<br>
+	<i class="oblique_yellow">Use Imported File</i> - Allows imported files 
+    to be used as loading screens. Selecting Use Campaign Screen or this option 
+    will make the following fields available:
+	</p>
+	<p class="normal_white_margined_2">
+	<i class="oblique_grey">Loading Screen Title</i> - The title displayed on your loading screen.<br>
+	<i class="oblique_grey">Loading Screen Subtitle</i> - The subtitle displayed on your loading screen.<br>
+	<i class="oblique_grey">Loading Screen Text</i> - Area for adding more text describing your map.<br>
+	<i class="oblique_grey">Reset Loading Screen to Defaults</i> - Reset the loading screen to its default settings.
+	</p>
+	<p class="normal_white_margined">
+	<i class="oblique_blue">Prologue Screen</i>
+	<br>
+	<br>
+	<i class="oblique_yellow">Use Default Screen</i> - Use the default "Melee" prologue screen<br>
+	<i class="oblique_yellow">Use Campaign Screen</i> - Allows you to use a campaign screen you have chosen for your prologue screen.  Selecting this option will also make the following fields available: Prologue Screen Title, Prologue Screen Subtitle, and Prologue Screen Text.<br>
+	<i class="oblique_yellow">Prologue Screen Title</i> - The title displayed on your prologue screen.<br>
+	<i class="oblique_yellow">Prologue Screen Subtitle</i> - The subtitle displayed on your prologue screen.<br>
+	<i class="oblique_yellow">Prologue Screen Text</i> - Area for adding more text describing your map.<br>
+	<i class="oblique_yellow">Reset Prologue Screen to Defaults</i> - Reset the prologue screen to its default settings.<br>
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="Player">Player Properties</a>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Player Name</i> - Here you can set player names.<br>
+	<i class="oblique_yellow">Color</i> - This is each player's color; these colors cannot be modified or reassigned.<br>
+	<i class="oblique_yellow">Race</i> - Choose the race of each player.<br>
+	<i class="oblique_yellow">Controller</i> - This option lets you set whether a player is computer controlled, user controlled, neutral, or rescuable.  A rescuable unit will change its allegiance to the first player that comes into contact with it.<br>
+	<i class="oblique_yellow">Fixed Start Location</i> - This option forces the editor to give a player a certain starting location.<br>
+	<i class="oblique_yellow">Reset Players to Defaults</i> - Reset the players to their default settings.<br>
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="Ally">Ally Priorities Properties</a>
+	<p class="normal_white">
+	This section allows you to modify the precedence with which the game sets who will start at what starting location.  It allows you to place teams together.  For instance if your map is designed to be played by two versus two, you would want the two players of each team to start in locations next to one another.  To ensure this, put same-force players into each other's High Priority section, and move all other players to the None section.  The Low Priority category is evaluated after the High Priority category, but before the None category.  To modify these properties, first check the box Modify Ally Priorities.
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="Force">Force Properties</a>
+	<p class="normal_white">
+	A force is similar to a team.  You can put several players on the same force and make them start allied, with allied victory on, and even make the players share vision.  To modify your player's forces first check the  Use Custom 
+    Forces box.  You can make people on a force have the following designations: Allied, Allied Victory, Share Vision, Share Unit Control, Share Adv. Unit Control.
+	</p>
+	<p class="normal_white">
+	Enabling Fixed Player Settings has several effects. It disables a player's 
+    ability to modify the race and color chosen in Player Properties. It 
+    disables a player's ability to alter any&nbsp; alliance, vision, and share 
+    unit settings. It also guarantees that the user will be assigned the first 
+    player slot when using the Test Map feature.</p>
+	<br>
+	
+
+	
+	<a class="small_header_blue" name="TechTree">Techtree Properties</a>
+	<p class="normal_white">
+	This section allows you modify what players can build what units.  If there is a check next to a unit's name under the heading Available, that unit can be built.  If the check box is empty, that unit cannot be constructed or trained.  
+    To alter the default techtree settings, you must first check the Use Custom Techtree box. (Please note that modifying this check box makes your map a non-melee map.)
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="Abilities">Ability Properties</a>
+	<p class="normal_white">
+	This allows you to prevent a player or players from using certain individual skills. For instance, you can allow a player to build Sorceresses, but then disallow the skills Slow, Invisibility, or Polymorph. To alter these properties, you must check the Use Custom Abilities box. (Please note that modifying this checkbox makes your map a non-melee map.)
+	</p>
+	<br>
+		
+		
+	<a class="small_header_blue" name="Upgrade">Upgrade Properties</a>
+	<p class="normal_white">
+	This section allows you to decide the state of a player's research at the beginning of the game. If an upgrade is listed as Researched for some player, then that player will start the game with that upgrade already researched. If an upgrade is listed as Unavailable, it cannot be researched. If it is Available, it can be researched. To alter these properties, you must first check the Use Custom Upgrades box. (Please note that modifying this checkbox makes your map a non-melee map.)
+	</p>
+	
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>

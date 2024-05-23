@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<script type="text/javascript" src="../Layout/Detector.js"></script>	<link rel=stylesheet href="../Layout/Styles.css" type="text/css">
+	<title>Warcraft III </title>
+</head>
+
+<body onload=detection() >
+	
+	<p class="large_header_blue">The Sound Editor</p>
+	<p class="normal_white">
+	The Sound Editor allows you to import and export sound (.wav) files and music (.mp3) files and then play these sounds through triggers in the 
+    Trigger Editor. To open the Sound Editor, use F5 or choose Sound Editor from the Module menu.<br>
+	<br>
+	Have you ever wanted to listen to Beethoven's Ninth Symphony while playing Warcraft? Well, now you can. Please be aware, though, that Battle.net will not allow you to pass maps over four 
+    megabytes in size; importing sound and music files into your map has the potential to make your map un-passable across Battle.net because imported sound and music files are stored within the map file itself and are often over four 
+    megabytes in size. (Using internal music and sounds will not increase your map's size, however.)<br>
+	<br>
+	Sounds and music are organized into two sections. The section on the left (similar to the Terrain Editor's brush list) has all the internal sounds. You cannot alter the internal sounds on this list. To expose internal sounds or music for use in your triggers, simply select that file, then select Use Internal Sound or Use Internal Music; then the sound or music will appear in the list of sounds and music on the right.<br>
+	<br>
+	This list on the right contains all the sounds and music that you have imported and the internal sounds and music that you are using.<br>
+	<br>
+	You can play a sound or music file by double-clicking on the file when it is on the internal list of sounds or by selecting it and hitting the Play Sound button in the toolbar. To stop sounds and music from playing, simply hit the spacebar or select Stop All Sound Playback from the toolbar.<br>
+	<br>
+	To edit a selected sound or music file's properties simply double-click on it when it is in the list on the right or select it and select Edit Sound Properties or select Rename Sound Variable.  The Sound Properties has the following options and information:
+	</p>
+	
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">File</i> - The file name of the sound or music.<br>
+	<i class="oblique_yellow">Format</i> - The max kilohertz of the sound, its bit-rate (for .mp3) or sample rate (for .wav), and number of channels (for .wav) or encoding method (for .mp3).<br>
+	<i class="oblique_yellow">Length</i> - The duration of the sound.<br>
+	<i class="oblique_yellow">Variable</i> - This is the variable name that will be displayed in the list of sound variables in the 
+    Trigger Editor. This is the only option that can be modified on a music file (.mp3).
+    <br>
+	<i class="oblique_blue"><br>
+    </i>
+	<i class="oblique_yellow">Options </i>-<i class="oblique_grey">&nbsp;&nbsp;&nbsp; Looping</i> - The sound file will play repeatedly until ordered to stop.<br>
+	<i class="oblique_grey">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3D sound</i> - The sound file will have 3D aspects and therefore will require positioning to play.<br>
+	<i class="oblique_grey">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Stop when out of range</i> - The sound file will stop when the user is not in range to hear it.<br>
+	</p>
+	
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Volume-</i> Increase the relative volume of the sound.<br>
+	<i class="oblique_yellow">Fade In Rate</i> -  How quickly the sound fades in. The higher the number, the faster the sound fades in.  The default is instant.<br>
+	<i class="oblique_yellow">Fade Out Rate</i> - How quickly the sound fades out. The higher the number, the faster the sound fades out. The default is instant.<br>
+	<i class="oblique_yellow">Pitch</i> - Increasing this number increases the speed at which the sound is played.<br>
+	<i class="oblique_yellow">Effect</i> - Special effects that can be added to a sound.  These effects are only compatible with certain sound cards, however.<br>
+	<i class="oblique_yellow">Min Distance</i> - The sound level at the minimum distance that the sound can be heard.<br>
+	<i class="oblique_yellow">Max Distance</i> - The sound level at the maximum distance that the sound can be heard.<br>
+	<i class="oblique_yellow">Distance Cutoff</i> - The distance at which the sound will begin to fade out.<br>
+	</p>
+	
+	<p class="normal_white">
+	To use sounds you have added to your map, you must access them through the 
+    Trigger Editor. When you have imported a sound or music file, or added internal sounds or music to the list of sounds on the right side of the editor, you can play them in the 
+    Trigger Editor through the actions "Sound - Play Sound" or "Sound - Play Music".<br>
+	<br>
+	Remember that 3D sounds must be attached to a specific location for them to play, be it a unit or region, and you must also be within range to hear them.
+	</p>
+	
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>

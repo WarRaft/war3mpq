@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<script type="text/javascript" src="../Layout/Detector.js"></script>
+	<link rel=stylesheet href="../Layout/Styles.css" type="text/css">
+	<title>World Edit Features and Navigation</title>
+</head>
+
+<body onload=detection() >
+	
+	<p class="large_header_blue">World Editor Features and Navigation<br>
+&nbsp;</p>
+	
+	<a class="small_header_blue" name="Navigating">Navigating Your Map</a>
+	<p class="normal_white">
+	There are many ways to navigate your map.  You can move up and down or left and right by using the scrollbars or the arrow keys on your keyboard.  You can also move around by right-clicking on your map and dragging.  Alternatively, you can change positions by left-clicking the minimap and dragging.<br>
+	<br>
+	Due to the three-dimensional nature of Warcraft III maps, you now have the option to zoom in on and rotate your map. You can zoom in or out by holding down the shift key and right-clicking and dragging on your map. You can rotate your map by holding down the Control key and right-clicking and dragging on your map. If you press the C key to lock the game camera, you can then use the game's conventions for zooming in and rotating.
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="Previewer">Previewer</a>
+	<p class="normal_white">
+	The previewer is the box on the left side of your screen that allows you to see each unit or doodad you select before you place it on the map. You can rotate and zoom in or out relative to each unit or doodad by using the arrows buttons located underneath the previewer. You can also see each animation under the various lighting options available by clicking on the arrows next to the associated time of day.<br>
+	<br>
+	With the Doodad Palette you can see all variations of a doodad in the previewer, and you can decide which variation you would like to place, provided you do not have Place Random Variation option checked.  Once you've chosen a doodad to place in your map, you can see any available variations or animations of the selected doodad by clicking the up and down arrows next to the word Variation or the word Animation on the left side of the editor.  If you do not have Random Rotation depressed, you can rotate the doodad you place by rotating it in the previewer.<br>
+	<br>
+	Using the Unit Palette, you can see all the available animations for a selected unit by clicking the up and down arrows next to the word Animation on the left side of the editor.
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="Brush">Brush List</a>
+	<p class="normal_white">
+	The brush list is an alternative to the palettes. However, it only allows you to select the terrain, units, and doodads associated with the tileset you chose when you first created the map. For 
+    instance, if you choose Lordaeron Summer as your tileset, only the units and doodads that fall under that tileset will be available in the brush list. The brush list also doesn't offer some of the other features of the palettes, such as brush size, and random rotation.
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="Status">Status Bar</a>
+	<p class="normal_white">
+	The status bar is beneath the horizontal scrollbar at the bottom of the editor window; it provides you with information about what you are currently doing.  It is divided into four sections from left to right.<br>
+	<br>
+	The first section displays the current position in (X, Y, Z) coordinates of the cursor, and the current cliff level of the terrain the cursor is above.<br>
+	<br>
+	The second section displays what brush is currently being used.  If you are modifying terrain, it will tell you your brush size, shape, and what type of brush you are using.  If you are modifying doodads or units, the status bar will tell you what doodad or unit you are placing.  If you are modifying regions, the status bar will simply say "Regions."  This section will also tell you if you have the selection brush active.<br>
+	<br>
+	The third section shows what, if anything, is currently selected on your map. If you have an object selected, it tells you the object's name, the order in which it was placed on the map (e.g., Paladin 0000 was the first unit placed on the map; this number only applies to units), its four-letter code (if the object is a unit or doodad), its owner (if it is a unit), and its level (if it is a 
+    Hero, a creep, or a critter).<br>
+	<br>
+	The fourth section tells you what game time the editor is currently displaying.  This time can be a set, unchanging time, but its default setting follows the normal day/night cycle.  This section also shows whether the map you are working on is a melee map.
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="Minimap">Minimap</a>
+	<p class="normal_white">
+	The minimap displays the terrain, units, doodads, and regions placed on your map from an overhead perspective.
+	</p>
+	<blockquote>
+	<p class="normal_white">
+	<i class="oblique_yellow">Show Neutral Building Icons</i> - Enable this option to 
+    view the neutral buildings on the map as icons.<br>
+	<i class="oblique_yellow">Show Show Creep Camp Icons</i> - Enable this option to 
+    view the location of creep camps.<br>
+	<i class="oblique_yellow">View Game Minimap</i> - Enable this option to view 
+    the minimap without the border.</p>
+	</blockquote>
+		
+	
+	<br>
+		
+	
+	<a class="small_header_blue" name="Preferences">Preferences</a>
+	<p class="normal_white">
+	The preferences section can be accessed through the File menu.</p>
+	
+	<i class="oblique_blue">General</i><br>
+	
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Undo Limit</i> - Enable this option to limit the number of actions taken in the editor that can be undone.  This limit can be useful for systems with memory constraints.<br>
+	<i class="oblique_yellow">Invert Mouse</i> - Change what direction the map scrolls when you right-click and drag along it.<br>
+	<i class="oblique_yellow">Autosave</i> - Save your map automatically at set intervals.<br>
+	<i class="oblique_yellow">Show Tooltips</i> - Display tooltips in the editor.<br>
+	<i class="oblique_yellow">Show verbose tips in unit palettes</i> - Display verbose tooltips in the editor.  Show Tooltips must be enabled if you want to use this feature.<br>
+	<i class="oblique_yellow">Lock visibility for active palette</i> - When this option is checked, you cannot modify the visibility status (via the View menu or through hotkeys) of the objects associated with the current in-focus palette.  For example, you could not modify doodad visibility while the Doodad Palette is open.<br>
+	<i class="oblique_yellow">Create a new map on start-up</i> - Create a new map every time you start the World Editor.<br>
+	<i class="oblique_yellow">Automatically create new palette windows</i> - With this option selected, every time you hit a palette hotkey, a new palette will be created.<br>
+	<i class="oblique_yellow">Automatically create new unknown variables while 
+    pasting trigger data</i> - With this option selected, variables will 
+    automatically be created when triggers are pasted that contain unknown 
+    variables. Note: This does not include the &quot;Set Variable&quot; trigger as this 
+    trigger can reference all variable types.<br>
+<i class="oblique_yellow">Reset General Preferences to Defaults</i> - Reset all 
+    general preferences to their default states.
+	</p>
+	
+	<i class="oblique_blue">Visual</i>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Fixed Time of Day</i> - Enable this option to have the editor always display maps at a certain time of day.  You can then choose this time of day.<br>
+	<i class="oblique_yellow">Sky display</i> - Choose what sky is displayed when you turn on Sky in the View menu.<br>
+	<i class="oblique_yellow">Tool Palette Button Size</i> - Choose the size of the buttons on the palettes.<br>
+	<i class="oblique_yellow">Large Grid Color</i> - Choose the color of the large (512 x 512) grid boxes.<br>
+	<i class="oblique_yellow">Medium Grid Color</i> - Choose the color of the medium (128 x 128) grid boxes.<br>
+	<i class="oblique_yellow">Small Grid Color</i> - Choose the color of the small (32 x 32) grid boxes.<br>
+	<i class="oblique_yellow">Terrain Wireframe Color</i> - Choose the color displayed when the terrain is displayed as a wireframe.<br>
+	<i class="oblique_yellow">Use Terrain Cursor</i> - Choose the color 
+    displayed when the terrain is placed, or choose no cursor at all.<br>
+<i class="oblique_yellow">Reset Visual Preferences to Defaults</i> - Reset all 
+    general preferences to their default states.
+	</p>
+	<p>
+	
+	<i class="oblique_blue">Text Colors </i></p>
+
+<p class="normal_white">
+This section allows you to change the colors displayed associated with triggers in the 
+Trigger Editor 
+and Object Editor, making it easier to find and read them. Double-clicking on a trigger  category in the list will display that trigger's associated color. You can select one a preset color from the list or select create a custom color by selecting the option Custom, then entering numbers for red, green, and blue values.
+</p>
+<p class="normal_white_margined">
+<i class="oblique_yellow">Reset Text Color Preferences to Defaults</i> - Reset all 
+text color preferences to their default states.
+</p>
+	
+	<i class="oblique_blue">Test Map</i><p class="normal_white_margined">
+<i class="oblique_yellow">Difficulty Level</i> - Change map's difficulty level 
+when Test Map is used. <br>
+<i class="oblique_yellow">Player Profile</i> - Change the profile name created 
+when Test Map is used. <br>
+<i class="oblique_yellow">Difficulty Level</i> - Change the difficulty level 
+maps use when using the Test Map feature. <br>
+<i class="oblique_yellow">Fixed Random Seed</i> - Makes all random numbers 
+generated in the game the same.<br>
+<i class="oblique_yellow">Copied Map File</i> - Change the location of the test 
+map file created when using the Test Map feature. <br>
+<i class="oblique_yellow">Reset Text Map Preferences to Defaults</i> - Reset all 
+text color preferences to their default states.
+</p>
+	
+    <p>
+	
+	<i class="oblique_blue">Video</i></p>
+<p class="normal_white_margined">
+<i class="oblique_yellow">Model Detail</i> - Change the detail of the models in 
+the editor. <br>
+<i class="oblique_yellow">Animation Quality</i> - Change the quality of the 
+animations in the editor. <br>
+<i class="oblique_yellow">Texture Quality</i> - Change the quality of the 
+texture in the editor. <br>
+<i class="oblique_yellow">Particles</i> - Change the detail of particle effects 
+in the editor.<br>
+<i class="oblique_yellow">Lights</i> - Change the detail of light effects in the 
+editor. <br>
+<i class="oblique_yellow">Match Video Options from Warcraft III</i> - Set the 
+video options in the editor to match the options in Warcraft III. <br>
+<i class="oblique_yellow">Reset Video Preferences to Defaults</i> - Reset all 
+video preferences to their default states.
+</p>
+	
+    <p>
+	
+	<i class="oblique_blue">Sound</i></p>
+<p class="normal_white_margined">
+<i class="oblique_yellow">Sound Volume</i> - Modify the volume of sound played 
+in the Sound Editor. <br>
+<i class="oblique_yellow">UI Effects Volume</i> - Modify the volume for user 
+interface sound effects. <br>
+<i class="oblique_yellow">Music Volume</i> - Modify the volume of music played 
+in the Sound Editor. <br>
+<i class="oblique_yellow">Reset Sound Preferences to Defaults</i> - Reset all 
+text color preferences to their default states.</p>
+	
+</body>
+</html>

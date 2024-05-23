@@ -1,0 +1,251 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<script type="text/javascript" src="../Layout/Detector.js"></script>
+	<link rel=stylesheet href="../Layout/Styles.css" type="text/css">
+	<title>Warcraft III </title>
+</head>
+
+<body onload=detection() >
+	
+	<p class="large_header_blue">The AI Editor<p class="normal_white">The AI 
+    Editor is where you can create artificial intelligence that will command an 
+    army's development and attack strategies.<br>
+&nbsp;</p>
+		
+    <p class="normal_white">
+	
+	<a class="small_header_blue" name="General">General</a></p>
+		
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Name</i> - Here you can name your AI.<br>
+	<i class="oblique_yellow">Race</i> - Select which race you would like to 
+    create an AI for. The custom race option allows the 
+    integration of custom units, abilities and upgrades. Remember to import the 
+    custom data.<br>
+    <br>
+	<i class="oblique_blue">Options</i></p>
+		
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Set Player Name</i> - Enable this option to set 
+    the in-game player 
+    name to the entered AI name.<br>
+	<i class="oblique_yellow">Melee </i> - Use a melee AI for standard melee games. Melee AIs tend to attack and defend more 
+    closely with allied players.<br>
+	<i class="oblique_yellow">Target Heroes</i> - With this option enabled, the 
+    AI will place a higher priority on attacking Heroes during battle.<br>
+	<i class="oblique_yellow">Repair Structures</i> - Enable this option to have 
+    workers automatically repair structures when needed.<br>
+	<i class="oblique_yellow">Heroes Flee</i> - With this option enabled, Heroes 
+    will attempt to flee from battle if they are seriously injured or unable to 
+    attack.<br>
+	<i class="oblique_yellow">Units Flee</i> - With this option enabled, 
+    non-Hero units will attempt to flee from battle if they are seriously 
+    injured or unable to attack.<br>
+	<i class="oblique_yellow">Groups Flee</i> - With this option enabled, 
+    attacking groups will attempt to retreat from battle if they are losing or 
+    at a disadvantage.<br>
+	<i class="oblique_yellow">Have No Mercy</i> - With this option enabled, the 
+    AI will watch for opportunities to attack when the enemy appears to be 
+    weakened or at a disadvantage. This attack corresponds with the Enemy - 
+    Major Assault attack priority.<br>
+	<i class="oblique_yellow">Ignore Injured</i> - Enable this option to ignore 
+    units with less than 50% life when assembling attack forces.<br>
+	<i class="oblique_yellow">Remove Injured</i> -Enable this option to 
+    periodically send injured units home (or to a fountain of life) to recover.
+    <br>
+	<i class="oblique_yellow">Take Items</i> - With this option enabled, Heroes 
+    will attempt to pick up any useful items they encounter. <br>
+	<i class="oblique_yellow">Slow Harvesting</i> - With this option enabled, 
+    only 1 gold or wood will be harvested by workers instead of the normal 
+    amount. This gives the AI a slight economic handicap. <br>
+	<i class="oblique_yellow">Allow Home Changes</i> -This option allows the AI 
+    to potentially choose a new location as a home base for gathering and 
+    retreating forces. <br>
+	<i class="oblique_yellow">Smart Artillery</i> - With this option enabled, 
+    artillery units will attempt to come forward and mount a siege attack on an 
+    enemy base when possible. <br>
+	<i class="oblique_yellow"><br>
+    </i>
+	<i class="oblique_blue">Custom Data<br>
+    <br>
+    </i>
+	<i class="oblique_yellow">Import</i> - Import custom data exported from the 
+    Object Editor to include in your AI. <br>
+	<i class="oblique_yellow">Export</i> - Export custom data to examine someone 
+    else's custom AI data in the Object Editor.<br>
+	<i class="oblique_yellow">Clear</i> - Remove all custom data from your AI.<br>
+    <br>
+	<i class="oblique_blue">Conditions</i> - Conditions can be configured here 
+    that are similar in form to the conditions in the Trigger Editor but are 
+    specialized for and only used with the AI Editor. Conditions created here 
+    can be used throughout the AI editor.</p>
+		
+	<p class="normal_white_margined">
+	A helpful concept when creating AI conditions is that of the AI captain, of 
+    which there are two types, attack and defense. The captains are invisible 
+    units without collision that act as guides for the AI. The attack captain 
+    stays at the base structure (Town Hall, Great Hall, etc.), waiting for the 
+    attack wave to form. Once formed, the attack captain leads the attack wave 
+    to the current attack priority and then returns to the base. The defense 
+    captain stays in between the base and the first gold mine unless an attack 
+    on the base occurs. The defense captain then leads defense forces to attack 
+    the intruders.<br>
+&nbsp;</p>
+		
+    <p class="normal_white">
+	
+	<a class="small_header_blue" name="Heroes">Heroes</a></p>
+		
+    <p class="normal_white_margined">
+	
+	<i class="oblique_yellow">Heroes Used</i> - Choose the Heroes you want the AI 
+to train. Available Heroes are based on the race selected in the General tab.<br>
+	<i class="oblique_yellow">Training Order</i> - Modify each training order's 
+    chance it has to be run by the AI. Training order corresponds with the 
+    Heroes selected in Heroes Used.<br>
+	<i class="oblique_yellow">Skill Selection</i> - Modify the order in which 
+    the AI's Heroes will learn skills.<br>
+&nbsp;<p class="normal_white">
+	
+	<a class="small_header_blue" name="Building">Building</a></p>
+		
+    <p class="normal_white_margined">
+	
+	<i class="oblique_yellow">Base Building</i> - Select which unit will be used 
+    as the AI's base building. The options available here correspond to the race 
+    selected in the General tab.<br>
+	<i class="oblique_yellow">Mine Building</i> - Select which unit will be used 
+    as the AI's gold mining building. This is generally used for undead only, 
+    though other units with the Blighted Gold Mine Ability can be selected here.<br>
+	<i class="oblique_yellow">Build Priorities</i> - The AI's 
+    build, research and upgrade orders are specified here. When a unit dies, it will 
+    be replaced by the AI unless the AI has insufficient resources, or some 
+    condition prevents it. There are five columns here for build priorities:<p class="normal_white_margined_2">
+	<i class="oblique_grey">Build</i> - What will be built, researched or 
+    upgraded.<br>
+	<i class="oblique_grey">Total</i> - Keeps track of the number of priorities 
+    of the same build type. The number without parentheses shows the total for 
+    all of the AI. The number inside the parentheses only shows the total at the 
+    town specified.<br>
+	<i class="oblique_grey">Food</i> - Keeps track of the food used as well as 
+    the food cap. When a priority makes the food used go beyond the food cap, 
+    that priority will be red.<br>
+	<i class="oblique_grey">Town</i> - Specifies where to process the build 
+    order. <br>
+	<i class="oblique_grey">Condition</i> - If the condition specified here 
+    isn't met, the AI will skip this build priority and go to the next one. The 
+    condition can be one that was created under the General tab, or it can be custom-created for this 
+    priority only.</p>
+		
+    <p class="normal_white_margined">
+	<i class="oblique_yellow">Gold Worker</i> - Select which unit will be used 
+    as the AI's gold harvesting unit. The options available here correspond to the race 
+    selected in the General tab.<br>
+	<i class="oblique_yellow">Lumber Worker</i> - Select which unit will be used 
+    as the AI's lumber harvesting unit. The options available here correspond to 
+    the race selected in the General tab.<br>
+	
+	<i class="oblique_yellow">Harvest Priorities</i> - The AI's 
+    harvest orders are specified here. There are four columns here for harvest 
+    priorities:</p>
+	<p class="normal_white_margined_2">
+	<i class="oblique_grey">Harvest</i> - Resource you want your worker to 
+    harvest.<br>
+	<i class="oblique_grey">Workers</i> - Number of workers that share the same 
+    priority.<br>
+	<i class="oblique_grey">Town</i> - Where the workers will harvest.<br>
+	<i class="oblique_grey">Condition</i> - If the condition specified here 
+    isn't met, the AI will skip this harvest priority and go to the next one. 
+    The condition can be one that was created under the General tab, or it can 
+    be custom-created for this priority only.<br>
+&nbsp;</p>
+	<p class="normal_white">
+	
+	<a class="small_header_blue" name="Attacking">Attacking</a><br>
+&nbsp;</p>
+		
+    <p class="normal_white_margined">
+	
+	<i class="oblique_yellow">Attack Groups</i> - The AI's attack groups are 
+    listed and created here.<br>
+	
+	<i class="oblique_yellow">Current Group</i> - Attack groups get their 
+    definition here. There are three columns for each entry in the attack group.<p class="normal_white_margined_2">
+	<i class="oblique_grey">Unit Type</i> - The type of unit. The units 
+    available are determined by the race selected in the General tab.<br>
+	<i class="oblique_grey">Quantity</i> - The number of units that match the 
+    particular unit type you have selected.<br>
+	<i class="oblique_grey">Condition</i> - If the condition specified here 
+    isn't met, the current group won't include this entry. The condition can be 
+    one that was created under the General tab, or it can be custom-created for this 
+    priority only.</p>
+		
+    <p class="normal_white_margined">
+	
+	<i class="oblique_yellow">Attack Waves</i> - The order of your attack waves 
+    are specified here. There are three columns for each entry in the attack 
+    group.<p class="normal_white_margined_2">
+	<i class="oblique_grey">#</i> - The wave number. This can be referenced in 
+    integer comparison conditions.<br>
+	<i class="oblique_grey">Attack Group</i> - The name of the attack group 
+    that's assigned to the wave.<br>
+	<i class="oblique_grey">Delay</i> - The amount of time before the next wave 
+    will start.</p>
+		
+    <p class="normal_white_margined">
+	
+	<i class="oblique_yellow">Minimum Forces</i> - The minimum units necessary 
+    to send an attack wave.<br>
+	
+	<i class="oblique_yellow">Initial Delay</i> - The amount of time before the 
+    first wave attacks.<br>
+	
+	<i class="oblique_yellow">Repeat Waves</i> - How many waves, from the last 
+    wave, will repeat after the last wave has been sent.<br>
+	
+	<i class="oblique_yellow">Target Priorities</i> - The targets for your 
+    attack waves. There are two columns here.<p class="normal_white_margined_2">
+	<i class="oblique_grey">Target</i> - Choose the AI's attack target. The 
+    targets higher on the list will be at a higher priority.<br>
+	<i class="oblique_grey">Conditions</i> - If the condition specified here 
+    isn't met, the target will be skipped when assessing which target to attack. 
+    The condition can be one that was created under the General tab, or it can 
+    be custom-created for this priority only.<br>
+&nbsp;</p>
+	<p class="normal_white">
+	
+	<a class="small_header_blue" name="Test Configuration">Test Configuration</a></p>
+		
+	<p class="normal_white">This tab is used exclusively for AIs that you want 
+    to test using a melee map. For custom maps, import an exported AI file into 
+    your Import Manager and then use the Test Map command.</p>
+		
+    <p class="normal_white_margined">
+	
+	<i class="oblique_yellow">Games Speed</i> - Modify the speed of the game 
+    when Test AI is used.<br>
+	
+	<i class="oblique_yellow">Game Options</i> - Disable the Fog of War to allow 
+    for visibility of the whole map. Disable the Victory/Defeat conditions to 
+    avoid unnecessary interruptions. <br>
+	
+	<i class="oblique_yellow">Map File</i> - Set map for the AI to be tested on.<br>
+	
+	<i class="oblique_yellow">Players</i> - Individual player settings are set 
+    here. For each player there are the following options:<p class="normal_white_margined_2">
+	<i class="oblique_grey">Control</i> - Choose the controller of this slot.<br>
+	<i class="oblique_grey">Race</i> - Choose the race played by the controller.<br>
+	<i class="oblique_grey">Team</i> - Choose what team the controller is on.<br>
+	<i class="oblique_grey">Color</i> - Choose the controller's team color.<br>
+	<i class="oblique_grey">Handicap</i> - Choose the controller's handicap.<br>
+	<i class="oblique_grey">AI</i> - If Computer is selected as the controller, 
+    choose the AI used.<br>
+	<i class="oblique_grey">AI Difficulty</i> - If Computer is selected as the 
+    controller, choose the AI difficulty. The AI difficulty can be referenced in 
+    your AI conditions.<br>
+	<i class="oblique_grey">AI Script</i> - If Computer is selected as the 
+    controller and Custom is selected for AI, an imported AI can be used for the 
+    slot. </p>
+	</body></html>

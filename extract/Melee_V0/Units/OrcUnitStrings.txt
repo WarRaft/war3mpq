@@ -1,0 +1,177 @@
+[oalt]
+Name=Altar of Storms
+Hotkey=A
+Tip=Build |cffffcc00A|rltar of Storms
+Ubertip="Summons Heroes. Revives slain Heroes."
+
+[oang]
+Name=Ancestral Guardian
+
+[obar]
+Name=Barracks
+Hotkey=B
+Tip=Build |cffffcc00B|rarracks
+Ubertip="Primary troop production building. Trains Grunts, Headhunters and Catapults. |nAlso contains the Berserker Strength and Troll Regeneration upgrades."
+
+[obea]
+Name=Beastiary
+Hotkey=E
+Tip=Build B|cffffcc00e|rastiary
+Ubertip="Trains Raiders, Kodo Beasts and Wyverns. |nAlso contains the Ensnare, Envenomed Spears and War Drums upgrades."
+
+[Obla]
+Name=Blademaster
+Propernames=Tojara,Nikoro,Kajind,Mikasa,Samuro,Akinos,Mazuru,Yozshura,Daisho,Kigami,Arashicage,Moogul the Sly,Jubei
+Hotkey=B
+Tip=Summon |cffffcc00B|rlademaster
+Ubertip="Cunning Hero, adept at quickly killing individual units and creating confusion among enemies. Can learn Mirror Image, Wind Walk, Critical Strike and Bladestorm. |n|n|cffffcc00Attacks land units.|r"
+Revivetip=Revive |cffffcc00B|rlademaster
+
+[ocat]
+Name=Catapult
+Hotkey=C
+Tip=Train |cffffcc00C|ratapult
+Ubertip="Long-range siege weaponry. Effective against buildings but slow and vulnerable. |n|n|cffffcc00Attacks land units and trees.|r"
+
+[odoc]
+Name=Troll Witch Doctor
+Hotkey=W
+Tip=Train Troll |cffffcc00W|ritch Doctor
+Ubertip="Supporting spellcaster. Can initially cast Sentry Ward, which summons an invisible detector. Can also learn Stasis Trap and Healing Ward. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Sentry Ward","- Sentry Ward|n- Stasis Trap","- Sentry Ward|n- Stasis Trap|n- Healing Ward"
+
+[otot]
+Name=Stasis Trap
+
+[oeye]
+Name=Sentry Ward
+
+[Ofar]
+Name=Far Seer
+Propernames=Gar'dal Grimsight,Negal Fireye,Kazil Darkeye,Magis Coldeye,Bale Bleakstare,Gorr Grimwolf,Kag'ar Winterfang,Nazgrel,Morg Wolfsong,Kazragore,Fenris'ar Gul
+Hotkey=F
+Tip=Summon |cffffcc00F|rar Seer
+Ubertip="Mystical Hero, effective at ranged attacks and scouting. Can learn Chain Lightning, Far Sight, Feral Spirit and Earthquake. |n|n|cffffcc00Attacks land and air units.|r"
+Revivetip=Revive |cffffcc00F|rar Seer
+
+[ofor]
+Name=War Mill
+Hotkey=M
+Tip=Build War |cffffcc00M|rill
+Ubertip="Serves as a drop-off point for harvested lumber. |nAlso contains upgrades for improved armor, melee weapons, ranged weapons, and Spiked Barricades."
+
+[ofrt]
+Name=Fortress
+Hotkey=U
+Tip=|cffffcc00U|rpgrade to Fortress
+Ubertip="Upgrade to Fortress to enable the production of additional types of structures and units."
+
+[ogre]
+Name=Great Hall
+Hotkey=H
+Tip=Build Great |cffffcc00H|rall
+Ubertip="Primary structure, used to train Peons and receive gathered resources. Can be upgraded to Stronghold and then Fortress to enable the production of additional types of structures and units."
+
+[ogru]
+Name=Grunt
+Hotkey=G
+Tip=Train |cffffcc00G|rrunt
+Ubertip="Brutish Orc warrior. Can learn Berserker Strength. |n|n|cffffcc00Attacks land units.|r"
+
+[ohun]
+Name=Troll Headhunter
+Hotkey=H
+Tip=Train Troll |cffffcc00H|readhunter
+Ubertip="Versatile spear-thrower, effective against air units. Can learn Troll Regeneration. |n|n|cffffcc00Attacks land and air units.|r "
+
+[ohwd]
+Name=Healing Ward
+
+[okod]
+Name=Kodo Beast
+Hotkey=K
+Tip=Train |cffffcc00K|rodo Beast
+Ubertip="Lumbering war beast, mounted by an Orcish drummer. Has the abilities War Drums and Devour. War Drums gives friendly units nearby a bonus to attack damage. Can gain the War Drums Upgrade. |n|n|cffffcc00Attacks land and air units.|r"
+
+[osld]
+Name=Spirit Lodge
+Hotkey=S
+Tip=Build |cffffcc00S|rpirit Lodge
+Ubertip="Spellcaster production building. Trains Shaman and Witch Doctors. |nAlso contains spell upgrades for Shaman and Witch Doctors."
+
+[opeo]
+Name=Peon
+Hotkey=P
+Tip=Train |cffffcc00P|reon
+Ubertip="Basic worker unit. Can harvest gold and lumber, build structures, and Repair. Can also go inside Orc Burrows to give it an attack. |n|n|cffffcc00Attacks land units and trees.|r"
+
+[orai]
+Name=Raider
+Hotkey=R
+Tip=Train |cffffcc00R|raider
+Ubertip="Highly mobile wolf rider. Effective against buildings. Can learn the Ensnare ability. |n|n|cffffcc00Attacks land units.|r"
+
+[oshm]
+Name=Shaman
+Hotkey=S
+Tip=Train |cffffcc00S|rhaman
+Ubertip="Primary spellcaster. Can initially cast Purge, which slows and dispels positive and negative buffs. Can also learn Lightning Shield and Bloodlust. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Purge","- Purge|n- Lightning Shield","- Purge|n- Lightning Shield|n- Bloodlust"
+
+[ostr]
+Name=Stronghold
+Hotkey=U
+Tip=|cffffcc00U|rpgrade to Stronghold
+Ubertip="Upgrade to Stronghold to enable the production of additional types of structures and units."
+
+[osw1]
+Name=Spirit Wolf
+EditorSuffix= (Level 1)
+
+[osw2]
+Name=Dire Wolf
+EditorSuffix= (Level 2)
+
+[osw3]
+Name=Shadow Wolf
+EditorSuffix= (Level 3)
+
+[otau]
+Name=Tauren
+Hotkey=T
+Tip=Train |cffffcc00T|rauren
+Ubertip="Mighty warrior. Can learn the Pulverize ability. |n|n|cffffcc00Attacks land units.|r"
+
+[Otch]
+Name=Tauren Chieftain
+Propernames=Marn Thunderhorn,Tygore Dusthoof,Tam Windtotem,Durn Harpyslayer,Kam Ghoststeer,Kel Stonebull,Mull Stormhoof,Grok Bloodhorn,Malar Plainstrider,Taur Runetotem
+Hotkey=T
+Tip=Summon |cffffcc00T|rauren Chieftain
+Ubertip="Warrior Hero, exceptional at absorbing damage and melee combat. Can learn Shockwave, War Stomp, Endurance Aura and Reincarnation. |n|n|cffffcc00Attacks land units.|r"
+Revivetip=Revive |cffffcc00T|rauren Chieftain
+
+[otrb]
+Name=Orc Burrow
+Hotkey=O
+Tip=Build |cffffcc00O|rrc Burrow
+Ubertip="Provides food, which increases the maximum number of units that can be trained. Peons can garrison inside to attack enemy units. |n|n|cffffcc00Attacks land and air units.|r"
+
+[otto]
+Name=Tauren Totem
+Hotkey=T
+Tip=Build |cffffcc00T|rauren Totem
+Ubertip="Trains Tauren. |nAlso contains the Pulverize upgrade."
+
+[owyv]
+Name=Wyvern
+Hotkey=W
+Tip=Train |cffffcc00W|ryvern
+Ubertip="Highly mobile flying creature. Excellent at scouting. Can learn Envenomed Spears. |n|n|cffffcc00Attacks land and air units.|r"
+
+[owtw]
+Name=Watch Tower
+Hotkey=W
+Tip=Build |cffffcc00W|ratch Tower
+Ubertip="Defensive structure. |n|n|cffffcc00Attacks land and air units.|r"

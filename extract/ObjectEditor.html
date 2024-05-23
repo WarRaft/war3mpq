@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<script type="text/javascript" src="../Layout/Detector.js"></script>
+	<link rel=stylesheet href="../Layout/Styles.css" type="text/css">
+	<title>World Edit The Unit Editor</title>
+</head>
+
+<body onload=detection() >
+	
+	<p class="large_header_blue">The Object Editor<br>
+
+	
+	<p class="normal_white">The Object Editor allows customization of units, 
+    items, doodads, abilities and upgrades. These objects can then be placed in 
+    your map or exported and be used by the Campaign Editor or AI Editor. Each 
+    object can have up to 11 different classes of modifications. Below is a 
+    brief explanation for each object type, along with a few examples.</p>
+	
+	<p><br>
+	
+	<a class="small_header_blue" name="Units">Units</a></p>
+    <p class="normal_white_margined">
+	<i class="oblique_yellow">Abilities</i> - Modify what abilities the unit has 
+    and what ability is active when the unit comes into play. This can include any ability in 
+    the abilities tab.<br>
+	<i class="oblique_yellow">Art</i> - Modify what the unit looks like. 
+    Examples include the following: model, color, size, elevation, and icon 
+    interface.<br>
+	<i class="oblique_yellow">Combat</i> - Modify how the unit behaves in 
+    combat.&nbsp; Examples include the following: what the attack looks like, how often it can 
+    attack,&nbsp;how much damage it does, what the attack sounds like, and what range 
+    its attack has.<br>
+	<i class="oblique_yellow">Editor</i> - Modify how the unit is treated in the 
+    editor. Examples include what editor menus this unit appears on, and whether 
+    the unit will drop items when it dies<br>
+	<i class="oblique_yellow">Movement</i> - Modify how the unit moves. Examples 
+    include the following: what priority the unit has in group formations, what 
+    the unit's base speed is, how quickly 
+    the unit turns, 
+    and whether or not the unit flies.<br>
+	<i class="oblique_yellow">Pathing</i> - Modify the unit's pathing 
+    properties. Examples include the unit's collision and the manner in which an AI will treat the unit.<br>
+	<i class="oblique_yellow">Sound</i> - Modify how the unit sounds. Examples 
+    include the sounds the unit makes when it moves, dies, or is selected.<br>
+	<i class="oblique_yellow">Stats</i> - Modify the unit's stats. Examples 
+    include the following: 
+    how much the unit costs to build, how much food the unit costs and produces, how 
+    quickly the unit 
+    can be built, what type of unit it's classified as (mechanical, town hall), 
+    the repair cost of the unit, how much health the unit has, and how much mana 
+    the unit has.<br>
+	<i class="oblique_yellow">Techtree</i> - Modify where the unit is in the 
+    techtree. Examples include what upgrades the unit uses and what the unit requires to be built.<br>
+	<i class="oblique_yellow">Text</i> - Modify the unit's text interface. 
+    Examples include the following: the unit name, the unit's mouseover tooltips, 
+    and the unit description.<br>
+&nbsp;</p>
+	
+    <p>
+	
+	<a class="small_header_blue" name="Items">Items</a></p>
+    <p class="normal_white_margined">
+	<i class="oblique_yellow">Abilities</i> - Modify what abilities the item 
+    has. This can include any ability in the abilities tab.<i class="oblique_yellow"><br>
+    Art</i> - Modify what the item looks like. Examples include the following: 
+    what color the item is, what 
+    model the item uses when it's on the ground, and what the icon looks like when a 
+    unit is holding the item.<br>
+	<i class="oblique_yellow">Combat</i> - Modify the material of an item to 
+    affect how it responds to being attacked. <br>
+	<i class="oblique_yellow">Stats</i> - Modify the item's stats. Examples 
+    include the following: what level the item is, whether it can be dropped or sold, how 
+    many items of that type can be stocked in a shop, and how often the item will be 
+    replenished in a shop.<br>
+	<i class="oblique_yellow">Text</i> - Modify the item's text interface. 
+    Examples include the following: the item's name, the item's mouseover 
+    tooltips, and the item's description.</p>
+	
+    <p><br>
+	
+	<a class="small_header_blue" name="Destructibles">Destructibles</a></p>
+    <p class="normal_white_margined">
+	<i class="oblique_yellow">Art</i> - Modify what the destructible looks like. 
+    Examples include the following: model, color, size, and elevation.<br>
+	<i class="oblique_yellow">Combat</i> - Modify the material of a destructible 
+    to affect how it responds to being attacked.<br>
+	<i class="oblique_yellow">Editor</i> - Modify how the destructible is 
+    treated in the editor. Examples of this include what editor menus the 
+    destructible appears on, and where the destructible can can be placed. <br>
+	<i class="oblique_yellow">Pathing</i> - Modify the destructible's pathing. 
+    An example of this is defining whether the destructible can have a unit walk 
+    on it.<br>
+	<i class="oblique_yellow">Sound</i> - Modify the destructible's sound. Here 
+    it can be determined what sound a destructible will make upon being 
+    destroyed. <br>
+	<i class="oblique_yellow">Stats</i> - Modify the destructible's stats. 
+    Examples of this include hit points, build time, and gold and lumber repair 
+    cost. <br>
+	<i class="oblique_yellow">Text</i> - Modify the name of the destructible.</p>
+	
+    <p><br>
+	
+	<a class="small_header_blue" name="Doodads">Doodads</a></p>
+    <p class="normal_white_margined">
+	<i class="oblique_yellow">Art</i> - Modify what the doodad looks like. 
+    Examples include the following: model, color, size, and elevation.<br>
+	<i class="oblique_yellow">Editor</i> - Modify how the doodad is treated in 
+    the editor. Examples include what editor menus the destructible appears on, 
+    and where the doodad can be placed. <br>
+	<i class="oblique_yellow">Pathing</i> - Modify the doodad's pathing. An 
+    example of this is defining whether the doodad can have a unit walk on it.<br>
+	<i class="oblique_yellow">Sound</i> - Modify the doodad's sound. Here it can 
+    be determined what sound a doodad makes. <br>
+	<i class="oblique_yellow">Text</i> - Modify the name of the doodad.</p>
+	
+    <p><br>
+	
+	<a class="small_header_blue" name="Abilities">Abilities</a></p>
+    <p class="normal_white_margined">
+	<i class="oblique_yellow">Art</i> - Modify what an ability looks like. 
+    Examples include the following: what art the ability icon uses, where the icon is placed on a 
+    unit's command card, what the ability's effect looks like, and where the 
+    ability's effect model attaches to.<br>
+	<i class="oblique_yellow">Data</i> - Modify fields that are unique to a 
+    particular ability. Examples of this include how much damage Dispel Magic 
+    deals to summoned units, how much life Heal restores, and which unit is created from 
+    Raise Dead.<br>
+	<i class="oblique_yellow">Sound</i> - Modify the sound created from an 
+    ability. This includes the initial sound as well as any sound that continues 
+    playing.<br>
+	<i class="oblique_yellow">Stats</i> - Modify the stats of an ability. 
+    Examples of this include area of effect, cooldown, casting time, mana cost, 
+    and what types of targets are allowed.<br>
+	<i class="oblique_yellow">Techtree</i> - Modify the techtree requirements of 
+    an ability. This includes modifying what units and/or levels are required to 
+    use an ability. <br>
+	<i class="oblique_yellow">Text</i> - Modify the ability's text interface. 
+    Examples include the following: the ability's name, the ability's mouseover tooltips, the 
+    ability's description, and the ability's hotkey assignments.<br>
+&nbsp;</p>
+	
+    <p>
+	
+	<a class="small_header_blue" name="Upgrades">Upgrades</a></p>
+    <p class="normal_white_margined">
+	<i class="oblique_yellow">Art</i> - Modify what an upgrade looks like. This 
+    includes what icon art the upgrade uses and where the icon is placed on a unit's 
+    command card.<br>
+	<i class="oblique_yellow">Data</i> - Modify fields that are unique to a 
+    particular upgrade. Examples of this include: Iron Forged Swords' attack 
+    bonus, Spiked Barricades' damage bonus, and Impaling Bolt's pierce effect.<br>
+	<i class="oblique_yellow">Stats</i> - Modify an upgrade's stats. Examples of 
+    this include: gold and lumber cost of the upgrade, the number of levels this 
+    upgrade has, and the amount of time it takes to research the upgrade.<br>
+	<i class="oblique_yellow">Techtree</i> - Modify the techtree requirements of 
+    an upgrade. This includes modifying what units and/or levels are required to 
+    research the upgrade.<br>
+	<i class="oblique_yellow">Text</i> - Modify the upgrade's text interface. 
+    Examples include the following: the upgrade's name, the upgrade's mouseover 
+    tooltips, and the upgrade's description.</p>
+	
+    <p class="normal_white_margined">&nbsp;</p>
+    <p class="normal_white_margined">&nbsp;</p>
+    <p class="normal_white_margined">&nbsp;</p>
+    <p class="normal_white_margined">&nbsp;</p>
+    <p class="normal_white_margined">&nbsp;</p>
+    <p class="normal_white_margined">&nbsp;</p>
+    <p class="normal_white_margined">&nbsp;</p>
+	
+    </body>
+</html>

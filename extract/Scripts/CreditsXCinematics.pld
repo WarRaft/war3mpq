@@ -1,0 +1,24 @@
+function PreloadFiles takes nothing returns nothing
+
+	call Preload( "units\\other\\DalaranMutant\\DalaranMutant_portrait.mdx" )
+	call Preload( "units\\Other\\DalaranMutant\\ZombieB.blp" )
+	call Preload( "units\\demon\\ChaosWarlord\\ChaosWarlord_portrait.mdx" )
+	call Preload( "units\\Demon\\ChaosWarlord\\ChaosWarlord.blp" )
+	call Preload( "Textures\\ChaosGrunt.blp" )
+	call Preload( "Units\\Creeps\\Unbroken\\Unbroken_portrait.mdx" )
+	call Preload( "units\\Creeps\\Unbroken\\FacelessOneUnbroken.blp" )
+	call Preload( "Textures\\TeamGlow00.blp" )
+	call Preload( "units\\orc\\SentryWard\\SentryWard.mdx" )
+	call Preload( "Textures\\Wards1.blp" )
+	call Preload( "units\\Orc\\SentryWard\\Eye3.blp" )
+	call Preload( "units\\Orc\\SentryWard\\Smoke1_anim128.blp" )
+	call Preload( "units\\creeps\\BanditMage\\BanditMage_portrait.mdx" )
+	call Preload( "units\\Creeps\\BanditMage\\BanditMage.blp" )
+	call Preload( "units\\creeps\\PolarBear\\PolarBear_portrait.mdx" )
+	call Preload( "Units\\Creeps\\Lobstrokkblue\\Lobstrokkblue_portrait.mdx" )
+	call Preload( "units\\Creeps\\Lobstrokkblue\\LobstrokkBlue.blp" )
+	call PreloadStart()
+
+endfunction
+
+

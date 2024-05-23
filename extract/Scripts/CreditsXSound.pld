@@ -1,0 +1,27 @@
+function PreloadFiles takes nothing returns nothing
+
+	call Preload( "units\\nightelf\\FaerieDragon\\FaerieDragon_portrait.mdx" )
+	call Preload( "units\\NightElf\\FaerieDragon\\FaerieDragon.blp" )
+	call Preload( "units\\nightelf\\Dryad\\Dryad_portrait.mdx" )
+	call Preload( "Textures\\Dryad.blp" )
+	call Preload( "units\\nightelf\\MountainGiant\\MountainGiant_portrait.mdx" )
+	call Preload( "Textures\\MountainGiant.blp" )
+	call Preload( "units\\undead\\SkeletonMage\\SkeletonMage_portrait.mdx" )
+	call Preload( "units\\Undead\\SkeletonMage\\SkeletonMage.blp" )
+	call Preload( "Textures\\Green_Star.blp" )
+	call Preload( "buildings\\orc\\VoodooLounge\\VoodooLounge.mdx" )
+	call Preload( "buildings\\Orc\\VoodooLounge\\VoodooLounge.blp" )
+	call Preload( "Textures\\OrcBirth.blp" )
+	call Preload( "Textures\\CloudSingleBlend.blp" )
+	call Preload( "Textures\\BackGround.blp" )
+	call Preload( "Textures\\dust1.blp" )
+	call Preload( "buildings\\Orc\\VoodooLounge\\TrollNeonSign.blp" )
+	call Preload( "buildings\\Orc\\VoodooLounge\\TrollNeonSign54.blp" )
+	call Preload( "SharedModels\\BuildingParticlebeam.mdx" )
+	call Preload( "SharedModels\\BirthStuff.blp" )
+	call Preload( "buildings\\naga\\AltarOfDepths\\AltarOfDepths.mdx" )
+	call PreloadStart()
+
+endfunction
+
+

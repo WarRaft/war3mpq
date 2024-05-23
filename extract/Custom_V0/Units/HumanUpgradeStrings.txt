@@ -1,0 +1,89 @@
+[Rhme]
+Name=Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords
+Tip=Upgrade to Iron Forged |cffffcc00S|rwords,Upgrade to Steel Forged |cffffcc00S|rwords,Upgrade to Mithril Forged |cffffcc00S|rwords
+Ubertip="Increases the attack damage of Militia, Footmen, Gryphon Riders and Knights.","Further increases the attack damage of Militia, Footmen, Gryphon Riders and Knights.","Further increases the attack damage of Militia, Footmen, Gryphon Riders and Knights."
+Hotkey=S,S,S
+
+[Rhra]
+Name=Black Gunpowder,Refined Gunpowder,Imbued Gunpowder
+Tip=Upgrade to Black |cffffcc00G|runpowder,Upgrade to Refined |cffffcc00G|runpowder,Upgrade to Imbued |cffffcc00G|runpowder
+Ubertip="Increases the ranged attack damage of Riflemen, Mortar Teams, Steam Tanks and Gyrocopters.","Further increases the ranged attack damage of Riflemen, Mortar Teams, Steam Tanks and Gyrocopters.","Further increases the ranged attack damage of Riflemen, Mortar Teams, Steam Tanks and Gyrocopters."
+Hotkey=G,G,G
+
+[Rhar]
+Name=Iron Plating,Steel Plating,Mithril Plating
+Tip=Upgrade to Iron |cffffcc00P|rlating,Upgrade to Steel |cffffcc00P|rlating,Upgrade to Mithril |cffffcc00P|rlating
+Ubertip="Increases the armor of Militia, Footmen, Knights, Gyrocopters and Steam Tanks.","Further increases the armor of Militia, Footmen, Knights, Gyrocopters and Steam Tanks.","Further increases the armor of Militia, Footmen, Knights, Gyrocopters and Steam Tanks."
+Hotkey=P,P,P
+
+[Rhla]
+Name=Studded Leather Armor,Reinforced Leather Armor,Dragonhide Armor
+Tip=Upgrade to Studded Leather |cffffcc00A|rrmor,Upgrade to Reinforced Leather |cffffcc00A|rrmor,Upgrade to Dragonhide |cffffcc00A|rrmor
+Ubertip="Increases the armor of Riflemen, Mortar Teams and Gryphon Riders.","Further increases the armor of Riflemen, Mortar Teams and Gryphon Riders.","Further increases the armor of Riflemen, Mortar Teams and Gryphon Riders."
+Hotkey=A,A,A
+
+[Rhac]
+Name=Improved Masonry,Advanced Masonry,Imbued Masonry
+Tip=Upgrade to Improved |cffffcc00M|rasonry,Upgrade to Advanced |cffffcc00M|rasonry,Upgrade to Imbued |cffffcc00M|rasonry
+Ubertip="Increases the armor and hit points of Human buildings.","Further increases the armor and hit points of Human buildings.","Further increases the armor and hit points of Human buildings."
+Hotkey=M,M,M
+
+[Rhgb]
+Name=Gyrocopter Bombs
+Tip=Research Gyrocopter |cffffcc00B|rombs
+Ubertip="Allows Gyrocopters to attack land units."
+Hotkey=B
+
+[Rhlh]
+Name=Improved Lumber Harvesting,Advanced Lumber Harvesting
+Tip=Improved |cffffcc00L|rumber Harvesting,Advanced |cffffcc00L|rumber Harvesting
+Ubertip="Increases the amount of lumber that Peasants can carry by <Rhlh,mod1>.","Further increases the amount of lumber that Peasants can carry by <Rhlh,mod1>."
+Hotkey=L,L
+
+[Rhde]
+Name=Defend
+Tip=Research |cffffcc00D|refend
+UberTip="Allows Footmen to use the Defend ability, which increases their defensive capabilities against Piercing attacks."
+Hotkey=D
+
+[Rhan]
+Name=Animal War Training
+Tip=Research |cffffcc00A|rnimal War Training
+Ubertip="Increases the maximum hit points of Knights and Gryphon Riders by <Rhan,base1>."
+Hotkey=A
+
+[Rhpt]
+Name=Priest Adept Training,Priest Master Training
+Tip=Pries|cffffcc00t|r Adept Training,Pries|cffffcc00t|r Master Training
+Ubertip="Increases Priests' mana capacity, mana regeneration rate, hit points, attack damage and gives them the ability to cast Dispel Magic.","Increases Priests' mana capacity, mana regeneration rate, hit points, attack damage and gives them the ability to cast Inner Fire."
+Hotkey=T,T
+
+[Rhst]
+Name=Sorceress Adept Training,Sorceress Master Training
+Tip=S|cffffcc00o|rrceress Adept Training,S|cffffcc00o|rrceress Master Training
+Ubertip="Increases Sorceresses' mana capacity, mana regeneration rate, hit points, attack damage and gives them the ability to cast Invisibility.","Increases Sorceresses' mana capacity, mana regeneration rate, hit points, attack damage and gives them the ability to cast Polymorph."
+Hotkey=O,O
+
+[Rhri]
+Name=Long Rifles
+Tip=Upgrade to |cffffcc00L|rong Rifles
+Ubertip="Increases the range of Riflemen attacks."
+Hotkey=L
+
+[Rhse]
+Name=Magic Sentry
+Tip=Research |cffffcc00M|ragic Sentry
+Ubertip="Provides Human towers with the ability to detect invisible units."
+Hotkey=M
+
+[Rhfl]
+Name=Flare
+Tip=Research |cffffcc00F|rlare
+Ubertip="Provides Mortar Teams with the Flare ability. Flares can be used to reveal any area of the map. |nCan see invisible units."
+Hotkey=F
+
+[Rhhb]
+Name=Storm Hammers
+Tip=Research Storm |cffffcc00H|rammers
+Ubertip="Causes a Gryphon Rider's hammers to strike through an enemy land unit and hit the next land opponent, dealing damage to both."
+Hotkey=H

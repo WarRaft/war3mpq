@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<script type="text/javascript" src="../Layout/Detector.js"></script>
+	<link rel=stylesheet href="../Layout/Styles.css" type="text/css">
+	<title>Warcraft III </title>
+</head>
+
+<body onload=detection() >
+	
+	<p class="large_header_blue">The Trigger Editor</p>
+	
+	<p class="normal_white">
+	This is the most advanced and powerful portion of the World Editor.  The 
+    Trigger Editor allows you to take complete control of every aspect of the game.  It is a simplified programming language designed to be accessible to novices, but powerful enough to satiate the desires of more advanced users.  To open the 
+    Trigger Editor, use F4, or choose Trigger Editor from the Module menu.<br>
+	<br>
+	A trigger is composed of three parts:  events, conditions, and actions.  A trigger's actions will activate if, when one of its events occurs, its conditions are met.
+    <br>
+&nbsp;</p>
+	
+	
+	
+	<a class="small_header_blue" name="Events">Events</a>
+	<p class="normal_white">
+	Events will start the process that may lead to a trigger's firing.  After a trigger's event has taken place, its conditions are evaluated, and finally its actions may occur.  The default trigger in a map is "Melee Initialization."  This trigger's default event is "Map Initialization."  Basically this means that the instant the map finishes loading, its actions will occur:  the trigger has no conditions that must be met.  If you wanted to, you could change this event to "Time - Time Elapsed," then change the number of seconds to ten.  The map would then run the "Melee initialization" trigger ten seconds after it had loaded.
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="Conditions">Conditions</a>
+	<p class="normal_white">
+	Conditions are special requirements that must be met for a trigger's actions to occur.  A condition must be true for a trigger's actions to run.  This way of thinking about conditions can be deceptive because you can have a condition like "<u>False</u> <u>Equal to</u> <u>False</u>"-- a condition which would always be true.  The default trigger "Melee Initialization" contains no default conditions; let's add one.  Hit Ctrl + D, then select "Game Speed Comparison."  The dialog box will then have the blue text, "<u>(Current game speed)</u> <u>Equal to</u> <u>Normal</u>."  If you leave the condition as it is and then run the map from the editor, the "Melee Initialization" trigger will run normally, assuming you have not changed any other parts of the trigger from their default values.  However, if you change "Normal" to "Fastest," the "Melee Initialization" trigger will not run from the editor.  This is because the editor sets the game speed to "Normal" automatically when you run maps from it.  The condition would be evaluated as "Normal speed equal to Fastest speed," a condition which is not true.<br>
+	<br>
+	Some of the differences between conditions and events are that conditions are only evaluated if the event of the trigger that they fall under has occurred.  Also, although a trigger can have multiple events, only one event need occur for a trigger's action to happen, whereas all conditions must be true simultaneously for the trigger's actions to occur.<br>
+	<br>
+	The only things a trigger really needs are actions.  (Well, in point of fact, this is not exactly true.  However, a trigger with no actions has no effect on the game and, therefore, no real point in the script.)  It is worth pointing out, though, that triggers do not need conditions or events in order for their actions to be carried out in the game.  Triggers can be run from other triggers using the action "Trigger - Run (Ignoring Conditions)," which will run any trigger's actions, regardless of its conditions or events or lack thereof.
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="Actions">Actions</a>
+	<p class="normal_white">
+	Actions are the results of a trigger.  These can be anything from panning the camera to a specific unit, as in a cinematic, or having one unit attack another.  Actions allow the designer to have complete control of what occurs in the game.
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="Creation">Creating a Trigger</a>
+	<p class="normal_white">
+	To open the Trigger Editor, hit F4 or select Trigger Editor from the Module menu.<br>
+	<br>
+	Before you create a trigger, you must have a category to place that trigger in.  Create a new category by selecting Category from the New menu.  You will see the category you just created in the tree listing on the left.  Categories have file icons.  You can name a category either by typing its name immediately after you create the new category, or by selecting the category, hitting F2, and typing in the new name.<br>
+	<br>
+	To create a new trigger, select the category you just created.  Then select Trigger from the New menu.  Select the trigger that you have just created.  You will notice that there are now two checkboxes on the right of the trigger box:
+	</p>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Enabled</i> - If this box is unchecked, this trigger is disabled and cannot be enabled during the game.<br>
+	<i class="oblique_yellow">Initially On</i> - If this box is unchecked, the 
+    trigger will start out disabled, but it can be enabled during the game 
+    through the use of the action &quot;Trigger - Turn On&quot;. Note that a trigger that 
+    is told to run a trigger will ignore the on/off status.</p>
+	<p class="normal_white">
+	There are also several fields on the right of the trigger box:
+	</p>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Comments</i> - This field is for placing comments that will act as a mnemonic for you and for others who may wish to modify your script.  Comments do not affect a trigger's functionality at all; they are for your own personal use in making notes.<br>
+	<i class="oblique_yellow">Trigger Functions</i> - Here the viscera of your trigger are displayed.  
+    You will notice that all of your events, conditions, and actions will be displayed in this part of the editor.  If you add an event, condition, or action, it will be organized in its appropriate section here.
+	</p>
+	<p class="normal_white">
+	You can copy and paste events, conditions, and actions from trigger to trigger, or even from map to map.  To edit an event, condition, or action you have already created, all you have to do is double-click that event, condition, or action.<br>
+	<br>
+	Some other things that you may or may not be familiar with in the editor are variables, functions, and presets.
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="Variables">Variables</a>
+	<p class="normal_white">
+	You can open the Variables part of the editor by hitting Ctrl + B or by selecting Variables from the Edit menu in the 
+    Trigger Editor.  These variables behave much like variables in a programming language like BASIC or C.  Variables are like buckets that the editor uses to hold certain types of data, but these are fickle buckets:  they will only carry one type of data.  For example, you cannot place an integer into a unit variable.<br>
+	<br>
+	With triggers you can refer to objects that are pre-placed on the map.  Say you want to use an action on a unit.  Then open the action that you want to use on the unit, and left-click the appropriate part of that action's grammar text.  The red and blue underlined text delineates the parts of the action that can be modified.  Now click the Select a Unit button.  Then select the unit on your map.  Your selected unit's variable name will now be in the variable list.<br>
+	<br>
+	Try this:  on an empty map, place an Orc Peon.  Open the Trigger Editor by hitting F4.  Create a category by hitting Ctrl + G.  Then create a trigger by hitting Ctrl + T.  Use Ctrl + R to create a new action.  Hit the u 
+    key in the menu and locate the nearby action "Unit - Kill."  The grammar text of this trigger is "Unit - Kill <u>(Triggering unit)</u>."  Left-click the blue underlined text, "<u>(Triggering Unit)</u>."  Left click the button that says, Select a Unit (to the left of the Edit Variables button). Select the Peon.  Congratulations!  You've associated this trigger with the Peon on your map.  All units 
+    that are pre-placed on a map have a variable name associated with them.<br>
+	<br>
+	If you wish to have a more thorough explanation of variables, it is recommended that you learn to program in any computer language.  (C++ rules!)
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="Functions">Functions</a>
+	<p class="normal_white">
+	The Trigger Editor contains many functions to allow users more flexibility and control than past Blizzard editors have been able to provide.  Functions are generally used in conjunction with variables and specific data types.  An example of a useful function is "Last Created Unit."  This function allows you access to the unit that was just created via "Unit - Create," and in fact it is one of only two functions that allow you to refer to a unit that was created during the game's execution (the other being "Last Created Unit Group").  These functions can be used in lieu of a unit variable or a unit that is pre-placed on the map.  Remember, though, that functions return values; you cannot manually set a function equal to some value like a variable.  You can however set a variable equal to a function.<br>
+	<br>
+	If, for example, you have just detected via an event that a Hero has leveled, then "Event Response - Leveling 
+    Hero" will only refer to that particular Hero.  You cannot simply set the function equal to some other 
+    Hero, and hope that the World Editor will be happy.  If you wish to level a specific 
+    Hero, you must use some other way of detecting that Hero (e.g., the event "Unit - Player-Owned Unit Event" and the condition "Unit-Type Comparison"), then use an appropriate action on the 
+    Hero, such as "Hero - Set Level."
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="Presets">Presets</a>
+	<p class="normal_white">
+	Presets are data built into the editor.  You do not need to do anything to have them available, and they never change.  An example of a preset is "Player 1 (Red)."
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="Value">Value</a>
+	<p class="normal_white">
+	Another field you will often be able to modify is the Value field.  This field allows you to enter information directly.  For instance this field appears on the action, "Game - Text Message (Auto-Timed)".  If you left-click the blue underlined word Text, you will open up the String window.  The last option in this window will be Value.  If you want a simple message, you can type it directly into this field; you do not have to create a new variable or use a function.
+	</p>
+	
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>

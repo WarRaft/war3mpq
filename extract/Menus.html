@@ -1,0 +1,307 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<script type="text/javascript" src="../Layout/Detector.js"></script>	
+	<link rel=stylesheet href="../Layout/Styles.css" type="text/css">
+	<title>World Edit Menus</title>
+</head>
+
+<body onload=detection() >
+	
+	<p class="large_header_blue">World Editor Menus</p>
+	
+	<a class="small_header_blue" name="File">File</a>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">New (Ctrl + N)</i> - Create a new map.<br>
+	<i class="oblique_yellow">Open (Ctrl + O)</i> - Open a map.<br>
+	<i class="oblique_yellow">Close (Ctrl + W)</i> - Close an open map.<br>
+	<i class="oblique_yellow">Save (Ctrl + S)</i> - Save an open map.<br>
+	<i class="oblique_yellow">Save As</i> - Save an open map.  This option allows you to change the map's name.<br>
+	<i class="oblique_yellow">Calculate Shadows and Save</i> - Create a shadow map, improving the shadows on your map in the game and in the editor.<br>
+	<i class="oblique_yellow">Export Script</i> - Export a World Editor script.<br>
+	<i class="oblique_yellow">Export Minimap</i> - Export a minimap image.<br>
+	<i class="oblique_yellow">Export Strings</i> -  Export strings.<br>
+	<i class="oblique_yellow">Import Strings</i> - Import strings.<br>
+	<i class="oblique_yellow">Preferences</i> - Open the editor preferences.<br>
+	</i>
+	<i class="oblique_yellow">Configure Controls</i> - Edit World Editor shortcuts.<br>
+	<i class="oblique_yellow">Test Map (Ctrl + F9)</i> - Run the map in the game in order to test it.<br>
+	</p>
+	<br>
+	
+	<a class="small_header_blue" name="Edit">Edit</a>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Undo (Ctrl + Z)</i> - Undo the last action done.<br>
+	<i class="oblique_yellow">Redo (Ctrl + Y)</i> - Redo the last action undone.<br>
+	<i class="oblique_yellow">Cut (Ctrl + X)</i> - Remove and copy the currently selected doodads, units, cameras, or regions.<br>
+	<i class="oblique_yellow">Copy (Ctrl + C)</i> - Copy the currently selected doodads, units, cameras, regions, or terrain.<br>
+	<i class="oblique_yellow">Paste (Ctrl + V)</i> - Paste the last doodads, 
+    units, cameras, regions, or terrain that you copied or cut.<br>
+	</i>
+	<i class="oblique_yellow">Mirror Paste Vertically (Ctrl + numpad +)</i> - 
+    Flip terrain, doodads, units, cameras, or regions being pasted vertically.<br>
+	</i>
+	<i class="oblique_yellow">Mirror Paste Horizontally (Ctrl + numpad -)</i> 
+    - Flip terrain, doodads, units, cameras, or regions being pasted horizontally.<br>
+	</i>
+	<i class="oblique_yellow">Rotate Paste 90 CW (Ctrl + numpad *)</i> - 
+    Rotate terrain, doodads, units, cameras, or regions being pasted 90 degrees 
+    clockwise.<br>
+	</i>
+	<i class="oblique_yellow">Rotate Paste 90 CCW (Ctrl + numpad /)</i> - 
+    Rotate terrain, doodads, units, cameras, or regions being pasted 90 degrees counter 
+    clockwise.<br>
+	<i class="oblique_yellow">Clear (Delete)</i> - Delete the currently selected doodads, units, cameras, or regions.<br>
+	<i class="oblique_yellow">Select All (Ctrl + A)</i> - Select all the doodads, units, cameras, regions, or terrain on the map.<br>
+	</i>
+	<i class="oblique_yellow">Nudge Selection Move Left (Numkey 4) </i> - 
+	Move left currently selected doodads, units, cameras, or regions.<br>
+	</i>
+	<i class="oblique_yellow">Nudge Selection Move Right (Numkey 6) </i> - 
+	Move right currently selected doodads, units, cameras, or regions.<br>
+	</i>
+	<i class="oblique_yellow">Nudge Selection Move Up (Numkey 8) </i> - 
+	Move up currently selected doodads, units, cameras, or regions.<br>
+	</i>
+	<i class="oblique_yellow">Nudge Selection Move Down (Numkey 2) </i> - 
+    Move down currently selected doodads, units, cameras, or regions.<br>
+	</i>
+	<i class="oblique_yellow">Nudge Selection Move Left + Up (Numkey 7) </i> - 
+    Move left and up currently selected doodads, units, cameras, or regions.<br>
+	</i>
+	<i class="oblique_yellow">Nudge Selection Move Left + Down (Numkey 1) </i> - 
+    Move left and down currently selected doodads, units, cameras, or regions.<br>
+	</i>
+	<i class="oblique_yellow">Nudge Selection Move Right + Up (Numkey 9) </i> - 
+    Move right and up currently selected doodads, units, cameras, or regions.<br>
+	</i>
+	<i class="oblique_yellow">Nudge Selection Move Right + Down (Numkey 3) </i> - 
+    Move right and down currently selected doodads, units, cameras, or regions.<br>
+	</i>
+	<i class="oblique_yellow">Nudge Selection Rotate Left (/) </i> - Rotate 
+    left currently selected doodads, units, or cameras.<br>
+	</i>
+	<i class="oblique_yellow">Nudge Selection Rotate Right (*) </i> - 
+    Rotate right currently selected doodads, units, or cameras.<br>
+	</i>
+	<i class="oblique_yellow">Nudge Selection Scale Up (+) </i> -&nbsp;Scale up currently selected doodads.<br>
+	</i>
+	<i class="oblique_yellow">Nudge Selection Scale Down (-) </i> -&nbsp;Scale down currently selected doodads.<br>
+	</i>
+	<i class="oblique_yellow">Nudge Selection Scale Up XY (Home) </i> -&nbsp;Scale up currently selected doodads on the XY axis only.<br>
+	</i>
+	<i class="oblique_yellow">Nudge Selection Scale Down XY (End) </i> -&nbsp;Scale down currently selected doodads on the XY axis only.<br>
+	</i>
+	<i class="oblique_yellow">Nudge Selection Scale Up Z (PgUp) </i> -&nbsp;Scale up currently selected doodads on the Z axis only.<br>
+	</i>
+	<i class="oblique_yellow">Nudge Selection Scale Down Z (PgDown) </i> -&nbsp;Scale down&nbsp;currently selected doodads on the Z axis only.
+    <i> <br>
+	</i>
+	<i class="oblique_yellow">View Selection in Object Manager (F1) </i> -&nbsp;View 
+    currently selected units, doodads, regions or cameras in the Object Manager.<br>
+	</i>
+	<i class="oblique_yellow">
+    View Selection in Object Editor (Ctrl + F1) </i> - View currently 
+    selected units or doodads in the Object Manager.<br>
+	</i>
+	<i class="oblique_yellow">View Selection in Tool Palette (Ctrl+P) </i> 
+    - View currently selected units or doodads in the Tool Palette. <br>
+	<i class="oblique_yellow">Edit Properties (Enter)</i> - Edit the properties of the currently selected doodads, units, cameras, or regions.<br>
+	</i>
+	<i class="oblique_yellow">Move Up in List (Ctrl + PgUp)</i> - Move 
+    currently selected region or camera up in the Tool Palette list.<br>
+	</i>
+	<i class="oblique_yellow">Move Down in List (Ctrl + PgDown)</i> - Move 
+    currently selected region or camera down in the Tool Palette list.<br>
+	</i>
+	<i class="oblique_yellow">Select Next in List (Ctrl + Tab)</i> - Move 
+    currently selected region or camera up in the Tool Palette list.<br>
+	</i>
+	<i class="oblique_yellow">Select Previous in List (Ctrl + Shift + Tab)</i> - 
+    Move currently selected region or camera up in the Tool Palette list.<br>
+	</i>
+	<i class="oblique_yellow">Mirror Selection Vertically </i> -&nbsp; Flip 
+    selected terrain vertically.<br>
+	</i>
+	<i class="oblique_yellow">Mirror Selection Horizontally </i> - Flip 
+    selected terrain horizontally. <i> <br>
+	</i>
+	<i class="oblique_yellow">Rotate Selection 180</i>- Rotate selected 
+    terrain 180 degrees. <i> <br>
+	</i>
+	<i class="oblique_yellow">Rotate Selection 90 CW </i> - Rotate selected 
+    terrain 90 degrees clockwise. Selection must be a square.<br>
+	</i>
+	<i class="oblique_yellow">Rotate Selection 90 CCW </i> - Rotate 
+    selected terrain 90 degrees counter clockwise. Selection must be a square.<br>
+	</p>
+		
+	<br>
+		
+	<a class="small_header_blue" name="View">View</a>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Terrain (Ctrl + T)</i> - Display terrain in one of three possible ways:  textured, wireframe, or hidden.  The wireframe option will show vertex heights, but no textures.  Hidden will completely black out the terrain in the editor.<br>
+	<i class="oblique_yellow">Doodads (Ctrl + D)</i> - Toggle the display of doodads.<br>
+	<i class="oblique_yellow">Units (Ctrl + U)</i> - Toggle the display of units.<br>
+	<i class="oblique_yellow">Unit Info Display (I)</i> - Enabling this option causes certain units to be portrayed differently on the map.  A unit whose target acquisition range is set to camp rather than normal will now appear dark blue in the editor.  If a unit has been set to drop an item when it dies, a white circle will now appear around that unit in the editor.<br>
+	<i class="oblique_yellow">Water (W)</i> - Toggle the display of water.<br>
+	<i class="oblique_yellow">Blight (H)</i> - Toggle the display of blight.<br>
+	<i class="oblique_yellow">Shadows (S)</i> - Toggle the display of shadows.<br>
+	<i class="oblique_yellow">Lighting (L)</i> - Toggle the light cast on the world.<br>
+	<i class="oblique_yellow">Weather (E)</i> - Toggle the display of weather.<br>
+	<i class="oblique_yellow">Sky (K)</i> - Toggle the display of the sky backdrop.<br>
+	<i class="oblique_yellow">Grid (G)</i> - Toggle between four different sized terrain grids.  The first option is to show no grid in the editor; this is the default setting.  The second option displays 512x512 unit squares; the third option, 128x128; and the fourth option, 32x32.<br>
+	<i class="oblique_yellow">Camera Bounds (B)</i> - Toggle display of the camera boundary lines on the map.  The camera bounds represent the center point of a camera moved to the extremes of the map.<br>
+	<i class="oblique_yellow">Pathing - Ground (P)</i> - Toggle the pathing map 
+    overlay on or off. A white overlay indicates unpathable, unflyable, and 
+    unbuildable terrain. A pink overlay shows unpathable and unbuildable 
+    terrain. A blue overlay indicates unbuildable terrain.<br>
+	</i>
+	<i class="oblique_yellow">Pathing - Naval (N)</i> - Toggle the naval 
+    pathing map overlay on or off. A red overlay indicates terrain that is 
+    unpathable to naval units.<br>
+	<i class="oblique_yellow">Regions (Ctrl + R)</i> - Toggle the display of regions.  Regions are automatically displayed when the regions layer is selected.<br>
+	<i class="oblique_yellow">Camera Objects (Ctrl + M)</i> - Toggle the display of camera objects from the Camera Palette on or off.  Camera objects are automatically displayed when the camera layer is selected.<br>
+	<i class="oblique_yellow">Lock to Game Camera (C)</i> - Pan the editor camera to match the in-game settings, and lock the editor camera in that position.<br>
+	<i class="oblique_yellow">Letterbox Mode (X)</i> - Enable this option to change the map view to the same aspect ratio of the game without the UI pane.  The main purpose of letterbox mode is to allow mapmakers to see precisely what will be viewable in the game.<br>
+	<i class="oblique_yellow">Snap to Game Camera (Ctrl + Shift + C)</i> - Change the camera settings to match the in-game settings, but do not lock them.  Note that clicking the middle mouse button also performs this action.<br>
+	</p>
+		
+	<br>
+		
+	<a class="small_header_blue" name="Layer">Layer</a>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Terrain (T)</i> - Change an open palette to the Terrain Palette.  This option allows you to modify terrain.<br>
+	<i class="oblique_yellow">Doodads (D)</i> - Change an open palette to the Doodad Palette.  This option allows you to modify doodads.<br>
+	<i class="oblique_yellow">Units (U)</i> - Change an open palette to the Unit Palette.  This option allows you to modify units.<br>
+	<i class="oblique_yellow">Regions (R)</i> - Change an open palette to the Region Palette.  This option allows you to modify regions.<br>
+	<i class="oblique_yellow">Cameras (M)</i> - Change an open palette to the Camera Palette.  This option allows you modify cameras.
+	</p>
+		
+	<br>
+		
+	<a class="small_header_blue" name="Scenario">Scenario</a>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Map Description</i> - Modify the map's name, description, suggested number of players, and author 
+    as well as a listing of the expansion features used.<br>
+	<i class="oblique_yellow">Map Options</i> - Modify the maps environmental 
+    settings and toggle use of item classification.<br>
+	<i class="oblique_yellow">Map Size and Camera Bounds</i> - Modify the map size and camera bounds.<br>
+	<i class="oblique_yellow">Loading Screen</i> - Modify the current map's loading screen.<br>
+	<i class="oblique_yellow">Player Properties</i> - Set player names, races, and controllers.  You may also decide here whether players have fixed start locations.<br>
+	<i class="oblique_yellow">Ally Priorities Properties</i> - Modify starting location priorities.<br>
+	<i class="oblique_yellow">Force Properties</i> - Set the starting player forces.<br>
+	<i class="oblique_yellow">Techtree Properties</i> - Set what units can be created for each player.<br>
+	<i class="oblique_yellow">Ability Properties</i> - Set what abilities can be researched, as well as what abilities are already researched, for each player.<br>
+	<i class="oblique_yellow">Upgrade Properties</i> - Set what upgrades can be researched, as well as what upgrades are already researched, for each player.<br>
+	</p>
+		
+	<br>
+		
+	<a class="small_header_blue" name="Tools">Tools</a>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Selection Brush (Space)</i> - Allow selection of objects depending on what the current layer is.<br>
+	<i class="oblique_yellow">Brush Size</i> - Change the current brush size.  This option only applies to the doodads and terrain layers.<br>
+	<i class="oblique_yellow">Brush Shape</i> - Change the brush shape from circle to square.  This option only applies to the doodads and terrain layers.<br>
+	<i class="oblique_yellow">Randomly Rotate Doodads</i> - Toggle random rotation of doodads.<br>
+	<i class="oblique_yellow">Randomly Scale Doodads</i> - Toggle random scaling of doodads.  There are four settings for this random scaling:  symmetric, asymmetric, asymmetric Z-axis only, and asymmetric XY-axis only.
+	</p>
+		
+	<br>
+		
+	<a class="small_header_blue" name="Advanced">Advanced</a>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Modify Tileset</i> - Allows you to switch tilesets or modify the current tileset.<br>
+	<i class="oblique_yellow">Random Groups</i> - Allows you to set up random groups of creep that will spawn in chosen locations.<br>
+	<i class="oblique_yellow">Item Tables</i> - </i>Manages all the item drops 
+    for the current map.<br>
+	<i class="oblique_yellow">Gameplay Constants</i> - </i>Allows you to modify of gameplay constants.<br>
+    <i class="oblique_yellow">Game Interface</i> - </i>Allows you to modify of the game 
+    interface.<br>
+	<i class="oblique_yellow">
+    Reset Height Field</i> - </i>Resets the terrain to its default height, if you don't check the Random box. If you do check the box, then this resets the terrain to its default height plus or minus some slight height variations.<br>
+	<i class="oblique_yellow">Adjust Cliff Levels</i> - </i>Increases or Decreases the 
+    height of all terrain and objects by a selected amount.<br>
+    <i class="oblique_yellow">Replace Tile</i> - </i>Allows you to replace all 
+    placed tiles of one type with another.<br>
+    <i class="oblique_yellow">Replace Cliff Type</i> - </i>Allows you to replace 
+    placed cliff types with another.<br>
+    <i class="oblique_yellow">Replace Doodads</i> - </i>Allows you to replace doodads 
+    of one type with another. This can be done to all doodads, or only selected 
+    doodads.<br>
+    <i class="oblique_yellow">
+    View Entire Map</i> - </i>Sets the camera so that all of 
+    the map can be viewed at once.<br>
+    <i class="oblique_yellow">Reset Texture Variations</i> - </i>Redraws all ground textures with the default distribution of randomly chosen texture variations<i>.<br>
+	<i class="oblique_yellow">
+    Enforce Water Height Limits</i> - </i>Enforces normal rules of water height. If this is unchecked, you can create strange effects with levitating water; however, you might also end up with some nasty graphical glitches. Use this option with caution.<br>
+	<i class="oblique_yellow">Enforce Camera Bounds</i> - </i>Enforces the camera 
+    bounds which are the blue lines just inside of the map border. If this is 
+    unchecked, camera objects can be moved beyond the camera bounds.</p>
+    
+	<br>
+	
+	<a class="small_header_blue" name="Module">Module</a>
+	<br>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Terrain Editor (F3)</i> -</i> Change the focus to the Terrain Editor.<br>
+	<i class="oblique_yellow">Trigger Editor (F4)</i> - </i>Change the focus to the 
+    Trigger Editor.<br>
+	<i class="oblique_yellow">Sound Editor (F6)</i> - </i>Change the focus to 
+    the Sound Editor.<br>
+	<i class="oblique_yellow">Object Editor (F7)</i> - </i>Change the focus to 
+    the Object Editor.<br>
+	<i class="oblique_yellow">Campaign Editor (F5)</i> - </i>Change the focus to the Campaign Editor.<br>
+    <i class="oblique_yellow">AI Editor (F8)</i> - </i>Change the focus to the 
+    AI Editor.<br>
+    <i class="oblique_yellow">Object Manager (F8)</i> </i>- Manages and cross-references all doodads, units, items, regions, and triggers currently in your map.<br>
+	<i class="oblique_yellow">Import Manager (F8)</i> </i>- Manages imported 
+    files.<br>
+	</p>
+    
+	<br>
+	
+	<a class="small_header_blue" name="Window">Window</a>
+	<br>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">New Palette</i> - </i>Open up a new palette window.<br>
+    <i class="oblique_yellow">Show Palettes (A)</i> - </i>Toggle whether or not you can see all the currently open palettes.<br>
+    <i class="oblique_yellow">Toolbar</i> - </i>Toggle display of the toolbar.<br>
+    <i class="oblique_yellow">Minimap</i> - </i>Toggle display of the minimap.<br>
+    <i class="oblique_yellow">Previewer</i> - </i>Toggle display of the minimap.<br>
+    <i class="oblique_yellow">Brush List</i> </i>- Toggle display of the Brush List.<br>
+    <i class="oblique_yellow">(Map List)</i> </i>- Switch between currently open maps.<br>
+	</p>
+    
+	<br>
+	
+	<a class="small_header_blue" name="Help">Help</a><br>    
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Warcraft III World Editor Help</i> - </i>Display help about the World Editor.<br>
+    <i class="oblique_yellow">License Agreement</i> - </i>Display the End User License Agreement.<br>
+	<i class="oblique_yellow">About Warcraft III World Editor</i> - </i>Display 
+    version number and copyright information.</p>
+	
+    <br>	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</body>
+</html>

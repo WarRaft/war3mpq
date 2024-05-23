@@ -1,0 +1,851 @@
+[amrc]
+Name=Amulet of Recall
+Hotkey=R
+Tip=Purchase Amulet of |cffffcc00R|recall
+Ubertip="Teleports <AIrt,DataA1> of the player's units within the targeted area to the location of the Hero when used."
+Description=Can be used to teleport units to the user.
+
+[ankh]
+Name=Ankh of Reincarnation
+Hotkey=A
+Tip=Purchase |cffffcc00A|rnkh of Reincarnation
+Ubertip="Automatically brings the Hero back to life with full hit points when the Hero wearing the Ankh dies."
+Description=Allows reincarnation upon death.
+
+[belv]
+Name=Boots of Elvenkind +6
+Hotkey=E
+Tip=Purchase Boots of |cffffcc00E|rlvenkind
+Ubertip="Increases the Agility of the Hero by 6 when worn."
+Description=Provides a bonus to Agility.
+
+[bgst]
+Name=Belt of Giant Strength +6
+Hotkey=B
+Tip=Purchase |cffffcc00B|relt of Giant Strength
+Ubertip="Increases the Strength of the Hero by 6 when worn."
+Description=Provides a bonus to Strength.
+
+[bspd]
+Name=Boots of Speed
+Hotkey=S
+Tip=Purchase Boots of |cffffcc00S|rpeed
+Ubertip="Increases the movement speed of the Hero when worn."
+Description=Increases movement rate.
+
+[ccmd]
+Name=Scepter of Mastery
+Hotkey=C
+Tip=Purchase S|cffffcc00c|repter of Mastery
+Ubertip="Transfers control of the targeted non-Hero unit to the player who uses the Scepter. The transfer of control is permanent. |nCannot be used on Heroes or on creeps higher than level <AIco,DataA1>."
+Description=Allows mind control of non-Hero units.
+
+[ciri]
+Name=Robe of the Magi +6
+Hotkey=R
+Tip=Purchase |cffffcc00R|robe of the Magi
+Ubertip="Increases the Intelligence of the Hero by 6 when worn."
+Description=Provides a bonus to Intelligence.
+
+[ckng]
+Name=Crown of Kings +5
+Hotkey=K
+Tip=Purchase Crown of |cffffcc00K|rings
+Ubertip="Increases the Strength, Intelligence, and Agility of the Hero by 5 when worn."
+Description="Provides a +5 bonus to Agility, Strength, and Intelligence."
+
+[clsd]
+Name=Cloak of Shadows
+Hotkey=C
+Tip=Purchase |cffffcc00C|rloak of Shadows
+Ubertip="Provides the Hero with invisibility at night when worn. An invisible Hero is untargetable by the enemy unless detected. If the Hero moves, attacks, uses an ability, or casts a spell, the invisibility effect is lost."
+Description=Provides the Shadowmeld ability.
+
+[crys]
+Name=Crystal Ball
+Hotkey=C
+Tip=Purchase |cffffcc00C|rrystal Ball
+Ubertip="Reveals a targeted area. Invisible units are also revealed by the Crystal Ball's effect. |nLasts <AIta,Dur1> seconds."
+Description=Permits the viewing of distant areas.
+
+[flag]
+Name=Human Flag
+Tip=Purchase Human Flag
+Ubertip="An object that is often captured in special scenarios as a win condition."
+Description=Can be captured in special scenarios.
+
+[nflg]
+Name=Night Elf Flag
+Tip=Purchase Night Elf Flag
+Ubertip="An object that is often captured in special scenarios as a win condition."
+Description=Can be captured in special scenarios.
+
+[oflg]
+Name=Orc Flag
+Tip=Purchase Orc Flag
+Ubertip="An object that is often captured in special scenarios as a win condition."
+Description=Can be captured in special scenarios.
+
+[uflg]
+Name=Undead Flag
+Tip=Purchase Undead Flag
+Ubertip="An object that is often captured in special scenarios as a win condition."
+Description=Can be captured in special scenarios.
+
+[gemt]
+Name=Gem of True Seeing
+Hotkey=G
+Tip=Purchase |cffffcc00G|rem of True Seeing
+Ubertip="Allows the Hero to detect hidden or invisible units in the Hero's line of sight when carried."
+Description=Permits invisible units to be seen.
+
+[gobm]
+Name=Goblin Land Mines
+Hotkey=L
+Tip=Purchase Goblin |cffffcc00L|rand Mines
+Ubertip="Places a hidden land mine at a target point. Enemy units that move near the land mine will activate the mine, destroying the mine and causing area of effect damage to nearby units."
+Description=Explosive mines.
+
+[gsou]
+Name=Soul Gem
+Hotkey=G
+Tip=Purchase Soul |cffffcc00G|rem
+Ubertip="Traps the targeted enemy Hero inside the Soul Gem when used. The enemy Hero is returned to play when the bearer of the Soul Gem is killed. While an enemy Hero is trapped, the bearer of the Soul Gem is revealed to the enemy through the Fog of War."
+Description=Allows the theft of a Hero's soul.
+
+[soul]
+Name=Soul
+Tip=Purchase Soul
+Ubertip="A soul, trapped by the enchantments of a Soul Gem."
+Description=This is a trapped soul.
+
+[mdpb]
+Name=Medusa Pebble
+Purchase Medusa Pebble
+Hotkey=P
+Tip=Purchase Medusa |cffffcc00P|rebble
+Ubertip="Turns the targeted enemy non-Hero unit into stone when used. A unit turned to stone by the Medusa Pebble is removed from the game permanently."
+Description=Turns target unit to stone.
+
+[rag1]
+Name=Slippers of Agility +3
+Hotkey=A
+Tip=Purchase Slippers of |cffffcc00A|rgility +3
+Ubertip="Increases the Agility of the Hero by 3 when worn."
+Description=Boosts Agility by 3.
+
+[rat3]
+Name=Claws of Attack +3
+Hotkey=K
+Tip=Purchase Claws of Attac|cffffcc00k|r +3
+Ubertip="Increases the attack damage of the Hero by 3 when worn."
+Description=Boosts attack damage by 3.
+
+[rin1]
+Name=Mantle of Intelligence +3
+Hotkey=I
+Tip=Purchase Mantle of |cffffcc00I|rntelligence +3
+Ubertip="Increases the Intelligence of the Hero by 3 when worn."
+Description=Boosts Intelligence by 3.
+
+[rde1]
+Name=Ring of Protection +2
+Hotkey=2
+Tip=Purchase Ring of Protection +|cffffcc002|r
+Ubertip="Increases the armor of the Hero by 2 when worn."
+Description=Boosts armor by 2.
+
+[rde2]
+Name=Ring of Protection +3
+Hotkey=3
+Tip=Purchase Ring of Protection +|cffffcc003|r
+Ubertip="Increases the armor of the Hero by 3 when worn."
+Description=Boosts armor by 3.
+
+[rde3]
+Name=Ring of Protection +4
+Hotkey=4
+Tip=Purchase Ring of Protection +|cffffcc004|r
+Ubertip="Increases the armor of the Hero by 4 when worn."
+Description=Boosts armor by 4.
+
+[rhth]
+Name=Periapt of Health
+Hotkey=H
+Tip=Purchase Periapt of |cffffcc00H|realth
+Ubertip="Increases the hit points of the Hero by <AIl2,DataA1> when worn."
+Description=Increases the hit points of the Hero.
+
+[rst1]
+Name=Gauntlets of Ogre Strength +3
+Hotkey=S
+Tip=Purchase Gauntlets of Ogre |cffffcc00S|rtrength +3
+Ubertip="Increases the Strength of the Hero by 3 when worn."
+Description=Boosts Strength by 3.
+
+[ofir]
+Name=Orb of Fire
+Hotkey=F
+Tip=Purchase Orb of |cffffcc00F|rire
+Ubertip="Adds <AIfb,DataA1> bonus fire damage to the attack of a Hero when carried. The Hero's attacks also do splash damage to nearby enemy units."
+Description=Attacks also do fire damage.
+
+[ofro]
+Name=Orb of Frost
+Hotkey=R
+Tip=Purchase Orb of F|cffffcc00r|rost
+Ubertip="Adds <AIob,DataA1> bonus cold damage to the attack of a Hero when carried. The Hero's attacks also slow the movement speed and attack rate of the enemy for <AIob,Dur1> seconds."
+Description=Attacks cause Frost Shock.
+
+[olig]
+Name=Orb of Lightning
+Hotkey=L
+Tip=Purchase Orb of |cffffcc00L|rightning
+Ubertip="Adds <AIlb,DataA1> bonus damage to the attack of a Hero when carried. The Hero's attacks also dispel magic and slow the movement speed of the enemy for <AIlp,Dur1> seconds. |n|cffffcc00Deals <AIlp,DataC1> bonus damage to summoned units."
+Description=Attacks also do lightning damage.
+
+[phea]
+Name=Potion of Healing
+Hotkey=P
+Tip=Purchase |cffffcc00P|rotion of Healing
+Ubertip="Heals <AIh1,DataA1> hit points when used."
+Description=Restores lost hit points.
+
+[pghe]
+Name=Potion of Greater Healing
+Hotkey=R
+Tip=Purchase Potion of G|cffffcc00r|reater Healing
+Ubertip="Heals <AIh2,DataA1> hit points when used."
+Description=Restores lost hit points.
+
+[pinv]
+Name=Potion of Invisibility
+Hotkey=I
+Tip=Purchase Potion of |cffffcc00I|rnvisibility
+Ubertip="Renders the Hero invisible for <AIv1,Dur1> seconds when used. An invisible Hero is untargetable by the enemy unless detected. If the Hero attacks, uses an ability, or casts a spell, the invisibility effect is lost."
+Description=Renders Hero temporarily invisible.
+
+[pgin]
+Name=Potion of Greater Invisibility
+Hotkey=I
+Tip=Purchase Potion of Greater |cffffcc00I|rnvisibility
+Ubertip="Renders the Hero invisible for <AIv2,Dur1> seconds when used. An invisible Hero is untargetable by the enemy unless detected. If the Hero attacks, uses an ability, or casts a spell, the invisibility effect is lost."
+Description=Renders Hero temporarily invisible.
+
+[pman]
+Name=Potion of Mana
+Hotkey=M
+Tip=Purchase Potion of |cffffcc00M|rana
+Ubertip="Restores <AIm1,DataA1> mana when used."
+Description=Restores lost mana.
+
+[pgma]
+Name=Potion of Greater Mana
+Hotkey=M
+Tip=Purchase Potion of Greater |cffffcc00M|rana
+Ubertip="Restores <AIm2,DataA1> mana when used."
+Description=Restores lost mana.
+
+[pnvu]
+Name=Potion of Invulnerability
+Hotkey=I
+Tip=Purchase Potion of |cffffcc00I|rnvulnerability
+Ubertip="Makes the Hero invulnerable to damage for <AIvu,Dur1> seconds when used. An invulnerable Hero may not be the target of spells or effects."
+Description=Renders Hero temporarily invulnerable.
+
+[pres]
+Name=Potion of Restoration
+Hotkey=R
+Tip=Purchase Potion of |cffffcc00R|restoration
+Ubertip="Completely restores the hit points and mana of the Hero when used."
+Description=Restores lost hit points and mana.
+
+[pspd]
+Name=Potion of Speed
+Hotkey=S
+Tip=Purchase Potion of |cffffcc00S|rpeed
+Ubertip="Increases the movement speed of the Hero by <AIsp,DataA1,%>% for <AIsp,Dur1> seconds."
+Description=Provides Hero with a temporary speed increase.
+
+[rlif]
+Name=Ring of Regeneration
+Hotkey=L
+Tip=Purchase Ring of Regeneration (|cffffcc00l|r)
+Ubertip="Increases the Hero's hit point regeneration by <Arel,DataA1> hit points per second."
+Description=Provides regeneration.
+
+[rwiz]
+Name=Sobi Mask
+Hotkey=S
+Tip=Purchase |cffffcc00S|robi Mask
+Ubertip="Increases the Hero's rate of mana regeneration by <AIrm,DataA1,%>% when worn."
+Description=Increases mana regeneration rate.
+
+[shea]
+Name=Scroll of Healing
+Hotkey=H
+Tip=Purchase Scroll of |cffffcc00H|realing
+Ubertip="Heals <AIha,DataA1> hit points to all friendly non-mechanical units around the Hero when used."
+Description=Restores hit points to nearby units.
+
+[sman]
+Name=Scroll of Mana
+Hotkey=M
+Tip=Purchase Scroll of |cffffcc00M|rana
+Ubertip="Restores <AImr,DataA1> mana to all friendly units in an area around your Hero."
+Description=Restores mana to nearby units.
+
+[spro]
+Name=Scroll of Protection
+Hotkey=R
+Tip=Purchase Scroll of P|cffffcc00r|rotection
+Ubertip="Increases the armor of all friendly units in an area around your Hero by <AIda,DataA1> for <AIda,Dur1> seconds."
+Description=Temporarily increases the armor of nearby units.
+
+[sres]
+Name=Scroll of Restoration
+Hotkey=R
+Tip=Purchase Scroll of |cffffcc00R|restoration
+Ubertip="Fully restores the hit points and mana of friendly non-mechanical units in an area around your Hero."
+Description=Restores hit points and mana to nearby units.
+
+[stwp]
+Name=Scroll of Town Portal
+Hotkey=T
+Tip=Purchase Scroll of |cffffcc00T|rown Portal
+Ubertip="Teleports the Hero and any of its nearby troops to a target friendly town hall."
+Description=Transports troops to friendly town hall.
+
+[tels]
+Name=Goblin Night Scope
+Hotkey=T
+Tip=Purchase Goblin Nigh|cffffcc00t|r scope
+Ubertip="Provides an increase to the Hero's line of sight radius at night when carried."
+Description=Increases sight range at night.
+
+[tdex]
+Name=Tome of Agility
+Hotkey=A
+Tip=Purchase Tome of |cffffcc00A|rgility
+Ubertip="Permanently increases the Agility of the Hero by <AIam,DataA1> when used."
+Description=Permanently increases Agility.
+
+[texp]
+Name=Tome of Experience
+Hotkey=E
+Tip=Purchase Tome of |cffffcc00E|rxperience
+Ubertip="Gives <AIem,DataA1> experience to the Hero when used."
+Description=Gives bonus experience points.
+
+[tint]
+Name=Tome of Intelligence
+Hotkey=T
+Tip=Purchase |cffffcc00T|rome of Intelligence
+Ubertip="Permanently increases the Intelligence of the Hero by <AIim,DataB1> when used."
+Description=Permanently increases Intelligence.
+
+[tkno]
+Name=Tome of Power
+Hotkey=P
+Tip=Purchase Tome of |cffffcc00P|rower
+Ubertip="Increases the level of the Hero by <AIlm,DataA1> when used."
+Description=Gives the Hero an experience level.
+
+[tstr]
+Name=Tome of Strength
+Hotkey=S
+Tip=Purchase Tome of |cffffcc00S|rtrength
+Ubertip="Permanently increases the Strength of the Hero by <AIsm,DataC1> when used."
+Description=Permanently increases Strength.
+
+[ward]
+Name=Warsong Battle Drums
+Hotkey=W
+Tip=Purchase |cffffcc00W|rarsong Battle Drums
+Ubertip="Increases the attack damage of nearby friendly units by <AIcd,DataA1,%>% when worn. |nDoes not stack with Command Aura."
+Description=Increases combat effectiveness of nearby units.
+
+[will]
+Name=Wand of Illusion
+Hotkey=I
+Tip=Purchase Wand of |cffffcc00I|rllusion
+Ubertip="Create an illusory double of the targeted unit when used. The illusory double deals no damage to enemy units, takes <AIil,DataB1> times the damage from enemy attacks, and will disappear after <AIil,Dur1> seconds or when its hit points reach zero."
+Description=Creates a phantom double.
+
+[wneg]
+Name=Wand of Negation
+Hotkey=N
+Tip=Purchase Wand of |cffffcc00N|regation
+Ubertip="Dispels all magical effects in a target area. |n|cffffcc00Deals <AIdi,DataB1> damage to summoned units.|r"
+Description=Dispels magic in an area.
+
+[fgrd]
+Name=Red Drake Egg
+Tip=Purchase Drake |cffffcc00E|rgg
+Hotkey=E
+Ubertip="Summons a Red Drake to fight for you. |nLasts <AIfd,Dur1> seconds."
+Description=Summons a Red Drake.
+
+[fgrg]
+Name=Stone Token
+Tip=Purchase Stone Token
+Ubertip="Summons a Rock Golem to fight for you. |nLasts <AIfr,Dur1> seconds."
+Description=Summons a Rock Golem.
+
+[fgdg]
+Name=Demonic Figurine
+Tip=Purchase Demonic Figurine
+Ubertip="Summons a Doom Guard to fight for you. |nLasts <AIfu,Dur1> seconds."
+Description=Summons a Doom Guard.
+
+[fgfh]
+Name=Spiked Collar
+Tip=Purchase Spiked Collar
+Ubertip="Summons a Felhound to fight for you. |nLasts <AIfh,Dur1> seconds."
+Description=Summons a Felhound.
+
+[fgsk]
+Name=Book of the Dead
+Tip=Purchase Book of the Dead
+Ubertip="Summons <AIfs,DataA1> Skeleton Warriors and <AIfs,DataB1> Skeleton Archers to fight for you. |nLasts <AIfs,Dur1> seconds."
+Description=Summons skeletons.
+
+[ktrm]
+Name=Urn of King Terenas
+Tip=Purchase Urn of King Terenas
+Ubertip="Formerly the container of King Terenas' ashes, this magically enchanted Urn was chosen by Tichondrius to preserve Kel'Thuzad's remains.
+Description=This urn contains the remains of King Terenas.
+
+[sehr]
+Name=The Heart of Searinox
+Tip=Purchase the Heart of Searinox
+Ubertip="The still beating heart of Searinox can be used to imbue an Orb with the fiery powers of a Dragon."
+Description=The heart of the Dragon Searinox.
+
+[azhr]
+Name=Heart of Aszune
+Tip=Purchase Heart of Aszune
+Ubertip="Legends say that the imprisoned spirit of Aszune seeks out her heart to this very day."
+Description=The magical amulet Heart of Aszune.
+
+[bzbe]
+Name=Empty Vial
+Tip=Purchase Empty Vial
+Ubertip="A special vial adept at containing the magical healing waters of a Fountain of Life."
+Description=This is an empty vial.
+
+[bzbf]
+Name=Full Vial
+Tip=Purchase Full Vial
+Ubertip="A special vial adept at containing the magical healing waters of a Fountain of Life."
+Description=This vial is full of healing waters.
+
+[cnhn]
+Name=Horn of Cenarius
+Tip=Purchase Horn of Cenarius
+Ubertip="This ancient relic of the Night Elves is said to hold the power to call the spirits of all Night Elves. It imbues its owner with <AIl1,DataA1> hit points, and a <Arel,DataA1> hit point per second regeneration bonus."
+Description=This is the Horn of Cenarius.
+
+[glsk]
+Name=Skull of Gul'dan
+Tip=Purchase Skull of Gul'dan
+Ubertip="Once a powerful user of Demonic magics, the Demons answered his calls, and found a greater use for his head."
+Description=This is the Skull of Gul'dan.
+
+[engs]
+Name=Enchanted Gemstone
+Tip=Purchase Enchanted Gemstone
+Ubertip="This artifact of the Kelani Magi is said to hold the power to make constructs out of pure energy. When the Kelani fell to ruin, the Razormane Quillboars were quick to scavenge and covet these beautiful and powerful objects."
+Description=This is an enchanted gemstone.
+
+[k3m1]
+Name=Mooncrystal
+Tip=Purchase Mooncrystal
+Ubertip="Cut from the emerald Eye of Jennala, it opens the mind of the Gate Keeper."
+Description=This is one part of the Key of Three Moons.
+
+[k3m2]
+Name=Partial Key of the Three Moons
+Tip=Purchase Partial Key of Three Moons
+Ubertip="Cut from the amethyst Stone of Hannalee, it opens the heart of the Gate Keeper."
+Description=This is two parts of the Key of Three Moons.
+
+[k3m3]
+Name=Key of Three Moons
+Tip=Purchase Key of Three Moons
+Ubertip="Cut from the sapphire Body of Enulaia, it opens the soul of the Gate Keeper."
+Description=This is the complete Key of Three Moons.
+
+[modt]
+Name=Mask of Death
+Tip=Purchase Mask of Death
+Ubertip="Gives melee Heroes a vampiric attack that converts <AIva,DataA1,%>% of their attack damage into life."
+Description=This mask permits attacks to drain life.
+
+[sand]
+Name=Scroll of Animate Dead
+Tip=Purchase Scroll of Animate Dead
+Ubertip="Raises <AIan,DataA1> nearby dead units to fight for <AIan,Dur1> seconds."
+Description=Animates the dead to fight for you.
+
+[srrc]
+Name=Scroll of Resurrection
+Tip=Purchase Scroll of Resurrection
+Ubertip="Brings <AIrs,DataA1> of your dead units back to life."
+Description=Resurrects your dead to fight again.
+
+[sror]
+Name=Scroll of the Beast
+Tip=Purchase Scroll of the Beast
+Ubertip="Gives friendly nearby units a <AIrr,DataA1,%>% bonus to damage for <AIrr,Dur1> seconds."
+Description=Boosts friendly unit combat damage.
+
+[infs]
+Name=Inferno Stone
+Tip=Purchase Inferno Stone
+Ubertip="Calls an Infernal down from the sky, dealing <AIin,DataA1> damage and stunning enemy land units for <AIin,Dur1> seconds in an area. The Infernal lasts <AIin,DataB1> seconds."
+Description=Brings down an Infernal demon.
+
+[wswd]
+Name=Sentry Wards
+Tip=Purchase Sentry Wards
+Ubertip="Drops a Sentry Ward to spy upon an area for <AIsw,Dur1> seconds." 
+Description=Conjures a Sentry Ward.
+
+[whwd]
+Name=Healing Wards
+Tip=Purchase Healing Wards
+Ubertip="Drops a ward that heals nearby friendly units for <Ahwd,Dur1> seconds."
+Description=Conjures a Healing Ward.
+
+[wlsd]
+Name=Wand of Lightning Shield
+Tip=Purchase Wand of Lightning Shield
+Ubertip="Allows the Hero to cast Lightning Shield on a target unit. Lightning Shield surrounds a unit with electricity, dealing <AIls,DataA1> damage per second to nearby units. |nLasts <AIls,Dur1> seconds."
+Description=Casts Lightning Shield.
+
+[wcyc]
+Name=Wand of the Wind
+Tip=Purchase Wand of the Wind
+Ubertip="Allows the Hero to cast Cyclone. Cyclone tosses a target enemy unit into the air, rendering it unable to attack, move or cast spells. |nLasts <AIcy,Dur1> seconds."
+Description=Casts Cyclone.
+
+[pams]
+Name=Anti-magic Potion
+Hotkey=A
+Tip=Purchase |cffffcc00A|rnti-magic Potion
+Ubertip="Gives the Hero immunity to magical spells for <AIxs,Dur1> seconds."
+Description=Renders Hero immune to magic.
+
+[clfm]
+Name=Cloak of Flames
+Tip=Purchase Cloak of Flames
+Ubertip="Engulfs the Hero in fire which deals <AIcf,DataA1> damage per second to nearby enemy land units. |nDoes not stack with Immolation."
+Description=Surrounds the Hero with damaging flames.
+
+[evtl]
+Name=Talisman of Evasion
+Tip=Purchase Talisman of Evasion
+Ubertip="Causes attacks against the wearer to miss <AIev,DataA1,%>% of the time. |nDoes not stack with Evasion."
+Description=Makes the Hero harder to hit.
+
+[nspi]
+Name=Necklace of Spell Immunity
+Tip=Purchase Necklace of Spell Immunity
+Ubertip="Renders the Hero invulnerable to magic."
+Description=Grants immunity to magic.
+
+[lhst]
+Name=The Lion Horn of Stormwind
+Tip=Purchase the Lion Horn of Stormwind
+Ubertip="Grants the Hero and friendly nearby units <AIad,DataA1> bonus armor. |nDoes not stack with Devotion Aura."
+Description=Generates a protective aura around the Hero.
+
+[kpin]
+Name=Khadgar's Pipe of Insight
+Tip=Purchase Khadgar's Pipe of Insight
+Ubertip="Grants the Hero and friendly nearby units a bonus to mana regeneration. |nDoes not stack with Brilliance Aura."
+Description=Nearby units regain mana more swiftly.
+
+[sbch]
+Name=Scourge Bone Chimes
+Tip=Purchase Scourge Bone Chimes
+Ubertip="Grants a melee Hero and friendly nearby melee units life stealing attacks which take <AIav,DataA1,%>% of the damage they deal and convert it into life. |nDoes not stack with Vampiric Aura."
+Description=Nearby units gain some life from damage they deal to enemy units.
+
+[afac]
+Name=Alleria's Flute of Accuracy
+Tip=Purchase Alleria's Flute of Accuracy
+Ubertip="Increases nearby ranged units damage by <AIar,DataA1,%>%. |nDoes not stack with Trueshot Aura."
+Description=Nearby units' missile attacks do more damage.
+
+[ajen]
+Name=Ancient Janggo of Endurance
+Tip=Purchase Ancient Janggo of Endurance
+Ubertip="Grants the Hero and friendly nearby units <AIau,DataB1,%>% increased attack speed and <AIau,DataA1,%>% movement speed. |nDoes not stack with Endurance Aura."
+Description=Nearby units move and attack more swiftly.
+
+[lgdh]
+Name=Legion Doom-Horn
+Tip=Purchase Legion Doom-Horn
+Ubertip="Grants the Hero and friendly nearby units increased life regeneration and movement speed. |nDoes not stack with Unholy Aura."
+Description=Nearby units heal and move more swiftly.
+
+[hcun]
+Name=Hood of Cunning
+Tip=Purchase Hood of Cunning
+Ubertip="Increases the Agility and Intelligence of the Hero by 4 when worn."
+Description=Provides bonuses to Agility and Intelligence.
+
+[mcou]
+Name=Medallion of Courage
+Tip=Purchase Medallion of Courage
+Ubertip="Increases the Strength and Intelligence of the Hero by 4 when worn."
+Description=Provides bonuses to Strength and Intelligence.
+
+[hval]
+Name=Helm of Valor
+Tip=Purchase Helm of Valor
+Ubertip="Increases the Strength and Agility of the Hero by 4 when worn."
+Description=Provides bonuses to Strength and Agility.
+
+[cnob]
+Name=Circlet of Nobility
+Tip=Purchase Circlet of Nobility
+Ubertip="Increases the Strength, Agility and Intelligence of the Hero by 2 when worn."
+Description="Provides a +2 bonus to Strength, Agility and Intelligence."
+
+[prvt]
+Name=Periapt of Vitality
+Tip=Purchase Periapt of Vitality
+Ubertip="Increases the hit points of the Hero by <AIlf,DataA1> when worn."
+Description=Increases the hit points of the Hero.
+
+[tgxp]
+Name=Tome of Greater Experience
+Tip=Purchase Tome of Greater Experience
+Ubertip="Gives the Hero <AIe2,DataA1> bonus experience points when used."
+Description=Gives bonus experience points.
+
+[mnst]
+Name=Mana Stone
+Tip=Purchase Mana Stone
+Ubertip="Increases the mana regeneration rate of the Hero by <AIrn,DataA1,%>% when worn. Can be consumed for <AIm2,DataA1> mana."
+Description="Provides faster mana regeneration, and can be consumed for mana."
+
+[hlst]
+Name=Health Stone
+Tip=Purchase Health Stone
+Ubertip="Increases the life regeneration rate of the Hero by <Arll,DataA1> hit points per second when worn. Can be consumed for <AIh2,DataA1> health."
+Description="Provides faster regeneration, and can be consumed for hit points."
+
+[tpow]
+Name=Tome of Knowledge
+Tip=Purchase Tome of Knowledge
+Ubertip="Permanently increases the Strength, Agility and Intelligence of the Hero by 1 when used."
+Description="Permanently increases Strength, Agility and Intelligence."
+
+[tst2]
+Name=Tome of Strength +2
+Tip=Purchase Tome of Strength +2
+Ubertip="Permanently increases the Strength of the Hero by 2 when used."
+Description=Permanently increases Strength.
+
+[tin2]
+Name=Tome of Intelligence +2
+Tip=Purchase Tome of Intelligence +2
+Ubertip="Permanently increases the Intelligence of the Hero by 2 when used."
+Description=Permanently increases Intelligence.
+
+[tdx2]
+Name=Tome of Agility +2
+Tip=Purchase Tome of Agility +2
+Ubertip="Permanently increases the Agility of the Hero by 2 when used."
+Description=Permamently increases Agility.
+
+[rde0]
+Name=Ring of Protection +1
+Hotkey=1
+Tip=Purchase Ring of Protection +|cffffcc001|r
+Ubertip="Increases the armor of the Hero by 1 when worn."
+Description=Boosts armor by 1.
+
+[rde4]
+Name=Ring of Protection +5
+Hotkey=5
+Tip=Purchase Ring of Protection +|cffffcc005|r
+Ubertip="Increases the armor of the Hero by 5 when worn."
+Description=Boosts armor by 5.
+
+[rat6]
+Name=Claws of Attack +6
+Tip=Purchase Claws of Attack +6
+Ubertip="Increases the attack damage of the Hero by 6 when worn."
+Description=Boosts attack damage by 6.
+
+[rat9]
+Name=Claws of Attack +9
+Tip=Purchase Claws of Attack +9
+Ubertip="Increases the attack damage of the Hero by 9 when worn."
+Description=Boosts attack damage by 9.
+
+[ratc]
+Name=Claws of Attack +12
+Tip=Purchase Claws of Attack +12
+Ubertip="Increases the attack damage of the Hero by 12 when worn."
+Description=Boosts attack damage by 12.
+
+[ratf]
+Name=Claws of Attack +15
+Tip=Purchase Claws of Attack +15
+Ubertip="Increases the attack damage of the Hero by 15 when worn."
+Description=Boosts attack damage by 15.
+
+[manh]
+Name=Manual of Health
+Tip=Purchase Manual of Health
+Ubertip="Permanently increases the hit points of the Hero by <AImh,DataA1> when used."
+Description=Permanent +50 hit points.
+
+[pmna]
+Name=Pendant of Mana
+Tip=Purchase Pendant of Mana
+Ubertip="Increases the mana capacity of the Hero by <AIbm,DataA1> when worn."
+Description=Provides additional mana.
+[penr]
+Name=Pendant of Energy
+Tip=Purchase Pendant of Energy
+Ubertip="Increases the mana capacity of the Hero by <AImb,DataA1> when worn."
+Description=Provides additional mana.
+
+[gcel]
+Name=Gloves of Haste
+Tip=Purchase Gloves of Haste
+Ubertip="Increases the attack speed of the Hero by <AIsx,DataA1,%>% when worn."
+Description=Increases attack speed.
+
+[ledg]
+Name=Gerard's Lost Ledger
+Tip=Purchase Gerard's Lost Ledger
+Ubertip="This Ledger looks to be full of boring facts and figures."
+Description=A ledger.
+
+[totw]
+Name=Talisman of the Wild
+Tip=Purchase Talisman of the Wild
+Ubertip="This mystic stone summons <AIff,DataA1> Furbolg to fight for you. |nLasts <AIff,Dur1> seconds."
+Description=Summons Furbolgs.
+
+[kybl]
+Name=Blood Key
+Tip=Purchase Blood Key
+Ubertip="This key is covered in blood."
+Description=A bloody key.
+
+[kygh]
+Name=Ghost Key
+Tip=Purchase Ghost Key
+Ubertip="This key is rather insubstantial."
+Description=A ghostly key.
+
+[kysn]
+Name=Sun Key
+Tip=Purchase Sun Key
+Ubertip="This key glows brightly."
+Description=A glowing key.
+
+[kymn]
+Name=Moon Key
+Tip=Purchase Moon Key
+Ubertip="This key glows faintly."
+Description=A faintly glowing key.
+
+[phlt]
+Name=Phat Lewt
+Tip=Purchase Phat Lewt
+Ubertip="There is no phatter lewt than this."
+Description=The phattest lewt, definitely.
+
+[gopr]
+Name=Glyph of Purification
+Tip=Purchase Glyph of Purification
+Ubertip="Created by ancient druids, this glyph has the power to heal the land."
+Description=A glyph.
+
+[ches]
+Name=Cheese
+Tip=Purchase the Cheese
+Ubertip="Cheese cheese cheese cheese!"
+Description=It's the Cheese!
+
+[mlst]
+Name=Maul of Strength
+Tip=Purchase Maul of Strength
+Ubertip="Increases the Strength of the Hero by 1 when carried."
+Description=Boosts Strength by 1.
+
+[rnsp]
+Name=Ring of Superiority
+Tip=Purchase Ring of Superiority
+Ubertip="Increases the Strength, Agility and Intelligence of the Hero by 1 when worn."
+Description="Provides a +1 bonus to Strength, Agility and Intelligence."
+
+[brag]
+Name=Bracer of Agility
+Tip=Purchase Bracer of Agility
+Ubertip="Increases the Agility of the Hero by 1 when worn."
+Description=Boosts Agility by 1.
+
+[sksh]
+Name=Skull Shield
+Tip=Purchase Skull Shield
+Ubertip="Increases the Strength of the Hero by 1 when carried."
+Description=Boosts Strength by 1.
+
+[vddl]
+Name=Voodoo Doll
+Tip=Purchase Voodoo Doll
+Ubertip="Increases the Intelligence of the Hero by 1 when carried."
+Description=Boosts Intelligence by 1.
+
+[sprn]
+Name=Spider Ring
+Tip=Purchase Spider Ring
+Ubertip="Increases the Agility of the Hero by 1 when worn."
+Description=Boosts Agility by 1.
+
+[tmmt]
+Name=Totem of Might
+Tip=Purchase Totem of Might
+Ubertip="Increases the Strength of the Hero by 1 when carried."
+Description=Boosts Strength by 1.
+
+[anfg]
+Name=Ancient Figurine
+Tip=Purchase Ancient Figurine
+Ubertip="Increases the Intelligence of the Hero by 1 when carried."
+Description=Boosts Intelligence by 1.
+
+[lnrn]
+Name=Lion's Ring
+Tip=Purchase Lion's Ring
+Ubertip="Increases the Agility of the Hero by 1 when worn."
+Description=Boosts Agility by 1.
+
+[iwbr]
+Name=Ironwood Branch
+Tip=Purhcase Ironwood Branch
+Ubertip="Increases the Strength of the Hero by 1 when carried."
+Description=Boosts Strength by 1.
+
+[jdrn]
+Name=Jade Ring
+Tip=Purchase Jade Ring
+Ubertip="Increases the Agility of the Hero by 1 when worn."
+Description=Boosts Agility by 1.
+
+[drph]
+Name=Druid Pouch
+Tip=Purchase Druid Pouch
+Ubertip="Increases the Intelligence of the Hero by 1 when carried."
+Description=Boosts Intelligence by 1.

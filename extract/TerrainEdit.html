@@ -1,0 +1,270 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<script type="text/javascript" src="../Layout/Detector.js"></script>
+	<link rel=stylesheet href="../Layout/Styles.css" type="text/css">
+	<title>World Edit The Terrain Editor</title>
+</head>
+
+<body onload=detection() >
+	
+	<p class="large_header_blue">The Terrain Editor</p>
+	
+	<p class="normal_white">
+	The Terrain Editor is the main module of the World Editor.  Here you can design and modify your terrain, as well as place units and doodads.
+    <br>
+&nbsp;</p>
+	
+	
+	<a class="small_header_blue" name="Terrain">The Terrain Palette</a>
+	<p class="normal_white">
+	To modify terrain, open your Terrain Palette by hitting the T key or by using the Window menu and choosing New Palette, then Terrain.  Once the Terrain Palette opens, you have four categories of tools you can use.<br>
+	<br>
+	The first section on the Terrain Palette is the Apply Texture section.  By clicking on any of the tiles, you can select that tile and place it on your map.  You may even place 
+    Blight and boundary textures.  Boundary is a special tile over which no unit can cross.  It is similar in function to the blackness that surrounds your map.  Blight is the disease that spreads over the ground near Undead buildings.  The option Place Random Variation (on the previewer) allows the editor to place a random tile variation from the currently selected  tile type, rather than placing only the tile variation you can see in the previewer.<br>
+	<br>
+	Second is the Apply Cliff section.  This section allows you to add and remove cliffs, shallow water, deep water, and ramps.  You can also change what cliff you are using.  You may increase or decrease the area modified by changing brush size.<br>
+	<br>
+	The third section, the Apply Height section, has the following options:</p>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Round</i> - This tool allows you to make rounded hills.  Holding down Shift and left-clicking with this tool enabled allows you to create rounded valleys.<br>
+	<i class="oblique_yellow">Plateau</i> - This tool allows you to create perfectly flat surfaces on rounded hills and rounded valleys.<br>
+	<i class="oblique_yellow">Noise</i> - This tool creates an uneven broken surface.<br>
+	<i class="oblique_yellow">Smooth</i> - This tool allows you to smooth out uneven surfaces.
+	</p>
+	<p class="normal_white">
+	The final section displays what brush shape and size you have selected and allows you to change the current brush size.
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="Modify">Modifying Your Tileset</a>
+	<p class="normal_white">
+	You can modify the tileset you have chosen or even create a custom tileset by selecting the option Modify Tileset under the Tools 
+    - Advanced menu.<br>
+	<br>
+	To create a custom tileset, you must first know that that tiles have an attribute called a texture page. Some tiles take up one texture page, while others with more variations take up two. You are limited to having a maximum of twelve texture pages used in a given tileset. All of the tilesets you can customize take up twelve texture pages at the start. Therefore, to add a new tile to a tileset, you must first remove enough tiles from that tileset to free enough texture pages so that you can fit your new tile in. If your new tile takes up two texture pages, you can remove two tiles that take up one texture page each, or you can remove one tile that takes up two texture pages. This will free the two texture pages you need to fit your new tile in. You cannot move or remove tiles that are marked with a red box, however.
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="UnitPalette">The Unit Palette</a>
+	<p class="normal_white">
+	To place units on your map, simply open a Unit Palette by hitting the U key, or if you have a palette open, you can change that palette to the Unit Palette by left-clicking the down arrow and choosing Unit Palette.<br>
+	<br>
+	The first menu specific to the Unit Palette is the list of possible unit owners:
+	</p>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Player X</i> - This is a list of Player 1, Player 2, and so forth up to the maximum number of players you have allowed in your map via Player Properties.<br>
+	<i class="oblique_yellow">Neutral Hostile</i> - A contradiction in terms?  Well, neutral hostile units do not care what player you are.  They are hostile to all players, including computer-controlled players, but they are not hostile to other neutral hostile units.<br>
+	<i class="oblique_yellow">Neutral Passive</i> - These are units that will not attack even if attacked. Player units will not attack them unless ordered to; some neutral passive units (like the Goblin Merchant) cannot be attacked at all.<br>
+	<i class="oblique_yellow">Items</i> - Here you can select items to be placed directly on your map.  This is not the place to decide what items your creeps will drop, though; for that, you need the Unit Properties dialog box, which you get by double-clicking a unit you've already placed on the map.
+	</p>
+	<p class="normal_white">
+	The second menu is the race menu.  It allows you to place units of any race, even units that are outside the current player's race, including neutral units.</p>
+	<p class="normal_white">
+	The third menu is a list of unit subtypes:</p>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Melee</i> - Units that can be found in a normal 
+    melee game. <br>
+	<i class="oblique_yellow">Campaign</i> - Units that are found in campaign 
+    maps. <br>
+	<i class="oblique_yellow">Custom</i> - Units that are created in the Object 
+    Editor.<br>
+	</p>
+	<p class="normal_white">
+	</p>
+	<p class="normal_white">
+	The fourth section is where you find the units.<br>
+	<br>
+	Player units (Orc, Human, Night Elf, and Undead) are divided into five categories.
+	</p>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Units</i> - These are the non-Hero units available to a race.  You will notice that there seem to be two of some units, like the Undead Gargoyle.  This unit has two forms; thus, you have two options to place:  a Gargoyle in regular form and a Gargoyle in Stone Form.<br>
+	<i class="oblique_yellow">Buildings</i> - This is a list of all the buildings each race can construct, including player starting locations.  Only the rooted versions of Night Elf buildings will fall under this category if the currently selected race is Night Elf.<br>
+	<i class="oblique_yellow">Heroes</i> - These are the Heroes available to a race.<br>
+	<i class="oblique_yellow">Uprooted Buildings</i> - This section is specific to the certain races; it includes the uprooted form of all of the selected race's buildings that can be uprooted and moved.<br>
+	<i class="oblique_yellow">Special</i> - These are the units created specifically for campaigns.<br>
+	</p>
+	<p class="normal_white">
+	In addition to the aforementioned categories, the neutral units also have two more categories.  These units can be further divided into groups based on tileset and level.<br>
+    <br>
+    Items may have another menu. If the use item classification option is 
+    checked in the Scenario - Map Options tab, there will be another menu that 
+    divides items into several different categories.</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="UnitProperties">Unit Properties</a>
+	<p class="normal_white">
+	After placing a unit, you can further modify it.  To do this, double-click a unit you have placed, or select the unit and choose Edit Properties in the Edit menu.  The following options can be modified for a unit you have placed:
+	</p>
+	
+	<i class="oblique_blue">General</i><br>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Player</i> - This menu allows you to change the ownership of the unit to any player or any of the previously mentioned owners:  Player X, Neutral Hostile, or Neutral Passive.<br>
+	<i class="oblique_yellow">Facing</i> - Here you can change what direction the unit is facing, either by clicking the arrows or entering in numbers manually.<br>
+	<i class="oblique_yellow">Hit Points</i> - This field allows you to adjust the starting hit points of the selected unit.  Please note that this is a percentage, and not the actual number, unlike the mana field.<br>
+	<i class="oblique_yellow">Mana Points</i> - Units with mana can have their starting mana amount adjusted directly.  Please note that this is not a percentage, but the exact number, unlike the hit points field.<br>
+	<i class="oblique_yellow">Level</i> - Designate a Hero's starting level.  This will affect its maximum mana and hit points.<br>
+	<i class="oblique_yellow">Target Acquisition Range</i> - This sets how far the unit AI will look to acquire targets.  This option affects when the unit will attack hostile units who approach it.<br>
+	<i class="oblique_yellow">Use Default Attributes</i> - Enables a Hero to 
+    have different Strength, Agility and Intelligence values.<br>
+	<i class="oblique_yellow">Abilities</i> - This affects what abilities the unit can have active, provided that the research requirements have been met in the Upgrade Properties menu if the unit is player-owned.  You can place points into a 
+    Hero's abilities just as you would in a game.  Please note that a Hero's ultimate ability will not be modifiable until that 
+    Hero is level six, so if, for example, you want a Paladin to start with Resurrection, you must raise his level to at least six.<br>
+	<i class="oblique_yellow">Inventory</i> - Here you can set what items a Hero will have when that 
+    Hero starts the game:  simply left-click an inventory slot, and select an item from the window that appears.<br>
+	</p>
+	
+	<i class="oblique_blue">Items Dropped</i><br>
+	<br>
+	Here you can set what items a unit or building will drop when it is destroyed. 
+    This can be done either by creating a custom drop table or from assigning it 
+    a drop table from the item table list.<br>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">New Set</i> - In order to add an item, you must first create an item set.  A set is a group of items that can drop, but are mutually exclusive.  Each item in that set will have a chance based on its percentage to drop, but only one of them can drop.  If you want a unit to drop more than one item from a unit or building, you must assign it more than one item set.<br>
+	<i class="oblique_yellow">Delete Set</i> - Delete a set already located on a unit.<br>
+	<i class="oblique_yellow">New Item</i> - Select a new item to add to a selected item set.<br>
+	<i class="oblique_yellow">Delete Item</i> - Deletes an item from a selected item set.<br>
+	<i class="oblique_yellow">Edit Item</i> - Exchange an item in a set with another item, or edit the item's likelihood of dropping.<br>
+	</p>
+	<br>
+	
+	<a class="small_header_blue" name="Random">Random Groups</a>
+	<p class="normal_white">
+	Random groups are groups of monsters that have a chance to appear in a given area.  These groups are similar in essence to the item drop tables, each particular group you set up has a potential to be placed, however they are mutually exclusive, only one set of creep in a group will appear in a specified area.  The random set that appears will be chosen at the time the map loads.<br>
+	<br>
+	To create a Random group, select Random Groups from the Tools - Advanced menu. Then select Add Group to create your first group of monsters. Then select Add Set to create a set of monsters that has a chance to spawn. There is a maximum of 
+    ten monsters in each set. You can change the number of monsters that spawn by selecting and changing the number of positions available in each set. Not every position has to be filled, so some groups can have fewer monsters than others. To have multiple sets that can spawn, simply add more sets of monsters.<br>
+	<br>
+	To use your random groups, place as many random units as you have positions in your group. Next, to use your group, open each random unit's Unit Properties dialog (by double-clicking on each unit), then selecting the Random Unit tab.<br>
+	<br>
+	On this tab select From Random Group for your Random Unit Type.  Then select the random group you just created in the Random Group listing.  Then set the position of the monster you want to spawn in this Random Unit's spot.<br>
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="Doodad">The Doodad Palette</a>
+	<p class="normal_white">
+	To place doodads, open the Doodad Palette by hitting the d key or by selecting Doodads from the Layer menu.  Doodads are generally non-interactive objects placed on a map for visual appeal.  The big exception is the tree doodad; trees are consumable.<br>
+	<br>
+	Doodads are organized by tileset and by category.  The doodad categories are the same for every tileset, but not every tileset has doodads that fall into each category.<br>
+	<br>
+	Next there are several buttons on the Doodad Palette:
+	</p>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Random Rotation</i> - This changes the doodad to face a random direction when placed.<br>
+	<i class="oblique_yellow">Random Scale - Symmetric</i> - When this button is pressed, the placed doodad will be of a random size, but it will remain symmetric:  all vertices (X, Y, and Z) will be increased by the same amount.<br>
+	<i class="oblique_yellow">Random Scale - Z only</i> - With this button depressed, the editor will randomly adjust doodads along the Z-axis only (height).<br>
+	<i class="oblique_yellow">Random Scale - XY only</i> - When you press this button, the editor will scale doodads randomly along the X and Y-axes only.<br>
+	<i class="oblique_yellow">Place Random Variation</i> - Most doodads will have at least one other variation; with this option selected, the editor will randomly select a variation to be placed.
+	</p>
+	<p class="normal_white">
+	The last two things on the menu are the list of available doodads and the brush menu.
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="DoodadProperties">Doodad Properties</a>
+	<p class="normal_white">
+	After placing a doodad you can further modify it just like a unit.  To do this, double-click on a placed doodad or select Edit Properties from the Edit menu.  You have the following options, though not all are available for every doodad.
+	</p>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Variation</i> - Some doodads have multiple variations on the same model, you can select a new variation here.<br>
+	<i class="oblique_yellow">Rotation</i> - Some doodads can face many multiple directions, though others are quite limited.<br>
+	<i class="oblique_yellow">Scale (%)</i> - You can modify the scale of the doodad along each vertex (X, Y, Z) by manipulating the various numbers next to each vertex.  Not all doodads can be manipulated in all vertices however.<br>
+	<i class="oblique_yellow">Life (%)</i> - You can modify the starting life of destructible doodads.  Even setting them to zero.<br>
+	<i class="oblique_yellow">Items Dropped</i> - Doodads can be set to drop 
+    items upon being destroyed in the same method that units can.<br>
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="Camera">The Camera Palette</a>
+	<p class="normal_white">
+	The Camera Palette can be found by hitting the M key or by selecting Cameras from the Layer menu.  This palette is designed to complement a trigger that uses it.  If you do not specify triggers in your script to see the action through your cameras, then the player will never know they exist.<br>
+	<br>
+	The options available on the Camera Palette are as follows:
+	</p>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Create</i> - Create a new camera, and sets that camera to the exact view of the map you currently have.
+	</p>
+	<p class="normal_white">
+	The following options do not become available until you have created at least one camera and selected it.
+	</p>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">View</i> - View your map from the currently selected camera in the Cameras list.<br>
+	<i class="oblique_yellow">Set To View</i> - Change the selected camera's perspective to the one from which you currently view the map.
+	</p>
+	<p class="normal_white">
+	Next on the palette is a list of cameras.  You can change a camera's name by right-clicking on it and then selecting Rename; you can also delete or create a copy of a camera through the right-click menu.
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="CameraProperties">Camera Properties</a>
+	<p class="normal_white">
+	After placing a camera you can modify its placement, name and focus.  Below is the list of modifications you can make to a camera's perspective through the selected camera's Camera Properties dialog:
+	</p>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Camera Name</i> - This field allows you to modify a selected camera's name.<br>
+	<i class="oblique_yellow">Target X</i> - Move a selected camera along the X-axis.<br>
+	<i class="oblique_yellow">Target Y</i> - Move a selected camera along the Y-axis.<br>
+	<i class="oblique_yellow">Z Offset</i> - Move a selected camera up and down on the Z-axis (normal).<br>
+	<i class="oblique_yellow">Rotation</i> - Rotate a selected camera with respect to the Z-axis (normal).<br>
+	<i class="oblique_yellow">Angle of Attack</i> - Rotate the camera with respect to the ground.<br>
+	<i class="oblique_yellow">Distance</i> - Modify the camera's distance relative to its target.<br>
+	<i class="oblique_yellow">Roll</i> - Rotate the camera along its longitudinal axis.<br>
+	<i class="oblique_yellow">Field of View</i> - Increase or decrease the field of view.<br>
+	<i class="oblique_yellow">Far Clipping</i> - Increase the length you can see to the horizon line.<br>
+	<i class="oblique_yellow">Preview Values in Main Window</i> - With this option checked, your perspective will change to that of the camera you are altering when you modify one of the above values.
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="RegionPalette">The Region Palette</a>
+	<p class="normal_white">
+	Regions, like cameras, need triggers to reference them so that they can be properly used.  Otherwise, they will have no effect in the game.  They can be used to set off triggers or to delineate areas a trigger will affect.  This aspect will be explained in more detail when we discuss the 
+    Trigger Editor.  There are exceptions to this rule of linking regions with triggers, and they involve weather effects, Way Gates and ambient sounds.<br>
+	<br>
+	The Region Palette is relatively simple.  Clicking on Add will allow you to add a region.  The white field below these two buttons contains a list of all the currently placed regions.  If you right-click a listed region, you can edit its properties, view it, and delete it.
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="RegionProperties">Region Properties</a>
+	<p class="normal_white">
+	This dialog box can be reached by double-clicking on a region in the terrain the Terrain Editor or by right-clicking on a region in the Region Palette and selecting Edit Properties.  This dialog box has the following options:<br>
+	<br>
+	The first field allows you to modify your region's name.  If you change this field, it will also change the variable name of your region.  The variable name is 
+    Region_XXX, located underneath the modifiable name field.<br>
+	<br>
+	The four numeric fields below the region's name field allow you to modify the size of the region by adjusting each of the region's four sides.<br>
+	<br>
+	The Select Color option allows you to designate that the selected region display with a specific color in the editor.  This makes it easier to tell the difference between multiple regions next to each other.<br>
+	<br>
+	The Weather Effect checkbox allows you to add weather effects through regions.  This is the only method available to designers who wish to have weather effects on melee maps.  Otherwise triggers must be used, and the map will become a non-melee map.<br>
+	<br>
+	The Ambient Sound checkbox allows you to add ambient sounds that will play in specified regions. However, these sounds must first be set to variables in the Sound Editor; otherwise, this option will not be able to be set. Please note that if you have placed a weather effect, you do not need to add an ambient sound for that region, as the sound associated with that weather effect will be played automatically.
+	</p>
+	<br>
+	
+	
+	<a class="small_header_blue" name="WayGates">Way Gates</a>
+	<p class="normal_white">
+	Way Gates are a special neutral passive unit in the game used in combination with regions. If you place a Way Gate and then open its Unit Properties dialog, you can make that Way Gate transport units to any region on the map by putting a check in the box, Way gate Active and then selecting a region you have placed. If you have not placed a region, you will not be able to check that box; it will be grayed out. If you do not point the Way Gate to a region, it will not be able to transport units.
+	</p>
+	
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>

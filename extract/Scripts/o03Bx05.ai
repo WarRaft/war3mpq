@@ -1,0 +1,24 @@
+//==================================================================================================
+//  $Id: o03Bx05.ai,v 1.3 2003/09/02 14:08:43 smercer Exp $
+//==================================================================================================
+globals
+    integer user = 8
+endglobals
+
+function main takes nothing returns nothing
+    call CampaignAI(BURROW,null)
+	
+	call PrepFullSuicide()
+    loop
+	    loop 
+		    exitwhen CommandsWaiting() == 0
+		    set user = GetLastCommand()
+			call PopLastCommand()
+		endloop
+        call SuicideUnitB('nogo',user)
+        call SuicideUnitB('nogn',user)
+        call SuicideUnitB(BERSERKER,user)
+        call SuicideUnitB(WITCH_DOCTOR,user)
+    endloop
+
+endfunction

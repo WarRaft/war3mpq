@@ -1,0 +1,25 @@
+//==================================================================================================
+//  $Id: o03Bx04.ai,v 1.1 2003/09/02 13:58:08 smercer Exp $
+//==================================================================================================
+globals
+    integer user = 7
+endglobals
+
+function main takes nothing returns nothing
+    call CampaignAI(BURROW,null)
+	
+	call PrepFullSuicide()
+    loop
+	    loop 
+		    exitwhen CommandsWaiting() == 0
+		    set user = GetLastCommand()
+			call PopLastCommand()
+		endloop
+        call SuicideUnitB(GRUNT,user)
+        call SuicideUnitB(SHAMAN,user)
+        call SuicideUnitB(RAIDER,user)
+        call SuicideUnitB(KODO_BEAST,user)
+		call SuicideUnitB(CATAPULT,user)
+    endloop
+
+endfunction

@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script type="text/javascript" src="../Layout/TheScript.js"></script>
+	<link rel=stylesheet href="../Layout/Styles.css" type="text/css">
+	<title>World Edit The Unit Editor</title>
+</head>
+
+<body>
+	
+	<p class="large_header_blue">The Unit Editor</p>
+	
+	<p class="normal_white">
+	This is another powerful addition to the World Editor, and it is recommended that you become familiar with the game before you use it, lest you delve too deeply into the inner workings of the game too quickly. To open the Unit Editor, use F6, or choose Unit Editor from the Module window. Here's a short definition of the items you can adjust in the Unit Editor.
+	</p>
+	<a class="small_header_blue" name="Definitions">Definitions:</a>
+	<br>
+	<p class="normal_white_margined">
+	<i class="oblique_yellow">Name</i> - This is the unit's name.
+	<br>
+	<i class="oblique_yellow">Name - Editor Suffix</i> - This is a suffix that only appears in the editor.
+	<br>
+	<i class="oblique_yellow">Proper Names</i> - This is a list of proper names available for the unit (Heroes only).
+	<br>
+	<i class="oblique_yellow">Model Used</i> - This is the base model used for unit's in-game representation.
+	<br>
+	<i class="oblique_yellow">Required Animation Names</i> - This option allows you to use models that are based off another model like the castle or the guard tower.
+	<br>
+	<i class="oblique_yellow">Interface Icon</i> - This is the icon used in the interface.
+	<br>
+	<i class="oblique_yellow">Scaling Value</i> - Here you can increase or decrease the unit's relative size.  Please note that this adjustment is symmetric:  all vertices will be adjusted by the same amount.
+	<br>
+	<i class="oblique_yellow">Tinting Value (Red/Blue/Green)</i> - Using these, you can adjust the unit's red, green, and blue color saturation.
+	<br>
+	<i class="oblique_yellow">Collision Size</i> - This size is used when determining the unit's collision.
+	<br>
+	<i class="oblique_yellow">Gold Cost</i> - This is the amount of the unit will cost to produce in the game.
+	<br>
+	<i class="oblique_yellow">Lumber Cost</i> - This is the amount of lumber the unit will cost to produce in the game.
+	<br>
+	<i class="oblique_yellow">Supply Cost</i> - This is the amount of supply the unit will take up in the game.
+	<br>
+	<i class="oblique_yellow">Supply Produced</i> - This is the amount of supply the unit will provide in the game.
+	<br>
+	<i class="oblique_yellow">Unit Classification</i> - This option modifies what class the unit is.
+	<br>
+	<i class="oblique_yellow">Build Time</i> - This determines how long it takes to build the unit in the game.
+	<br>
+	<i class="oblique_yellow">Primary Attribute</i> - This attribute determines a Hero's bonus damage.
+	<br>
+	<i class="oblique_yellow">Starting (Strength/Agility/Intelligence)</i> - These determine how much of each attribute the Hero starts the game with.
+	<br>
+	<i class="oblique_yellow">(Strength/Agility/Intelligence) per Level</i> - These determine how much of each attribute the Hero gains with each level.
+	<br>
+	<i class="oblique_yellow">Hit Points Maximum (Base)</i> - This is the unit's base amount of maximum hit points.
+	<br>
+	<i class="oblique_yellow">Hit Point Regeneration Rate</i> - This determines how fast the unit regenerates.
+	<br>
+	<i class="oblique_yellow">Hit Point Regeneration Type</i> - This determines where and when the unit can regenerate.
+	<br>
+	<i class="oblique_yellow">Mana Maximum</i> - This is the starting maximum mana of the unit.
+	<br>
+	<i class="oblique_yellow">Mana Regeneration</i> - This determines how fast the unit regenerates mana.
+	<br>
+	<i class="oblique_yellow">Initial Mana</i> - This is the amount of mana the unit starts the game with.  This amount cannot be made larger than the current unit's maximum mana.
+	<br>
+	<i class="oblique_yellow">Requirements</i> - This is a list of all units that must have been built before the current unit can be built.
+	<br>
+	<i class="oblique_yellow">Trained Units</i> - This is a list of units this building can train.
+	<br>
+	<i class="oblique_yellow">Structures Built</i> - This is a list of structures this unit can construct.
+	<br>
+	<i class="oblique_yellow">Upgrades Used</i> - This is a list of upgrades that affect the current unit.
+	<br>
+	<i class="oblique_yellow">Researches Available</i> - This is a list of upgrades that can be researched on this building.
+	<br>
+	<i class="oblique_yellow">Units Sold</i> - This is a list of units that are sold from this building.
+	<br>
+	<i class="oblique_yellow">Items Sold</i> - This is a list of items that are sold from this building.
+	<br>
+	<i class="oblique_yellow">Defense Base</i> - This is the starting defense of the unit.
+	<br>
+	<i class="oblique_yellow">Defense Upgrade Bonus</i> - This determines how much defense the unit will get for each defense upgrade.
+	<br>
+	<i class="oblique_yellow">Defense Type</i> - This is the type of armor the unit wears.
+	<br>
+	<i class="oblique_yellow">Minimum Attack Range</i> - This determines how close a hostile unit can be to the current unit and still be attackable.
+	<br>
+	<i class="oblique_yellow">Attacks Enabled</i> - For units that have two available attacks, you can disable one or the other here.
+	<br>
+	<i class="oblique_yellow">Attack X - Range</i> - This is the maximum attack range a unit has for this attack.
+	<br>
+	<i class="oblique_yellow">Attack X - Attack Type</i> - This is the type of attack the unit uses.
+	<br>
+	<i class="oblique_yellow">Attack X - Weapon Type</i> - This is the type of weapon the unit uses.
+	<br>
+	<i class="oblique_yellow">Attack X - Projectile Art</i> - This determines what art, if any, is used if the attack is a projectile.
+	<br>
+	<i class="oblique_yellow">Attack X - Projectile Speed</i> - This determines how quickly the projectile travels to its target.
+	<br>
+	<i class="oblique_yellow">Attack X - Targets Allowed</i> - This is a list of what units can be targeted by this attack.
+	<br>
+	<i class="oblique_yellow">Attack X - Damage Base</i> - This is the base damage this attack does.
+	<br>
+	<i class="oblique_yellow">Attack X - Damage Number of Dice</i> - This is the number of dice used in the damage range equation.
+	<br>
+	<i class="oblique_yellow">Attack X - Damage Sides per Die</i> - This is the number of sides per die used in the damage range equation.  Here is the equation used to produce the damage range of a unit:<br>
+		<i class="oblique_blue_margined_centered">
+		(Base) + (Number of Dice) = Minimum damage</i><br>
+		<i class="oblique_blue_margined_centered">
+		(Base) + (Number of Sides per Die)*(Number of Dice) = Maximum damage</i>
+	<br>
+	<i class="oblique_yellow">Attack X - Cooldown Time</i> - This is the amount of time that must pass between each attack.
+	<br>
+	<i class="oblique_yellow">Attack X - Area of Effect (Full/Half/Quarter Damage)</i> - This is the size of area where units will take full/half/quarter damage from this attack, if it is an area-effect attack.
+	<br>
+	<i class="oblique_yellow">Attack X - Area of Effect Targets</i> - These are the targets that can be affected by the attack, if it is an area-effect attack.
+	<br>
+	<i class="oblique_yellow">Abilities</i> - This is a list of abilities that are available for the unit.
+	<br>
+	<i class="oblique_yellow">Hero Abilities</i> - This is a list of abilities that are available for this unit; these abilities can only be given to Hero units.
+	<br>
+	<i class="oblique_yellow">Movement Type</i> - This is the type of movement the unit uses.
+	<br>
+	<i class="oblique_yellow">Movement Height</i> - This is how high the unit is above the ground.
+	<br>
+	<i class="oblique_yellow">Movement Speed Base</i> - This is the base speed of the unit.
+	<br>
+	<i class="oblique_yellow">Movement Turn Rate</i> - This determines how fast the unit can turn.
+	<br>
+	<i class="oblique_yellow">Acquisition Range</i> - This is how close a unit must be to be targeted by this unit's AI.
+	<br>
+	<i class="oblique_yellow">Sight Radius (Day/Night)</i> - This radius determines how far the unit can see during different periods of time.
+	<br>
+	<i class="oblique_yellow">Transported Size</i> - This determines how many slots the unit takes up in a transport.
+	<br>
+	<i class="oblique_yellow">Sleeps</i> - This determines whether or not this unit will fall asleep at night.
+	<br>
+	<i class="oblique_yellow">Level</i> - This is the unit's level.  Buildings do not have levels.
+	<br>
+	<i class="oblique_yellow">Point Value</i> - This is the number of points awarded to the player who kills this unit.
+	<br>
+	<i class="oblique_yellow">Priority</i> - This is the priority of the unit.
+	<br>
+	<i class="oblique_yellow">Bounty Awarded - Base</i> - This is the base amount of gold awarded for killing the unit.
+	<br>
+	<i class="oblique_yellow">Bounty Awarded - Number of Dice</i> - This is the number of dice used to calculate possible range of gold awarded.
+	<br>
+	<i class="oblique_yellow">Bounty Awarded - Sides per Die</i> - This is the number of sides per die used to calculate the range of possible gold awarded.  Here's the equation for calculating the bounty awarded:<br>
+		<i class="oblique_blue_margined_centered">
+		(Base) + (Number of dice) = Minimum bounty</i><br>
+		<i class="oblique_blue_margined_centered">
+		(Base) + (Number of sides per die)*(Number of dice) = Maximum bounty</i>
+	<br>
+	<i class="oblique_yellow">Display as Neutral Hostile</i> - This option makes the unit display as neutral hostile.
+	<br>
+	<i class="oblique_yellow">Stock Maximum</i> - This is the number of units of this type that can be sold in a store.  For example, if this number is three, and this unit is sold at a Mercenary Camp, then you can purchase three of this unit.
+	<br>
+	<i class="oblique_yellow">Stock Replenish Interval</i> - This determines how long it takes in seconds for one unit to replenish at a location where this unit-type can be purchased.
+	<br>
+	<i class="oblique_yellow">Tooltip</i> - This is the normal tooltip for this unit.
+	<br>
+	<i class="oblique_yellow">Hotkey</i> - This is the hotkey used for this unit.
+	<br>
+	<i class="oblique_yellow">Tooltip - Revive</i> - This is the tooltip used for a Hero waiting to be revived at an Altar.
+	<br>
+	<i class="oblique_yellow">Extended Tooltip</i> - This is the verbose tooltip displayed when a user has this setting active in the game.
+	<br>
+	<i class="oblique_yellow">Description</i> - This is the description of this unit.
+	</p>
+	
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
