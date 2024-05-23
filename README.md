@@ -1,6 +1,6 @@
 # war3mpq
 
-Порядок извлечения архивов:
+Extraction order
 
 - War3.mpq
 - War3x.mpq
