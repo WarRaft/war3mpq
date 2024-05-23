@@ -1,6 +1,6 @@
 # war3mpq
 
-Extraction order
+Extraction order:
 
 - War3.mpq
 - War3x.mpq
