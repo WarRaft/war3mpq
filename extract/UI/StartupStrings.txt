@@ -1,2 +1,0 @@
-Warcraft III is already running.
-Warcraft III was unable to initialize DirectX.  Please ensure you have DirectX 8.1 or newer installed and that your display drivers are current.  DirectX may be found on your Warcraft III install CD under Options.
