@@ -4,7 +4,7 @@
 
 <instance-profile id="war3mpq"
                  name="war3mpq"
-                 start-page="starter-topic.md">
+                 start-page="file-format.md">
 
-    <toc-element topic="starter-topic.md"/>
+    <toc-element topic="file-format.md"/>
 </instance-profile>
