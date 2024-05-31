@@ -6,5 +6,7 @@
                  name="war3mpq"
                  start-page="file-format.md">
 
-    <toc-element topic="file-format.md"/>
+    <toc-element topic="file-format.md">
+        <toc-element topic="imp.md"/>
+    </toc-element>
 </instance-profile>
