@@ -6,15 +6,15 @@
 
 ```C++
 Imports {
-    uint32LE format // 0 - ROC
+    uint32le format // 0 - ROC
                     // 1 - TFT
-    uint32LE count
+    uint32le count
     Item[count]     
 }
 
 Item {
-    #if (format == 1) {
-        byte flags 
+    if (format == 1) {
+        uint8BE flags 
     }
     string path
 }
