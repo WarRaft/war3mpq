@@ -9,5 +9,9 @@
     <toc-element topic="file-format.md">
         <toc-element topic="imp.md"/>
         <toc-element topic="w3abdhqtu.md"/>
+        <toc-element topic="slk.md"/>
+        <toc-element topic="w3g.md">
+            <toc-element topic="w3g-actions.md"/>
+        </toc-element>
     </toc-element>
 </instance-profile>

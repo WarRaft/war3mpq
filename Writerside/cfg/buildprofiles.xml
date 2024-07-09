@@ -8,6 +8,8 @@
             <primary-color>ruby</primary-color>
             <color-preset>contrast</color-preset>
             <noindex-content>false</noindex-content>
+
+            <include-after-body>include-after-body.html</include-after-body>
         </variables>
     </build-profile>
 
