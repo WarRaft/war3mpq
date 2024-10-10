@@ -1,42 +1,12 @@
+<show-structure for="chapter,procedure" depth="3"/>
+
 # w3g
 
 WarCraft III Replay action format description.
 
 For more informtion about w3g file format, please visit [](http://w3g.deepnode.de).
 
-## Another parsers
-
-- [](https://github.com/PBug90/w3gjs)
-- [](https://w3rep.sourceforge.net/)
-- [](https://github.com/JSamir/wc3-replay-parser)
-
-## Table of Content
-
-- [](#Introduction)
-- [](#Header)
-- [](#SubHeader0)
-- [](#SubHeader1)
-- [](#Version)
-- [](#Data)
-- [](#Decompressed)
-- [](#PlayerRecord)
-- [](#GameName)
-- [](#EncodedString)
-- [](#GameSettings)
-- [](#MapCreatorName)
-- 4.6  [PlayerCount]
-- 4.7  [GameType]
-- 4.8  [LanguageID]
-- 4.9  [PlayerList]
-- 4.10 [GameStartRecord]
-- 4.11 [SlotRecord]
-- 4.12 [RandomSeed]
-- 5.0 [ReplayData]
-- 6.0 General notes
-- 6.1 Notes on official Blizzard Replays
-- [](#Credits)
-
-## DISCLAIMER (please read it ...)
+## DISCLAIMER
 
 All information in this document was solely obtained by looking at the replay
 file and guessing the meaning of each single field. All knowledge about the
@@ -55,54 +25,48 @@ We would really appreciate it if you credit us in your project or drop us
 a line via mail - because we like to know if the work put into this document
 was anything worth after all ;-)
 
-## 1.0 Introduction {id="Introduction"}
+## Another parsers
 
-An important word ahead.
-The information in this document is addressed to developers who want to create
-programs, tools and websites that help to enrich the gaming experience for the
-*whole* WarCraft III community.
-We absolutely do not tolerate hacks and cheats. Therefore you MUST NOT use
-the information provided in this document for any of these purposes.
+- [](https://github.com/PBug90/w3gjs)
+- [](https://w3rep.sourceforge.net/)
+- [](https://github.com/JSamir/wc3-replay-parser)
 
-This file is meant to contain a description of the replay format itself.
-Additional notes and explanations on single fields and/or algorithms will
-(eventually) be moved to a seperate file ("w3g_notes.txt") some day.
+## Convention
 
-The whole file is still under construction. The meaning of some fields is still
-unknown and "known" fields might be wrong. Please contact us if you figure out
-any unknown values or find a replay that simply does not conform with the
-description of a "known" field.
+WORD = 2byte = int16
+DWORD = 4byte = int32
+QWORD = 8byte = int64
 
-### Convention
-
-Sections directly related to data stored in the replay file are written in
-square brackets [].
-
-## 2.0 Header {id="Header"}
+## Header {id="Header"}
 
 The replay file consist of a header followed by a variable number of compressed
 data blocks. The header has the following format:
 
-| offset | size/type                                           | Description                                                |
-|--------|-----------------------------------------------------|------------------------------------------------------------|
-| 0x0000 | 28 chars                                            | zero terminated string "Warcraft III recorded game\0x1A\0" |
-| 0x001c | 1 dword                                             | fileoffset of first compressed data block (header size)    |
-|        | 0x40 for WarCraft III with patch <= v1.06           |                                                            |
-|        | 0x44 for WarCraft III patch >= 1.07 and TFT replays |                                                            |
-| 0x0020 | 1 dword                                             | overall size of compressed file                            |
-| 0x0024 | 1 dword                                             | replay header version:                                     |
-|        | 0x00 for WarCraft III with patch <= 1.06            |                                                            |
-|        | 0x01 for WarCraft III patch >= 1.07 and TFT replays |                                                            |
-| 0x0028 | 1 dword                                             | overall size of decompressed data (excluding header)       |
-| 0x002c | 1 dword                                             | number of compressed data blocks in file                   |
-| 0x0030 | n bytes                                             | SubHeader (see section 2.1 and 2.2)                        |
+```C
+Header {
+  string[28] magick // 
+}
+```
+
+| offset | size/type                                           | Description                                                 |
+|--------|-----------------------------------------------------|-------------------------------------------------------------|
+| 0x0000 | 28 chars                                            | zero terminated string `Warcraft III recorded game \0x1A\0` |
+| 0x001c | 1 dword                                             | fileoffset of first compressed data block (header size)     |
+|        | 0x40 for WarCraft III with patch <= v1.06           |                                                             |
+|        | 0x44 for WarCraft III patch >= 1.07 and TFT replays |                                                             |
+| 0x0020 | 1 dword                                             | overall size of compressed file                             |
+| 0x0024 | 1 dword                                             | replay header version:                                      |
+|        | 0x00 for WarCraft III with patch <= 1.06            |                                                             |
+|        | 0x01 for WarCraft III patch >= 1.07 and TFT replays |                                                             |
+| 0x0028 | 1 dword                                             | overall size of decompressed data (excluding header)        |
+| 0x002c | 1 dword                                             | number of compressed data blocks in file                    |
+| 0x0030 | n bytes                                             | SubHeader (see section 2.1 and 2.2)                         |
 
 The size of the header excluding the subheader is `0x30` bytes so far.
 
-## 2.1 SubHeader for header version 0 {id="SubHeader0"}
+### SubHeader for header version 0 {id="SubHeader0"}
 
-This header was used for all replays saved with WarCraft III patch version
-v1.06 and below.
+This header was used for all replays saved with WarCraft III patch version `v1.06` and below.
 
 | offset | size/type                                           | Description                                |
 |--------|-----------------------------------------------------|--------------------------------------------|
@@ -119,10 +83,9 @@ v1.06 and below.
 
 Overall header size for version 0 is 0x40 bytes.
 
-## 2.2 SubHeader for header version 1 {id="SubHeader1"}
+### SubHeader for header version 1 {id="SubHeader1"}
 
-This header is used for all replays saved with WarCraft III patch version
-v1.07 and above.
+This header is used for all replays saved with WarCraft III patch version `v1.07` and above.
 
 | offset | size/type                                                 | Description                                       |
 |--------|-----------------------------------------------------------|---------------------------------------------------|
@@ -143,7 +106,7 @@ v1.07 and above.
 
 Overall header size for version 1 is `0x44` bytes.
 
-## 2.3 Version information {id="Version"}
+### Version information {id="Version"}
 
 | game version | version in replay | version of war3.exe | release date |
 |--------------|-------------------|---------------------|--------------|
@@ -233,12 +196,11 @@ Here comes a list of version numbers, header version and build numbers:
 | 314a    | version 1         | 6034  | 2003-06-02   |
 | 315     | version 1         | 6034  | 2003-06-10   |
 
-(*) Patch 305 and 305a still use the old V0 GameVersion scheme (2 words).
+> Patch 305 and 305a still use the old V0 GameVersion scheme (2 words).
 
-Notes:
+> 313 replays might be convertable to FT retail 1.07 replays.
 
-- 313 replays might be convertable to FT retail 1.07 replays.
-- 315 replays might be convertable to FT retail 1.10/1.11 replays.
+> 315 replays might be convertable to FT retail 1.10/1.11 replays.
 
 ### Beta versions of various patches
 
@@ -347,7 +309,9 @@ Depending on the game type one of these records follows:
 |        | 0x20=random                                            |                                                 |
 |        | 0x40=race selectable/fixed (see notes in section 4.11) |                                                 |
 
-## 4.2 GameName {id="GameName"}
+## GameName {id="GameName"}
+
+<!-- 4.2 -->
 
 This is a plain null terminated string reading the name of the game.
 
@@ -367,13 +331,15 @@ is fixed:
   by WarCraft III patch version 1.06 and earlier
   (see war3.mpq\UI\FrameDef\GlobalStrings.fdf: GAMENAME, LOCAL_GAME):
 
-English        : "%s's Game"         : "local game"
-Czech    (1029): "Hra %s"            : "Místní hra"
-German   (1031): "Spiel von %s"      : "Lokales Spiel"
-Spanish  (1034): "Partida de %s"     : "Partida local"
-French   (1036): "Partie de %s"      : "Partie locale"
-Italian  (1040): "Partita di %s"     : "Partita locale"
-Polish   (1045): "Gra (%s)"          : "Gra lokalna"
+|                 |                 |                  |
+|-----------------|-----------------|------------------|
+| English         | "%s's Game"     | "local game"     |
+| Czech    (1029) | "Hra %s"        | "Místní hra"     |
+| German   (1031) | "Spiel von %s"  | "Lokales Spiel"  |
+| Spanish  (1034) | "Partida de %s" | "Partida local"  |
+| French   (1036) | "Partie de %s"  | "Partie locale"  |
+| Italian  (1040) | "Partita di %s" | "Partita locale" |
+| Polish   (1045) | "Gra (%s)"      | "Gra lokalna"    |
 
 `%s` denotes the game creators player name.
 
@@ -515,7 +481,9 @@ Custom -> Scenario  (not 100% sure about this)
 0x0002 | 1 word | unknown (always 0x0000 so far)
 
 TODO:
-values in patch >=1.07:
+values in patch `>=1.07`:
+
+```
 01 00 00 00 : ladder 1on1 / custom scenario
 20 00 00 00 : ladder team
 09 00 00 00 : custom game
@@ -527,7 +495,7 @@ values in patch >=1.07:
 01 40 13 00 : custom game
 09 A0 42 00 : custom game
 09 A8 44 00 : custon game
-
+```
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 4.8 [LanguageID]
@@ -660,9 +628,7 @@ the runtime of the Warcraft.exe of the game host in milliseconds.
 For ladder games the value variies very much - probably the battle.net server
 hands out a 'real' seed (not runtime based) to the clients.
 
-===============================================================================
-5.0 [ReplayData]
-===============================================================================
+## 5.0 ReplayData {id="ReplayData"}
 
 This section describes the Replay data following directly after the static data
 described in section 4. It represents information about the game in progress.
@@ -914,7 +880,7 @@ Examples:
 23 FB 0D 00 00 04 DD B8 B1 87 00 ->  "#.........."    3579 4 2276571357 0
 23 D5 15 00 00 04 19 ED 43 72 00 ->  "#.......Cr."    5589 4 1917054233 0
 23 1B 03 00 00 04 D8 2E 81 4F 00 ->  "#........O."     795 4 1333866200 0
-23 F2 04 00 00 04 91 7F C6 01 00 ->  "#........."    1266 4 29786001 0
+23 F2 04 00 00 04 91 7F C6 01 00 ->  "#...... ..."    1266 4 29786001 0
 ```
 
 all following back-to-back in a single replay:
